@@ -5200,13 +5200,13 @@ a img {
 p {
   font-family: inherit;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility;
 }
 p.lead {
-  font-size: 1.21875rem;
+  font-size: 1.11875rem;
   line-height: 1.6;
 }
 p aside {
@@ -5300,7 +5300,7 @@ code {
 ul,
 ol,
 dl {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   list-style-position: outside;
@@ -6538,7 +6538,7 @@ th.hide-for-touch {
   margin-top: 5rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 40.063em) {
   .m-t-m-0 {
     margin-top: 0;
   }
@@ -6559,7 +6559,7 @@ th.hide-for-touch {
     margin-top: 4rem;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 64.063em) {
   .m-t-l-0 {
     margin-top: 0;
   }
@@ -6600,7 +6600,7 @@ th.hide-for-touch {
   margin-bottom: 4rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 40.063em) {
   .m-b-m-0 {
     margin-bottom: 0;
   }
@@ -6621,7 +6621,7 @@ th.hide-for-touch {
     margin-bottom: 4rem;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 64.063em) {
   .m-b-l-0 {
     margin-bottom: 0;
   }
@@ -7106,6 +7106,9 @@ ul {
   margin: 0;
   overflow: visible;
 }
+.inline-list li {
+  margin-left: 0 !important;
+}
 
 a {
   -webkit-transition: color 0.15s linear;
@@ -7182,12 +7185,30 @@ body, html {
 
 footer {
   background: #fff;
+  margin-bottom: 1rem;
+  opacity: 0.2;
+  display: inline-block;
+  -webkit-transition: opacity 0.1s linear;
+  -moz-transition: opacity 0.1s linear;
+  -ms-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+@media only screen and (min-width: 40.063em) {
+  footer {
+    display: block;
+  }
+}
+footer:hover {
+  opacity: 1;
+}
+footer .nav__link {
+  font-size: 0.8rem;
 }
 
-.copyright {
-  color: #BCBBBB;
+.footer__text {
   font-size: 0.8rem;
-  margin-top: 0.2rem;
+  margin-left: 0 !important;
 }
 
 .overlay, .overlay--loading {
@@ -7217,7 +7238,6 @@ footer {
 
 header {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
-  position: fixed;
   z-index: 2;
   background: rgba(255, 255, 255, 0.95);
   background: #fff;
@@ -7226,19 +7246,25 @@ header {
   top: 0;
   bottom: 0;
 }
-@media only screen {
-  header {
-    font-size: 1em;
+header ul li {
+  float: left;
+}
+@media only screen and (min-width: 40.063em) {
+  header ul li {
+    width: 100%;
   }
 }
-header ul {
-  display: inline-block;
-  width: 100%;
+@media only screen and (min-width: 40.063em) {
+  header ul {
+    width: 100%;
+    display: inline-block;
+  }
 }
 
 .nav__link {
   padding: .3em .4em;
   display: block;
+  margin: 0 !important;
 }
 .nav__link.active {
   text-decoration: underline;
@@ -7252,23 +7278,33 @@ header ul {
   float: left;
   line-height: 1em;
   font-size: 4em;
-  width: 100%;
-  padding: 0.4em 0;
+  padding: 0.4em 0.5em;
   background: #333;
   color: #fff;
   text-align: center;
   border-radius: 55% 45%;
+  display: none;
+}
+@media only screen and (min-width: 40.063em) {
+  .icon-logo {
+    padding: 0.4em 0.4em;
+    width: 100%;
+    font-size: 4rem;
+    display: block;
+  }
 }
 
-header {
-  width: 10em;
-}
+@media only screen and (min-width: 40.063em) {
+  header {
+    width: 10em;
+    position: fixed;
+  }
 
-.content {
-  padding-left: 11.25em;
-  padding-bottom: 0;
+  .content {
+    padding-left: 11.25em;
+    padding-bottom: 0;
+  }
 }
-
 .stage {
   position: relative;
   overflow: hidden;
@@ -7320,6 +7356,7 @@ header {
 
 .section--home {
   background: #F7F7F7;
+  border-color: #E6E7E9;
 }
 
 .typekit-badge {
@@ -7400,7 +7437,7 @@ a.post__info {
 .post__content {
   background: #fff;
   border-radius: 5px 5px 0 0;
-  padding: 4em 1em 4em;
+  padding: 1em 1em 4em;
 }
 .post__content hr {
   width: 50%;
@@ -7435,10 +7472,10 @@ a.post__info {
 
 .section--work {
   padding: 3em 0;
+  width: 100%;
   height: 100%;
-  position: relative;
 }
 
 .section--af {
-  background: red;
+  background: #f3f3f3;
 }
