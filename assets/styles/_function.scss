@@ -1,0 +1,128 @@
+
+
+// Animations
+/////////////////////////////////////////////////////////////////////////
+@mixin keyframe ($animation-name){
+    @-webkit-keyframes $animation-name{
+        @content;
+    }
+
+    @-moz-keyframes $animation-name{
+        @content;
+    }
+
+    @-ms-keyframes $animation-name{
+        @content;
+    }
+
+    @-o-keyframes $animation-name{
+        @content;
+    }
+
+    @keyframes $animation-name{
+        @content;
+    }
+}
+//Animations: How to use above mixin:
+// @include keyframe(slideWrap) {
+//   0% {
+//     left:0;
+//     top:0;
+//   }
+//   100% {
+//     left:0;
+//     top:0;
+//   }
+// }
+
+// Vendor Prefixes and Values
+/////////////////////////////////////////////////////////////////////////
+
+@mixin vendor($property, $value...){
+    -webkit-#{$property}:$value;
+       -moz-#{$property}:$value;
+        -ms-#{$property}:$value;
+         -o-#{$property}:$value;
+            #{$property}:$value;
+}
+// @include vendor(background, red);
+
+@mixin vendor-val($property, $value...){
+    #{$property}:-webkit-#{$value};
+       #{$property}:-moz-#{$value};
+        #{$property}:-ms-#{$value};
+         #{$property}:-o-#{$value};
+            #{$property}:#{$value};
+}
+// @include vendor-val(display,box);
+
+// display: -webkit-box;
+// display: -moz-box;
+// display: -ms-flexbox;
+// display: -webkit-flex;
+// display: flex;
+
+
+// Truncate
+/////////////////////////////////////////////////////////////////////////
+@mixin truncate($truncation-boundary){
+    max-width:$truncation-boundary;
+    white-space:nowrap;
+    overflow:hidden;
+    @include vendor(text-overflow,ellipsis);
+}
+
+//@include truncate(100%);
+
+
+
+// Multiline Truncate (experimental)
+/////////////////////////////////////////////////////////////////////////
+//Courtesy of  Jan Wagner.
+// @mixin truncate-multi($lh, $l, $mw) {
+//   /* non-webkit */
+//   max-height: $lh*$l;
+//   /* webkit */
+//   -webkit-box-orient: vertical;
+//   -webkit-line-clamp: $l;
+//   display: -webkit-box;
+//   line-height: $lh;
+//   max-width: $mw;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   * {overflow:hidden}
+// }
+// //Use by adding .hide to the p tags parent element.
+// .parent {
+//   &.hide {
+//     @include truncate-multi(1.4em, 3, 100%);
+//   }
+// }
+// <article class="parent hide">
+//   <p>
+//   </p>
+// </article>
+
+
+
+
+
+// Centering Mixin
+/////////////////////////////////////////////////////////////////////////
+//Will work on a fallback method, but for now, pure css3 centering!
+
+@mixin centered($width, $height) {
+  @include vendor(transform, translate(-$width, -$height));
+  width:$width;
+  height:$height;
+}
+//@include centered(50%,50%);
+
+
+// Centering Mixin
+/////////////////////////////////////////////////////////////////////////
+@mixin size($width, $height){
+    width:$width;   
+    height:$height;
+}
+//@include size(50%,50%);

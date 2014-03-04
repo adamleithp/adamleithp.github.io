@@ -1,0 +1,70 @@
+---
+layout: default
+title: Homepage
+---
+
+<div class="stage stage--home">
+	<div class="columns small-12 text-center">
+		<h3 class="stage--title">Developer and Designer in 
+
+		{% for post in site.posts limit:1 %}
+		<a class="location" href="{{post.locationLink}}{{post.city}} {{post.country}}">
+			<i class="icon fa fa-flag"></i>
+			<span>{{post.city}}, {{post.country}}</span>
+		</a>
+
+		{% endfor %}
+
+		</h3>
+	</div>
+</div>
+
+<div class="row">
+	<div class="about clearfix margin-bottom-small-4">
+		<div class="columns small-12 medium-8 medium-centered content__pull">
+			<div>
+				<img src="assets/images/adam2.jpg" alt="" class="left small-12 medium-5 about__img">
+				<h4>Adam Leith Pietrantonio</h4>
+				<p class="margin-top-small-1">Alot of my energy is spent making things. Sometimes these things are for clients, sometimes they are for fun. </p>
+				<p><span class="text--semibold">Professional Web Developer</span> and aspiring <span class="text--semibold">UX designer</span>. This is where I put my... Well, everything.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section--home">
+	<div class="row">
+		<div class="margin-top-small-3 margin-bottom-small-4">
+			<div class="columns small-12 medium-6 medium-centered">
+				<h4 class="margin-bottom-small-1 text-center"><a href="blog.html">My Recent Thoughts</a></h4>
+				<hr>
+		        <ul class="list--entries">
+
+		            {% for post in site.posts %}
+
+		            <li>
+		            	<a href="{{ post.url }}" class="list__entry clearfix small-12">
+			                <div class="list--entries__info">
+			                	
+		                		
+				                <h5>{{ post.title }}</h5>
+				                <span>
+				                	<small class="list-entries__date left">{{ post.date | date_to_string }}</small>
+				                	<small class="list-entries__category left text--regular">&nbsp;&nbsp;#{{ post.category }}</small>   	
+				                </span>
+			                
+			                </div>
+						</a> 
+		           </li>
+
+		            {% endfor %}
+		        </ul>
+
+
+
+
+		        </ul>
+			</div>
+		</div>
+		
+	</div>
+</div>
