@@ -70,6 +70,6 @@ module.exports = function(grunt) {
 
   // grunt.registerTask('test', ['jshint']);
 
-  grunt.registerTask('default', ['concat', 'uglify', 'sass']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass',]);
 
 };
