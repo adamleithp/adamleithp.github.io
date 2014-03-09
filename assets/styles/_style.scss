@@ -35,6 +35,7 @@ $custom-break: "#{$screen} and (min-width:#{$custom})";
 /////////////////////////////////////////
 
 .inline {display: inline;}
+.inline-block {display: inline-block;}
 .hardware {@include vendor(transform, translate3d(0,0,0));}
 
 .clearfix {
@@ -79,6 +80,15 @@ $row-width--large: rem-calc(1100);
 
 .text--larger {font-size: 1.1rem;}
 .text--smaller {font-size: .9rem;}
+
+
+
+// grid fixes
+
+.row .row {
+    margin:0 0;
+}
+
 
 h6,h5,h4,h3,h2,h1 {
     @include semibold;
@@ -162,7 +172,12 @@ body,html { height: 100%;}
 .relative {
     position: relative;
 }
-
+.center {
+    @include vendor(transform,translate(50%,50%));
+    position: absolute;
+    left: 0%;
+    width: 50%;
+}
 .button {
     text-transform: uppercase;
     padding: .7em 1.4em;
@@ -185,27 +200,39 @@ body,html { height: 100%;}
         color:#222;
     }
 }
-
+.special-centered-for-small {
+    @media #{$small-only} {
+        max-width:400px;
+        margin:0 auto; 
+    }
+}
 
 
 // Footer
 footer {
+    @extend .hardware;
     background:#fff;
-    margin-bottom: $push*1;
-    opacity: 0.2;
+    padding-bottom: $push*1;
+    //opacity: 0.2;
+    width: 100%;
     display: inline-block;
-    @include vendor(transition, opacity .1s linear);
+    
     @extend .clearfix;
 
     @media #{$medium-up} {
         display: block;
+        float: left;
+        width: 100%
     }
 
     &:hover {
-        opacity: 1;
+
+        .footer__text {
+            color:$primary-color;
+        }
     }
     .nav__link {
-        font-size: 0.8rem;
+        //font-size: 0.8rem;
     }
 
 }
@@ -213,8 +240,10 @@ footer {
     //color:#BCBBBB;
     font-size: 0.8rem;
     margin-left: 0 !important;
-    
-    //@extend .nav__link;
+    padding:.3em .4em;
+    color:#ccc;
+    @include vendor(transition, color .1s linear);
+
 
 }
 
@@ -301,10 +330,18 @@ header {
             font-size: 4em;
             padding: 0.3em 0.4em;
             background: #333;
+            //background:#295835;
             color: #fff;
             text-align: center;
             border-radius: 55% 45%;
             display: none;
+            @include vendor(transition, background-color .1s .05s linear);
+
+            &:hover {
+                //background-color: #356842;
+                background-color: #444;
+                //background-color: rgb(151, 231, 209);
+            }
 
             @media #{$medium-up} {
                 padding: 1.2rem 1rem;
@@ -484,11 +521,13 @@ $border-radius: 5px;
         background-clip: text; 
         color: #333;
         margin:0;
-        font-size: 2.5em;       
+        font-size: 2.1em;       
 
-        @media #{$small-up} {
-            //font-size: 4em;
-            //font-size: 3vw;
+        @media #{$medium-up} {
+            font-size: 2.5em; 
+        }
+        @media #{$iphone-only} {
+            font-size: 1.7em; 
         }
     }
 
@@ -607,10 +646,19 @@ $content--post--bg: #fff;
     height: 100%;
 }
 
+    .work__img {
+        height: 500px;
+
+        >div {
+            @extend .center;
+        }
+    }
     .section--af {
         background: #f3f3f3;
     }
-
+    .section--le {
+        background: #e4e4e4;
+    }
 
 
 

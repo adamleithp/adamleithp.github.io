@@ -1,0 +1,1246 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"pad-",
+				"padding-right"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"stage",
+				"stage__img"
+			],
+			[
+				"d",
+				"disc"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"tex-",
+				"text-align"
+			],
+			[
+				"fa",
+				"fadeIn"
+			],
+			[
+				"fad",
+				"fadeIn"
+			],
+			[
+				"fae",
+				"fadeOut"
+			],
+			[
+				"bordr",
+				"border-right"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"anim",
+				"anim-	animation: ${1:name} ${2:duration} ${3:timing-function} ${4:delay} ${5:iteration-count} ${6:direction} ${7:fill-mode};"
+			],
+			[
+				"ted",
+				"text-decoration"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"text-d",
+				"text-decoration"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"bod",
+				"body-push"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"mari",
+				"margin-bottom"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"nav",
+				"nav-color"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"the",
+				"theme2"
+			],
+			[
+				"re",
+				"removeClass"
+			],
+			[
+				"fir",
+				"first-slide"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"sli",
+				"slideWidth"
+			],
+			[
+				"actv",
+				"active-slide"
+			],
+			[
+				"list-",
+				"list-style"
+			],
+			[
+				"item",
+				"project-item"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"background",
+				"background-repeat"
+			],
+			[
+				"proj",
+				"project_item_height"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"head",
+				"header_color"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"logo",
+				"logoItem"
+			],
+			[
+				"con",
+				"content_gutter"
+			],
+			[
+				"gu",
+				"header_gutter"
+			],
+			[
+				"header",
+				"header_width"
+			],
+			[
+				"f",
+				"fixed"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"link",
+				"link-blue"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"lin",
+				"link-dark-blue"
+			],
+			[
+				"c",
+				"disc"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"foa",
+				"float"
+			],
+			[
+				"l",
+				"link-light-blue"
+			],
+			[
+				"padding-",
+				"padding-top"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"li",
+				"light-grey"
+			],
+			[
+				"tr",
+				"transparent"
+			],
+			[
+				"tra",
+				"transparent"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 3335,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/_style.scss",
+			"settings":
+			{
+				"buffer_size": 11636,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 52,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/app.js",
+			"settings":
+			{
+				"buffer_size": 1392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 1957,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/_margins.scss",
+			"settings":
+			{
+				"buffer_size": 1287,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_layouts/blog_post.html",
+			"settings":
+			{
+				"buffer_size": 1150,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/blog_list.html",
+			"settings":
+			{
+				"buffer_size": 334,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/foundation/_settings.scss",
+			"settings":
+			{
+				"buffer_size": 39356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2034,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/app.scss",
+			"settings":
+			{
+				"buffer_size": 193,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/_normalize.scss",
+			"settings":
+			{
+				"buffer_size": 7395,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "work.html",
+			"settings":
+			{
+				"buffer_size": 2048,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"fold",
+				"Code Folding: Unfold All"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/adamleithp/_posts/2014-01-18-firstpost.html",
+		"/Applications/MAMP/htdocs/adamleithp/.gitignore",
+		"/Applications/MAMP/htdocs/adamleithp/assets/styles/_margins.scss",
+		"/Applications/MAMP/htdocs/adamleithp/_config.yml",
+		"/Applications/MAMP/htdocs/adamleithp/gruntfile.js",
+		"/Applications/MAMP/htdocs/adamleithp/package.json",
+		"/Applications/MAMP/htdocs/adamleithp/assets/styles/app.scss",
+		"/Applications/MAMP/htdocs/adamleithp/assets/styles/app.css",
+		"/Applications/MAMP/htdocs/site2/site.sublime-workspace",
+		"/Applications/MAMP/htdocs/site/css/app.css",
+		"/Applications/MAMP/htdocs/Portfolio/_header.html",
+		"/Applications/MAMP/htdocs/Portfolio/templates/logo.html",
+		"/Applications/MAMP/htdocs/site/css/foundation/components/_type.scss",
+		"/Applications/MAMP/htdocs/site/_posts/2014-01-18-firstpost.html",
+		"/Applications/MAMP/htdocs/site/js/custom.js",
+		"/Applications/MAMP/htdocs/site/_config.yml",
+		"/Applications/MAMP/htdocs/site/css/app.scss",
+		"/Users/AdamLiethP/Downloads/jekyll-plugins-master/_layouts/category_index.html",
+		"/Applications/MAMP/htdocs/site/js/modernizr.js",
+		"/Users/AdamLiethP/Downloads/font-awesome-4.0.3/scss/font-awesome.scss",
+		"/Applications/MAMP/htdocs/site/css/fonts/_mixins.scss",
+		"/Applications/MAMP/htdocs/site/css/foundation/_settings.scss",
+		"/Applications/MAMP/htdocs/site/css/_margins.scss",
+		"/Users/AdamLiethP/Downloads/jekyll-plugins-master/_includes/custom/category_feed.xml",
+		"/Applications/MAMP/htdocs/site/css/_normalize.scss",
+		"/Applications/MAMP/htdocs/site/_posts/2014-01-18-firstpost.md",
+		"/Applications/MAMP/htdocs/site/_posts/2014-01-18-second_post.md",
+		"/Applications/MAMP/htdocs/site/_layouts/default.html",
+		"/Applications/MAMP/htdocs/site/blog.html",
+		"/Applications/MAMP/htdocs/site/_posts/2014-01-18.md",
+		"/Applications/MAMP/htdocs/site/_layouts/blog_post.html",
+		"/Applications/MAMP/htdocs/site/index.html",
+		"/Applications/MAMP/htdocs/site/css/_myStyle.scss",
+		"/Applications/MAMP/htdocs/Blank Template/assets/scss/_style.scss",
+		"/Applications/MAMP/htdocs/Blank Template/assets/scss/app.scss",
+		"/Applications/MAMP/htdocs/site/css/style.scss",
+		"/Applications/MAMP/htdocs/site/css/_style.scss",
+		"/Applications/MAMP/htdocs/site/css/custom/_mq.scss",
+		"/Applications/MAMP/htdocs/site/css/custom/_hint.scss",
+		"/Applications/MAMP/htdocs/site/css/boot/_grid.scss",
+		"/Applications/MAMP/htdocs/Link Energy/linkenergy/assets/scss/foundation/_settings.scss",
+		"/Applications/MAMP/htdocs/Link Energy/linkenergy/index.php",
+		"/Applications/MAMP/htdocs/Link Energy/linkenergy/assets/scss/_style.scss",
+		"/Applications/MAMP/htdocs/marilyn/assets/scss/foundation/_settings.scss",
+		"/Applications/MAMP/htdocs/marilyn/assets/scss/_normalize.scss",
+		"/Applications/MAMP/htdocs/marilyn/assets/scss/foundation/components/_type.scss",
+		"/Applications/MAMP/htdocs/Link Energy/linkenergy/footer.php",
+		"/Applications/MAMP/htdocs/Link Energy/linkenergy/assets/scss/app.scss",
+		"/Applications/MAMP/htdocs/LinkEnergy/css/style.css",
+		"/Applications/MAMP/htdocs/Rapid/index.html",
+		"/Applications/MAMP/htdocs/LinkEnergy/footer.php",
+		"/Applications/MAMP/htdocs/LinkEnergy/404.php",
+		"/Applications/MAMP/htdocs/LinkEnergy/404.html",
+		"/Applications/MAMP/htdocs/Portfolio/assets/scss/_normalize.scss",
+		"/Applications/MAMP/htdocs/Portfolio/assets/scss/_function.scss",
+		"/Applications/MAMP/htdocs/Portfolio/blog/css/main.css",
+		"/Applications/MAMP/htdocs/Portfolio/Build/blog/index.html",
+		"/Applications/MAMP/htdocs/Portfolio/index.html",
+		"/Applications/MAMP/htdocs/Portfolio/Build/blog/css/main.css",
+		"/Applications/MAMP/htdocs/Portfolio/Build/blog/_config.yml",
+		"/Applications/MAMP/htdocs/Portfolio/assets/scss/_logo.scss",
+		"/Applications/MAMP/htdocs/Portfolio/_footer.html",
+		"/Applications/MAMP/htdocs/Portfolio/templates/_hollandia-web.html",
+		"/Applications/MAMP/htdocs/Portfolio/assets/scss/_font.scss",
+		"/Applications/MAMP/htdocs/Portfolio/assets/scss/_widths.scss",
+		"/Applications/MAMP/htdocs/Portfolio/assets/scss/_animation.scss",
+		"/Applications/MAMP/htdocs/Portfolio/assets/js/app.js",
+		"/Applications/MAMP/htdocs/Portfolio/templates/_logo.html",
+		"/Users/AdamLiethP/Downloads/icomoon28631/style.css",
+		"/Users/AdamLiethP/Downloads/icomoon14428/style.css",
+		"/Users/AdamLiethP/Downloads/icomoon14428/index.html",
+		"/Applications/MAMP/htdocs/Portfolio/web 3.html",
+		"/Applications/MAMP/htdocs/Portfolio/Build/_site/blog/blog.html",
+		"/Applications/MAMP/htdocs/Portfolio/Build/_site/blog/index.html",
+		"/Applications/MAMP/htdocs/Portfolio/blog/_site/index.html",
+		"/Applications/MAMP/htdocs/Portfolio/blog/index.html",
+		"/Applications/MAMP/htdocs/Portfolio/blog/_config.yml",
+		"/Applications/MAMP/htdocs/Portfolio/blog/_posts/2013-10-07-welcome-to-jekyll.markdown",
+		"/Applications/MAMP/htdocs/Portfolio/Build/blog/_site/index.html",
+		"/Applications/MAMP/htdocs/Portfolio/blog/blog.html",
+		"/Applications/MAMP/htdocs/Portfolio/_site/blog/css/main.css",
+		"/Applications/MAMP/htdocs/Portfolio/templates/_lifeQuest-branding.html",
+		"/Applications/MAMP/htdocs/Portfolio/templates/_inside-branding.html",
+		"/Applications/MAMP/htdocs/Portfolio/templates/_gmsa-branding.html",
+		"/Applications/MAMP/htdocs/Portfolio/templates/_avenue-branding.html",
+		"/Applications/MAMP/htdocs/Portfolio/assets/scss/function.scss",
+		"/Applications/MAMP/htdocs/Portfolio/.DS_Store",
+		"/Applications/MAMP/htdocs/Portfolio/assets/scss/animation.scss",
+		"/Users/AdamLiethP/Downloads/icomoon77449/index.html",
+		"/Applications/MAMP/htdocs/Portfolio/templates/_oneCause-branding.html",
+		"/Applications/MAMP/htdocs/Portfolio/templates/_qwax-branding.html",
+		"/Applications/MAMP/htdocs/Portfolio/templates/_qwax-web.html",
+		"/Applications/MAMP/htdocs/Portfolio/templates/_link-web.html",
+		"/Applications/MAMP/htdocs/Portfolio/templates/_link-branding.html",
+		"/Users/AdamLiethP/Downloads/icomoon77449/style.css",
+		"/Users/AdamLiethP/Downloads/icomoon9788/style.css",
+		"/Applications/MAMP/htdocs/Portfolio/web.html",
+		"/Applications/MAMP/htdocs/Portfolio/branding.html",
+		"/Applications/MAMP/htdocs/Portfolio/.gitignore",
+		"/Users/AdamLiethP/Downloads/icomoon9788/index.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_qwax-web.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_link-web.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/logo.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_hollandia-web.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_link-branding.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_avenue-branding.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_inside-branding.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_lifeQuest-branding.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_oneCause-branding.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_qwax-branding.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_gmsa-branding.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/index.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_gmsa-web.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_qmsa-branding.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_oneLife-branding.html",
+		"/Users/AdamLiethP/Documents/Work/Web/Portfolio/templates/_gmsa.html",
+		"/Applications/MAMP/htdocs/Commercial/_gmsa.html",
+		"/Applications/MAMP/htdocs/Commercial/templates/_gmsa-web.html",
+		"/Applications/MAMP/htdocs/Commercial/assets/scss/function.scss",
+		"/Applications/MAMP/htdocs/Commercial/assets/css/normalize.css",
+		"/Applications/MAMP/htdocs/Commercial/assets/scss/ui.scss",
+		"/Users/AdamLiethP/Documents/Work/Web/UI/sass/_ui.scss",
+		"/Users/AdamLiethP/Documents/Work/Web/UI/sass/_functions.scss",
+		"/Users/AdamLiethP/Documents/Work/Web/UI/sass/styles.scss",
+		"/Users/AdamLiethP/Downloads/dist/css/bootstrap.css",
+		"/Users/AdamLiethP/Documents/Commercial/index.html",
+		"/Applications/MAMP/htdocs/Template August 2013/assets/css/normalize.css",
+		"/Users/AdamLiethP/Downloads/icomoon39365/index.html"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Applications/MAMP/htdocs/site/css/foundation/components",
+			"/Applications/MAMP/htdocs/LinkEnergy",
+			"/Applications/MAMP/htdocs",
+			"/Applications/MAMP/htdocs/Hollandia_2"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"m-t-m-5",
+			"row",
+			"section",
+			"-le",
+			"e4e4e4",
+			"-le",
+			"list",
+			"abuut",
+			"abut",
+			"about",
+			"icon-logo",
+			"footer",
+			"lists",
+			"header ",
+			"header",
+			"header ul",
+			"m-t-s-4 m-b-s-2",
+			"padding-l",
+			"content {",
+			".post__content",
+			"contact__link",
+			"stage__titl",
+			".stage",
+			"post",
+			".post__title--wrap",
+			"stage-push",
+			"header",
+			".content",
+			"post",
+			"content--post",
+			"large-",
+			"medium-",
+			"small-",
+			"margin-bottom-",
+			"margin-top-",
+			"test",
+			"min",
+			"logo",
+			"font-s",
+			"Logo",
+			"Logo_a_1",
+			"logo",
+			"$theme",
+			"header",
+			"1em",
+			"paragraph-font-size",
+			"ol,",
+			"ol.",
+			"rem",
+			"stage ",
+			"stage",
+			"title",
+			"list--in",
+			"button",
+			"hr",
+			"post__content",
+			".post__title--wrap",
+			".post__content",
+			"fix",
+			"content",
+			"title",
+			".post__title--wrap",
+			".post__title",
+			"post__title--wrap clearfix",
+			"stage__text",
+			".post__title--wrap",
+			"stage__content",
+			"logo",
+			"trans",
+			"em-",
+			"em",
+			"4em",
+			");",
+			"img",
+			"upper",
+			"button",
+			"legac",
+			"padding",
+			"text",
+			"h1",
+			"addClass",
+			"post__title",
+			"row",
+			"time",
+			"Christie’s Auction House in New York",
+			"small-12 medium-6 columns margin-top-medium-4",
+			"small-12 columns",
+			"europe",
+			"nth",
+			"h1",
+			"@media",
+			"header",
+			"#main",
+			"main",
+			".panel span",
+			"header",
+			"1",
+			"header ul",
+			"charity",
+			"hidden",
+			"panel",
+			"panel span",
+			"p",
+			"body",
+			"main-banner",
+			"flt",
+			"nav-",
+			"back",
+			"backf",
+			"social__span",
+			"url",
+			"ul",
+			"li",
+			"inde",
+			".port-item",
+			"title",
+			"stage",
+			".active",
+			"social",
+			"socal",
+			"header",
+			"h1",
+			"home",
+			"font-famil",
+			">",
+			"home",
+			"1000px",
+			"650%"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"l-",
+			"m-",
+			"s-",
+			"m-b-",
+			"m-t-",
+			"logo",
+			"$theme-color",
+			"<a href=\"#\" class=\"nav--link\">",
+			"&::",
+			"",
+			"\"home-desc\"",
+			"\"home-title\"",
+			"<img src=\"../imgs/website.png\" alt=\"website\">",
+			">Left<",
+			">Right<",
+			"link_font",
+			" ",
+			"state",
+			"login-wrapper",
+			"stage",
+			"theme_color",
+			"",
+			"icons",
+			"grid"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_layouts/default.html",
+					"settings":
+					{
+						"buffer_size": 3335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1377,
+								1225
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 594.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/styles/_style.scss",
+					"settings":
+					{
+						"buffer_size": 11636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5865,
+								5865
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5767.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_config.yml",
+					"settings":
+					{
+						"buffer_size": 52,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/js/app.js",
+					"settings":
+					{
+						"buffer_size": 1392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								718,
+								293
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "gruntfile.js",
+					"settings":
+					{
+						"buffer_size": 1957,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1835,
+								1835
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 894.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/styles/_margins.scss",
+					"settings":
+					{
+						"buffer_size": 1287,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								466,
+								466
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "_layouts/blog_post.html",
+					"settings":
+					{
+						"buffer_size": 1150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								616,
+								616
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 115.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "_layouts/blog_list.html",
+					"settings":
+					{
+						"buffer_size": 334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								229,
+								229
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "assets/styles/foundation/_settings.scss",
+					"settings":
+					{
+						"buffer_size": 39356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1225,
+								1225
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 2034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								565,
+								565
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 385.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "assets/styles/app.scss",
+					"settings":
+					{
+						"buffer_size": 193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "assets/styles/_normalize.scss",
+					"settings":
+					{
+						"buffer_size": 7395,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2142,
+								2142
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7696.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "work.html",
+					"settings":
+					{
+						"buffer_size": 2048,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								209,
+								209
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.496791848689,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 181.0,
+	"status_bar_visible": true
+}

@@ -9,7 +9,7 @@ layout: default
 
 			<img src="{{page.image}}" alt="" class="stage__img" id="stage__img"/>
 
-			<div class="columns small-12 medium-10 large-9 medium-centered m-t-s-1">
+			<div class="columns small-12 medium-10 large-11 medium-centered m-t-s-2">
 				<section class="post__title--wrap clearfix">
 					<h2 class="stage__text post__title post__title--masked">{{page.title}}</h2>
 					<h4 class="text--light">{{page.sub}}</h4>
@@ -19,7 +19,7 @@ layout: default
 						<li>
 							<a href="#">
 								<i class="icon fa fa-clock-o"></i>
-								<span>When: {{ page.date | date_to_string }} </span>
+								<span><strong>When:</strong> {{ page.date | date_to_string }} </span>
 							</a>
 						</li>
 					
@@ -37,6 +37,9 @@ layout: default
 			</div>
 		</div>
 		<div class="columns small-12 medium-10 large-9 medium-centered post__content">
-			{{ content }}
+			<div class="special-centered-for-small">
+				{{ content }}
+			</div>
+			
 		</div>
 	</div>
