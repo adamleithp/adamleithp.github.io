@@ -7176,7 +7176,7 @@ body, html {
   position: relative;
 }
 
-.center, .work__img > div {
+.center {
   -webkit-transform: translate(50%, 50%);
   -moz-transform: translate(50%, 50%);
   -ms-transform: translate(50%, 50%);
@@ -7525,14 +7525,11 @@ a.post__info {
   height: 100%;
 }
 
-.work__img {
-  height: 500px;
+.work__img img {
+  margin: 0 auto 4rem;
+  display: block;
 }
 
 .section--af {
   background: #f3f3f3;
-}
-
-.section--le {
-  background: #e4e4e4;
 }
