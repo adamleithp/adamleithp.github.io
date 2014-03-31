@@ -5,11 +5,13 @@ title: Homepage
 
 <div class="stage stage--home">
 	<div class="columns small-12 text-center">
-		<h3 class="stage--title">Developer and Designer in 
+		<h3 class="stage__title stage__title--item">Developer and Designer in 
 
 		{% for post in site.posts limit:1 %}
-		<a class="location" href="{{post.locationLink}}{{post.city}} {{post.country}}">
-			<i class="icon fa fa-flag"></i>
+		
+
+		<a class="location stage__title--item" href="{{post.locationLink}}{{post.city}} {{post.country}}">
+			<i class="icon fa fa-map-marker stage__title--item"></i>
 			<span>{{post.city}}, {{post.country}}</span>
 		</a>
 
@@ -34,7 +36,7 @@ title: Homepage
 	<div class="special-centered-for-small">
 		<div class="columns small-12 medium-9 medium-centered large-8">
 
-				<a href="blog.html"><h4 class="text-center">My Recent Thoughts</h4></a>
+				<a href="blog.html"><h4>My Recent Thoughts</h4></a>
 
 			<hr>
 	        <ul class="list--entries">

@@ -27,6 +27,10 @@ $custom-break: "#{$screen} and (min-width:#{$custom})";
     }
 }
 
+body {
+    background: url("#{$img}bg-fixed.jpg");
+    background-attachment: fixed;
+}
 // @media #{$retina} {
 //  background: url(bg@2x.jpg) transparent;
 // }
@@ -212,7 +216,7 @@ body,html { height: 100%;}
 footer {
     @extend .hardware;
     background:#fff;
-    padding-bottom: $push*1;
+    // padding-bottom: $push*1;
     //opacity: 0.2;
     width: 100%;
     display: inline-block;
@@ -286,7 +290,14 @@ header {
     background: #fff;
     font-size: .9em;
     height:100%;
-    top:0; bottom:0;
+    top:0; //bottom:0;
+    z-index: 1;
+
+    position: fixed;  
+    background: #fff;
+    height: auto;
+    width: 100%;
+
 
     
     ul {
@@ -352,6 +363,14 @@ header {
         }
 
 
+            // .dropdown-menu {
+            //     //display: none;
+            //     padding-left: 1rem;
+            // }
+            // .dropdown-menu--active {
+            //     display: block;
+            // }
+
 // .logo_container {
 
 // position: relative;
@@ -359,13 +378,16 @@ header {
 // -webkit-backface-visibility: hidden;
 // }
 
-
+.content {
+    margin-top: 3rem;
+}
 @media #{$medium-up} {
     header {
         width: 10em;
         position: fixed;
     }
     .content {
+        margin-top: 0;
         padding-left: 11.25em;
         padding-bottom: 0;
     }
@@ -407,18 +429,38 @@ $stage-push: 4em;
 
 
 // Home
-    .stage--title {
+    .stage__title {
         //font-size: 2rem !important;
     }
         .location {
-            border-bottom: 1px dotted rgba(255,255,255,0.9);
             padding: .1rem;
             color:inherit;
+            margin-left: 0.5rem;
 
             &:hover {
                 color:#ccc;
+
+                span {
+                    border-bottom: 1px dotted rgba(255,255,255,0.9);
+                }
+            }
+            .stage__title--item {
+                text-shadow: 0px 0px 3px #000;
+
+            }
+            span {
+                @include vendor(transition, all .15s linear);
+                border-bottom: 1px dotted transparent;
+            }
+            .icon {
+                font-size: 1.6rem;
+                text-decoration: none;
+            }
+            .icon, span {
+                color: #84F0AF;
             }
         }
+
     .about {
         h4 {
             color: darken($body-font-color,20);
@@ -428,6 +470,10 @@ $stage-push: 4em;
             border: 5px solid #fff;
             border-radius: $border-radius; 
             max-width: 113px;       
+
+            @media #{$medium-up} {
+                margin: 0 1rem 6rem 0;
+            }
         }
 
     }

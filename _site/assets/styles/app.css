@@ -7044,6 +7044,11 @@ table {
   content: "\e600";
 }
 
+body {
+  background: url("../images/bg-fixed.jpg");
+  background-attachment: fixed;
+}
+
 .inline {
   display: inline;
 }
@@ -7215,7 +7220,6 @@ body, html {
 
 footer {
   background: #fff;
-  padding-bottom: 1rem;
   width: 100%;
   display: inline-block;
 }
@@ -7275,7 +7279,11 @@ header {
   font-size: .9em;
   height: 100%;
   top: 0;
-  bottom: 0;
+  z-index: 1;
+  position: fixed;
+  background: #fff;
+  height: auto;
+  width: 100%;
 }
 header ul li {
   float: left;
@@ -7333,6 +7341,10 @@ header ul li {
   }
 }
 
+.content {
+  margin-top: 3rem;
+}
+
 @media only screen and (min-width: 40.063em) {
   header {
     width: 10em;
@@ -7340,6 +7352,7 @@ header ul li {
   }
 
   .content {
+    margin-top: 0;
     padding-left: 11.25em;
     padding-bottom: 0;
   }
@@ -7375,12 +7388,33 @@ header ul li {
 }
 
 .location {
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.9);
   padding: .1rem;
   color: inherit;
+  margin-left: 0.5rem;
 }
 .location:hover {
   color: #ccc;
+}
+.location:hover span {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.9);
+}
+.location .stage__title--item {
+  text-shadow: 0px 0px 3px #000;
+}
+.location span {
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -ms-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  border-bottom: 1px dotted transparent;
+}
+.location .icon {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.location .icon, .location span {
+  color: #84F0AF;
 }
 
 .about h4 {
@@ -7391,6 +7425,11 @@ header ul li {
   border: 5px solid #fff;
   border-radius: 5px;
   max-width: 113px;
+}
+@media only screen and (min-width: 40.063em) {
+  .about img {
+    margin: 0 1rem 6rem 0;
+  }
 }
 
 .section--home {

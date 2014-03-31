@@ -19,6 +19,21 @@ $("p:has(img)").contents().unwrap();
 })();
 
 
+// // dropdown 
+// (function() {
+// 	var dropdown_trigger = $(".trigger-dropdown"),
+// 		dropdown = $(".dropdown-menu");
+
+// 	if (dropdown.hasClass("dropdown-menu--active"));
+
+// 	dropdown_trigger.on("click", function(e) {
+// 		e.preventDefault()
+// 		dropdown.addClass("dropdown-menu--active");
+// 	});
+
+	
+// })();
+
 
 // var $document = $(document),
 //     $element = $('.stage__img'),

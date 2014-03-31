@@ -306,7 +306,7 @@
 			"file": "_layouts/default.html",
 			"settings":
 			{
-				"buffer_size": 3335,
+				"buffer_size": 3687,
 				"line_ending": "Unix"
 			}
 		},
@@ -314,7 +314,7 @@
 			"file": "assets/styles/_style.scss",
 			"settings":
 			{
-				"buffer_size": 11636,
+				"buffer_size": 11780,
 				"line_ending": "Unix"
 			}
 		},
@@ -402,7 +402,7 @@
 			"file": "work.html",
 			"settings":
 			{
-				"buffer_size": 2048,
+				"buffer_size": 1950,
 				"line_ending": "Unix"
 			}
 		}
@@ -616,6 +616,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".section--le",
+			"transl",
+			"nav__link",
 			"m-t-m-5",
 			"row",
 			"section",
@@ -740,10 +743,7 @@
 			"h1",
 			"home",
 			"font-famil",
-			">",
-			"home",
-			"1000px",
-			"650%"
+			">"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -785,7 +785,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -818,15 +818,15 @@
 					"file": "_layouts/default.html",
 					"settings":
 					{
-						"buffer_size": 3335,
+						"buffer_size": 3687,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1377,
-								1225
+								3656,
+								3656
 							]
 						],
 						"settings":
@@ -835,7 +835,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 594.0,
+						"translation.y": 1749.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -845,15 +845,15 @@
 					"file": "assets/styles/_style.scss",
 					"settings":
 					{
-						"buffer_size": 11636,
+						"buffer_size": 11780,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5865,
-								5865
+								11487,
+								11487
 							]
 						],
 						"settings":
@@ -863,7 +863,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5767.0,
+						"translation.y": 12142.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -960,8 +960,8 @@
 						"selection":
 						[
 							[
-								466,
-								466
+								350,
+								350
 							]
 						],
 						"settings":
@@ -1148,15 +1148,15 @@
 					"file": "work.html",
 					"settings":
 					{
-						"buffer_size": 2048,
+						"buffer_size": 1950,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								209,
-								209
+								1349,
+								1349
 							]
 						],
 						"settings":
@@ -1166,7 +1166,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 504.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
