@@ -7437,6 +7437,17 @@ header ul li {
   border-color: #E6E7E9;
 }
 
+.page-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 40.063em) {
+  .page-title {
+    margin-top: 4.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
 .typekit-badge {
   display: none !important;
 }
