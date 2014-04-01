@@ -10144,6 +10144,25 @@ header ul li {
   }
 }
 
+.list--social li {
+  float: left;
+}
+.list--social .nav__link:hover {
+  text-decoration: none;
+}
+.list--social .nav__link span {
+  font-size: 0.7rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 1.5rem;
+  display: none;
+}
+@media only screen and (min-width: 40.063em) {
+  .list--social .nav__link span {
+    display: block;
+  }
+}
+
 .content {
   margin-top: 3rem;
 }
@@ -10175,6 +10194,14 @@ header ul li {
 
 .stage--home {
   background-image: url("../images/montreal.jpg");
+  background-size: 400%;
+  background-position: center center;
+}
+@media only screen and (min-width: 40.063em) {
+  .stage--home {
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 .stage__img__wrap {
@@ -10191,9 +10218,17 @@ header ul li {
 }
 
 .location {
+  width: 100%;
+  float: left;
   padding: .1rem;
   color: inherit;
-  margin-left: 0.5rem;
+}
+@media only screen and (min-width: 40.063em) {
+  .location {
+    width: auto;
+    float: none;
+    margin-left: 0.5rem;
+  }
 }
 .location:hover {
   color: #ccc;

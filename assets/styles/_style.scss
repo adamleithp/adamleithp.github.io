@@ -363,13 +363,31 @@ header {
         }
 
 
-            // .dropdown-menu {
-            //     //display: none;
-            //     padding-left: 1rem;
-            // }
-            // .dropdown-menu--active {
-            //     display: block;
-            // }
+        .list--social {
+            
+
+            
+            li {
+                float: left;
+            }
+            .nav__link {
+                &:hover {
+                    text-decoration: none;
+                }
+                span {
+                    font-size: 0.7rem;
+                    position: absolute;
+                    top: 0.4rem;
+                    left: 1.5rem;
+
+                    display: none;
+
+                    @media #{$medium-up} {
+                        display: block;
+                    }
+                }
+            }
+        }
 
 // .logo_container {
 
@@ -411,6 +429,13 @@ $stage-push: 4em;
 
     .stage--home {
         background-image: url("#{$img}montreal.jpg");
+            background-size: 400%;
+            background-position: center center;
+
+        @media #{$medium-up} {
+            background-size: cover;
+            background-position: center center;
+        }
     }
     .stage__img__wrap {
         position: relative;
@@ -433,10 +458,16 @@ $stage-push: 4em;
         //font-size: 2rem !important;
     }
         .location {
+            width: 100%;
+            float: left;
             padding: .1rem;
             color:inherit;
-            margin-left: 0.5rem;
-
+            
+            @media #{$medium-up} { 
+                width: auto;
+                float: none;
+                margin-left: 0.5rem;
+            }
             &:hover {
                 color:#ccc;
 
@@ -717,7 +748,7 @@ $content--post--bg: #fff;
         //background: #e4e4e4;
     }
 
-    
+
 
 
 
