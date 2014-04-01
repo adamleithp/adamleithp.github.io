@@ -41,8 +41,8 @@
 	                <li><a href="/index.html" class="nav__link stage__text">Home</a></li>
 	                <li><a href="/blog.html" class="nav__link stage__text">Thoughts</a></li>
 	                <li><a href="/work.html" class="nav__link stage__text">Projects</a></li>
-	                <li><a href="/photos.html" class="nav__link stage__text">Photos</a></li>
-	                <li><a href="mailto:adamleithp@me.com" target="_blank" class="nav__link stage__text contact__link">Contact</a></li>
+<!-- 	                <li><a href="/photos.html" class="nav__link stage__text">Photos</a></li>
+ -->	                <li><a href="mailto:adamleithp@me.com" target="_blank" class="nav__link stage__text contact__link">Contact</a></li>
 	            </ul>
 			</nav>
 		</header>
@@ -122,35 +122,6 @@
 	<script src='/assets/js/foundation.min.js'></script>
 	<script src='/assets/js/adamleithp.min.js'></script>
 	
-	
-	<script type="text/javascript" src="/assets/js/instafeed.min.js"></script>
-	<script type="text/javascript">
-		var feed = new Instafeed({
-		  	get: 'user',
-			userId: 23293296,
-		    accessToken: '262351.467ede5.176ab1984b1d47e6b8dea518109d7a5e',
-			link: 'true',
-			clientId: '19b6db2209d942ffab7a2eca8468f6a9',
-			limit: '60',
-		  sortBy: 'most-liked',
-		  after: function () {
-		    var images = $("#instafeed").find('a');
-		    $.each(images, function(index, image) {
-		      var delay = (index * 75) + 'ms';
-		      $(image).css('-webkit-animation-delay', delay);
-		      $(image).css('-moz-animation-delay', delay);
-		      $(image).css('-ms-animation-delay', delay);
-		      $(image).css('-o-animation-delay', delay);
-		      $(image).css('animation-delay', delay);
-		      $(image).addClass('animated flipInX');
-		    });
-		  },
-		  template: '<a href="" target="_blank"><img src="" /><div class="likes">&hearts; </div></a>'
-		});
-		feed.run();
-	</script>
-
-
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
