@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
 				"mar",
 				"margin-bottom"
 			],
@@ -18,10 +26,6 @@
 			[
 				"pad",
 				"padding"
-			],
-			[
-				"bac",
-				"background-size"
 			],
 			[
 				"stage",
@@ -118,10 +122,6 @@
 			[
 				"nav",
 				"nav-color"
-			],
-			[
-				"text",
-				"text-transform"
 			],
 			[
 				"margin",
@@ -303,26 +303,17 @@
 			}
 		},
 		{
-			"file": "_layouts/default.html",
-			"settings":
-			{
-				"buffer_size": 3687,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "assets/styles/_style.scss",
 			"settings":
 			{
-				"buffer_size": 11780,
+				"buffer_size": 13020,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_config.yml",
 			"settings":
 			{
-				"buffer_size": 52,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -330,7 +321,7 @@
 			"file": "assets/js/app.js",
 			"settings":
 			{
-				"buffer_size": 1392,
+				"buffer_size": 1709,
 				"line_ending": "Unix"
 			}
 		},
@@ -343,26 +334,28 @@
 			}
 		},
 		{
-			"file": "assets/styles/_margins.scss",
+			"contents": "Searching 1 file for \"thoughts\" (regex)\n\nUnable to open /Applications/MAMP/htdocs/site/css/foundation/components\n0 matches across 0 files\n\n\nSearching 3254 files for \"thoughts\" (regex)\n\n/Applications/MAMP/htdocs/adamleithp/_layouts/blog_list.html:\n    7  	<div class=\"special-centered-for-small\">\n    8  		<div>\n    9: 			<h2 class=\"text--bold m-b-s-0\">Thoughts.</h2>\n   10  			<h5 class=\"text--light m-t-s-0\">Anything worth sharing will be put here.</h5>\n   11  		</div>\n\n/Applications/MAMP/htdocs/adamleithp/_layouts/default.html:\n   37  	            <ul>\n   38  	                <li><a href=\"/index.html\" class=\"nav__link stage__text\">Home</a></li>\n   39: 	                <li><a href=\"/blog.html\" class=\"nav__link stage__text\">Thoughts</a></li>\n   40  	                <li><a href=\"/work.html\" class=\"nav__link stage__text\">Projects</a></li>\n   41  	                <li><a href=\"/photos.html\" class=\"nav__link stage__text\">Photos</a></li>\n   ..\n   56  		            <ul class=\"right inline-list\">\n   57  		                <li><a href=\"/index.html\" class=\"nav__link footer__text\">Home</a></li>\n   58: 		                <li><a href=\"/blog.html\" class=\"nav__link footer__text\">Thoughts</a></li>\n   59  		                <li><a href=\"/work.html\" class=\"nav__link footer__text\">Projects</a></li>\n   60  		                <li><a href=\"/photos.html\" class=\"nav__link footer__text\">Photos</a></li>\n\n/Applications/MAMP/htdocs/adamleithp/_site/blog.html:\n   37  	            <ul>\n   38  	                <li><a href=\"/index.html\" class=\"nav__link stage__text\">Home</a></li>\n   39: 	                <li><a href=\"/blog.html\" class=\"nav__link stage__text\">Thoughts</a></li>\n   40  	                <li><a href=\"/work.html\" class=\"nav__link stage__text\">Projects</a></li>\n   41  	                <li><a href=\"/photos.html\" class=\"nav__link stage__text\">Photos</a></li>\n   ..\n   49  	<div class=\"special-centered-for-small\">\n   50  		<div>\n   51: 			<h2 class=\"text--bold m-b-s-0\">Thoughts.</h2>\n   52  			<h5 class=\"text--light m-t-s-0\">Anything worth sharing will be put here.</h5>\n   53  		</div>\n   ..\n  119  		            <ul class=\"right inline-list\">\n  120  		                <li><a href=\"/index.html\" class=\"nav__link footer__text\">Home</a></li>\n  121: 		                <li><a href=\"/blog.html\" class=\"nav__link footer__text\">Thoughts</a></li>\n  122  		                <li><a href=\"/work.html\" class=\"nav__link footer__text\">Projects</a></li>\n  123  		                <li><a href=\"/photos.html\" class=\"nav__link footer__text\">Photos</a></li>\n\n/Applications/MAMP/htdocs/adamleithp/_site/code/2014/03/01/githubPost.html:\n   37  	            <ul>\n   38  	                <li><a href=\"/index.html\" class=\"nav__link stage__text\">Home</a></li>\n   39: 	                <li><a href=\"/blog.html\" class=\"nav__link stage__text\">Thoughts</a></li>\n   40  	                <li><a href=\"/work.html\" class=\"nav__link stage__text\">Projects</a></li>\n   41  	                <li><a href=\"/photos.html\" class=\"nav__link stage__text\">Photos</a></li>\n   ..\n  106  		            <ul class=\"right inline-list\">\n  107  		                <li><a href=\"/index.html\" class=\"nav__link footer__text\">Home</a></li>\n  108: 		                <li><a href=\"/blog.html\" class=\"nav__link footer__text\">Thoughts</a></li>\n  109  		                <li><a href=\"/work.html\" class=\"nav__link footer__text\">Projects</a></li>\n  110  		                <li><a href=\"/photos.html\" class=\"nav__link footer__text\">Photos</a></li>\n\n/Applications/MAMP/htdocs/adamleithp/_site/index.html:\n   37  	            <ul>\n   38  	                <li><a href=\"/index.html\" class=\"nav__link stage__text\">Home</a></li>\n   39: 	                <li><a href=\"/blog.html\" class=\"nav__link stage__text\">Thoughts</a></li>\n   40  	                <li><a href=\"/work.html\" class=\"nav__link stage__text\">Projects</a></li>\n   41  	                <li><a href=\"/photos.html\" class=\"nav__link stage__text\">Photos</a></li>\n   ..\n   79  		<div class=\"columns small-12 medium-9 medium-centered large-8\">\n   80  \n   81: 				<a href=\"blog.html\"><h4>My Recent Thoughts</h4></a>\n   82  \n   83  			<hr>\n   ..\n  138  		            <ul class=\"right inline-list\">\n  139  		                <li><a href=\"/index.html\" class=\"nav__link footer__text\">Home</a></li>\n  140: 		                <li><a href=\"/blog.html\" class=\"nav__link footer__text\">Thoughts</a></li>\n  141  		                <li><a href=\"/work.html\" class=\"nav__link footer__text\">Projects</a></li>\n  142  		                <li><a href=\"/photos.html\" class=\"nav__link footer__text\">Photos</a></li>\n\n/Applications/MAMP/htdocs/adamleithp/_site/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/test/idleness.txt:\n   19  Throughout Europe, though not in America, there is a third class of men, more respected than either of the classes of workers. There are men who, through ownership of land, are able to make others pay for the privilege of being allowed to exist and to work. These landowners are idle, and I might therefore be expected to praise them. Unfortunately, their idleness is only rendered possible by the industry of others; indeed their desire for comfortable idleness is historically the source of the whole gospel of work. The last thing they have ever wished is that others should follow their example.\n   20  \n   21: From the beginning of civilization until the Industrial Revolution, a man could, as a rule, produce by hard work little more than was required for the subsistence of himself and his family, although his wife worked at least as hard as he did, and his children added their labor as soon as they were old enough to do so. The small surplus above bare necessaries was not left to those who produced it, but was appropriated by warriors and priests. In times of famine there was no surplus; the warriors and priests, however, still secured as much as at other times, with the result that many of the workers died of hunger. This system persisted in Russia until 1917 [1], and still persists in the East; in England, in spite of the Industrial Revolution, it remained in full force throughout the Napoleonic wars, and until a hundred years ago, when the new class of manufacturers acquired power. In America, the system came to an end with the Revolution, except in the South, where it persisted until the Civil War. A system which lasted so long and ended so recently has naturally left a profound impress upon men's thoughts and opinions. Much that we take for granted about the desirability of work is derived from this system, and, being pre-industrial, is not adapted to the modern world. Modern technique has made it possible for leisure, within limits, to be not the prerogative of small privileged classes, but a right evenly distributed throughout the community. The morality of work is the morality of slaves, and the modern world has no need of slavery.\n   22  \n   23  It is obvious that, in primitive communities, peasants, left to themselves, would not have parted with the slender surplus upon which the warriors and priests subsisted, but would have either produced less or consumed more. At first, sheer force compelled them to produce and part with the surplus. Gradually, however, it was found possible to induce many of them to accept an ethic according to which it was their duty to work hard, although part of their work went to support others in idleness. By this means the amount of compulsion required was lessened, and the expenses of government were diminished. To this day, 99 per cent of British wage-earners would be genuinely shocked if it were proposed that the King should not have a larger income than a working man. The conception of duty, speaking historically, has been a means used by the holders of power to induce others to live for the interests of their masters rather than for their own. Of course the holders of power conceal this fact from themselves by managing to believe that their interests are identical with the larger interests of humanity. Sometimes this is true; Athenian slave-owners, for instance, employed part of their leisure in making a permanent contribution to civilization which would have been impossible under a just economic system. Leisure is essential to civilization, and in former times leisure for the few was only rendered possible by the labors of the many. But their labors were valuable, not because work is good, but because leisure is good. And with modern technique it would be possible to distribute leisure justly without injury to civilization.\n\n/Applications/MAMP/htdocs/adamleithp/_site/photos.html:\n   37  	            <ul>\n   38  	                <li><a href=\"/index.html\" class=\"nav__link stage__text\">Home</a></li>\n   39: 	                <li><a href=\"/blog.html\" class=\"nav__link stage__text\">Thoughts</a></li>\n   40  	                <li><a href=\"/work.html\" class=\"nav__link stage__text\">Projects</a></li>\n   41  	                <li><a href=\"/photos.html\" class=\"nav__link stage__text\">Photos</a></li>\n   ..\n   77  		            <ul class=\"right inline-list\">\n   78  		                <li><a href=\"/index.html\" class=\"nav__link footer__text\">Home</a></li>\n   79: 		                <li><a href=\"/blog.html\" class=\"nav__link footer__text\">Thoughts</a></li>\n   80  		                <li><a href=\"/work.html\" class=\"nav__link footer__text\">Projects</a></li>\n   81  		                <li><a href=\"/photos.html\" class=\"nav__link footer__text\">Photos</a></li>\n\n/Applications/MAMP/htdocs/adamleithp/_site/travel/2014/01/18/second_post.html:\n   37  	            <ul>\n   38  	                <li><a href=\"/index.html\" class=\"nav__link stage__text\">Home</a></li>\n   39: 	                <li><a href=\"/blog.html\" class=\"nav__link stage__text\">Thoughts</a></li>\n   40  	                <li><a href=\"/work.html\" class=\"nav__link stage__text\">Projects</a></li>\n   41  	                <li><a href=\"/photos.html\" class=\"nav__link stage__text\">Photos</a></li>\n   ..\n  110  		            <ul class=\"right inline-list\">\n  111  		                <li><a href=\"/index.html\" class=\"nav__link footer__text\">Home</a></li>\n  112: 		                <li><a href=\"/blog.html\" class=\"nav__link footer__text\">Thoughts</a></li>\n  113  		                <li><a href=\"/work.html\" class=\"nav__link footer__text\">Projects</a></li>\n  114  		                <li><a href=\"/photos.html\" class=\"nav__link footer__text\">Photos</a></li>\n\n/Applications/MAMP/htdocs/adamleithp/_site/work.html:\n   37  	            <ul>\n   38  	                <li><a href=\"/index.html\" class=\"nav__link stage__text\">Home</a></li>\n   39: 	                <li><a href=\"/blog.html\" class=\"nav__link stage__text\">Thoughts</a></li>\n   40  	                <li><a href=\"/work.html\" class=\"nav__link stage__text\">Projects</a></li>\n   41  	                <li><a href=\"/photos.html\" class=\"nav__link stage__text\">Photos</a></li>\n   ..\n  101  		            <ul class=\"right inline-list\">\n  102  		                <li><a href=\"/index.html\" class=\"nav__link footer__text\">Home</a></li>\n  103: 		                <li><a href=\"/blog.html\" class=\"nav__link footer__text\">Thoughts</a></li>\n  104  		                <li><a href=\"/work.html\" class=\"nav__link footer__text\">Projects</a></li>\n  105  		                <li><a href=\"/photos.html\" class=\"nav__link footer__text\">Photos</a></li>\n\n/Applications/MAMP/htdocs/adamleithp/index.html:\n   37  		<div class=\"columns small-12 medium-9 medium-centered large-8\">\n   38  \n   39: 				<a href=\"blog.html\"><h4>My Recent Thoughts</h4></a>\n   40  \n   41  			<hr>\n\n/Applications/MAMP/htdocs/adamleithp/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/test/idleness.txt:\n   19  Throughout Europe, though not in America, there is a third class of men, more respected than either of the classes of workers. There are men who, through ownership of land, are able to make others pay for the privilege of being allowed to exist and to work. These landowners are idle, and I might therefore be expected to praise them. Unfortunately, their idleness is only rendered possible by the industry of others; indeed their desire for comfortable idleness is historically the source of the whole gospel of work. The last thing they have ever wished is that others should follow their example.\n   20  \n   21: From the beginning of civilization until the Industrial Revolution, a man could, as a rule, produce by hard work little more than was required for the subsistence of himself and his family, although his wife worked at least as hard as he did, and his children added their labor as soon as they were old enough to do so. The small surplus above bare necessaries was not left to those who produced it, but was appropriated by warriors and priests. In times of famine there was no surplus; the warriors and priests, however, still secured as much as at other times, with the result that many of the workers died of hunger. This system persisted in Russia until 1917 [1], and still persists in the East; in England, in spite of the Industrial Revolution, it remained in full force throughout the Napoleonic wars, and until a hundred years ago, when the new class of manufacturers acquired power. In America, the system came to an end with the Revolution, except in the South, where it persisted until the Civil War. A system which lasted so long and ended so recently has naturally left a profound impress upon men's thoughts and opinions. Much that we take for granted about the desirability of work is derived from this system, and, being pre-industrial, is not adapted to the modern world. Modern technique has made it possible for leisure, within limits, to be not the prerogative of small privileged classes, but a right evenly distributed throughout the community. The morality of work is the morality of slaves, and the modern world has no need of slavery.\n   22  \n   23  It is obvious that, in primitive communities, peasants, left to themselves, would not have parted with the slender surplus upon which the warriors and priests subsisted, but would have either produced less or consumed more. At first, sheer force compelled them to produce and part with the surplus. Gradually, however, it was found possible to induce many of them to accept an ethic according to which it was their duty to work hard, although part of their work went to support others in idleness. By this means the amount of compulsion required was lessened, and the expenses of government were diminished. To this day, 99 per cent of British wage-earners would be genuinely shocked if it were proposed that the King should not have a larger income than a working man. The conception of duty, speaking historically, has been a means used by the holders of power to induce others to live for the interests of their masters rather than for their own. Of course the holders of power conceal this fact from themselves by managing to believe that their interests are identical with the larger interests of humanity. Sometimes this is true; Athenian slave-owners, for instance, employed part of their leisure in making a permanent contribution to civilization which would have been impossible under a just economic system. Leisure is essential to civilization, and in former times leisure for the few was only rendered possible by the labors of the many. But their labors were valuable, not because work is good, but because leisure is good. And with modern technique it would be possible to distribute leisure justly without injury to civilization.\n\n20 matches across 11 files\n",
 			"settings":
 			{
-				"buffer_size": 1287,
-				"line_ending": "Windows"
+				"buffer_size": 15593,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
 			}
 		},
 		{
-			"file": "_layouts/blog_post.html",
+			"file": "_layouts/default.html",
 			"settings":
 			{
-				"buffer_size": 1150,
+				"buffer_size": 3812,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_layouts/blog_list.html",
+			"file": "/Applications/MAMP/htdocs/Link Energy/linkenergy/assets/js/app.js",
 			"settings":
 			{
-				"buffer_size": 334,
+				"buffer_size": 2264,
 				"line_ending": "Unix"
 			}
 		},
@@ -378,23 +371,23 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2034,
+				"buffer_size": 2081,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/styles/app.scss",
+			"file": "_layouts/blog_page.html",
 			"settings":
 			{
-				"buffer_size": 193,
+				"buffer_size": 337,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/styles/_normalize.scss",
+			"file": "photos.html",
 			"settings":
 			{
-				"buffer_size": 7395,
+				"buffer_size": 727,
 				"line_ending": "Unix"
 			}
 		},
@@ -402,7 +395,7 @@
 			"file": "work.html",
 			"settings":
 			{
-				"buffer_size": 1950,
+				"buffer_size": 1905,
 				"line_ending": "Unix"
 			}
 		}
@@ -467,13 +460,21 @@
 	},
 	"file_history":
 	[
-		"/Applications/MAMP/htdocs/adamleithp/_posts/2014-01-18-firstpost.html",
-		"/Applications/MAMP/htdocs/adamleithp/.gitignore",
+		"/Applications/MAMP/htdocs/adamleithp/assets/styles/_normalize.scss",
+		"/Applications/MAMP/htdocs/adamleithp/blog.html",
+		"/Applications/MAMP/htdocs/adamleithp/_layouts/blog_list.html",
+		"/Applications/MAMP/htdocs/Blank Template/adam.gitignore",
+		"/Applications/MAMP/htdocs/adamleithp/_layouts/blog_post.html",
+		"/Applications/MAMP/htdocs/Blank Template/assets/js/app.js",
 		"/Applications/MAMP/htdocs/adamleithp/assets/styles/_margins.scss",
 		"/Applications/MAMP/htdocs/adamleithp/_config.yml",
+		"/Applications/MAMP/htdocs/adamleithp/assets/styles/app.scss",
+		"/Applications/MAMP/htdocs/Blank Template/assets/styles/_style.scss",
+		"/Applications/MAMP/htdocs/Blank Template/.gitignore",
+		"/Applications/MAMP/htdocs/adamleithp/_posts/2014-01-18-firstpost.html",
+		"/Applications/MAMP/htdocs/adamleithp/.gitignore",
 		"/Applications/MAMP/htdocs/adamleithp/gruntfile.js",
 		"/Applications/MAMP/htdocs/adamleithp/package.json",
-		"/Applications/MAMP/htdocs/adamleithp/assets/styles/app.scss",
 		"/Applications/MAMP/htdocs/adamleithp/assets/styles/app.css",
 		"/Applications/MAMP/htdocs/site2/site.sublime-workspace",
 		"/Applications/MAMP/htdocs/site/css/app.css",
@@ -586,15 +587,7 @@
 		"/Applications/MAMP/htdocs/Commercial/_gmsa.html",
 		"/Applications/MAMP/htdocs/Commercial/templates/_gmsa-web.html",
 		"/Applications/MAMP/htdocs/Commercial/assets/scss/function.scss",
-		"/Applications/MAMP/htdocs/Commercial/assets/css/normalize.css",
-		"/Applications/MAMP/htdocs/Commercial/assets/scss/ui.scss",
-		"/Users/AdamLiethP/Documents/Work/Web/UI/sass/_ui.scss",
-		"/Users/AdamLiethP/Documents/Work/Web/UI/sass/_functions.scss",
-		"/Users/AdamLiethP/Documents/Work/Web/UI/sass/styles.scss",
-		"/Users/AdamLiethP/Downloads/dist/css/bootstrap.css",
-		"/Users/AdamLiethP/Documents/Commercial/index.html",
-		"/Applications/MAMP/htdocs/Template August 2013/assets/css/normalize.css",
-		"/Users/AdamLiethP/Downloads/icomoon39365/index.html"
+		"/Applications/MAMP/htdocs/Commercial/assets/css/normalize.css"
 	],
 	"find":
 	{
@@ -602,9 +595,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/Applications/MAMP/htdocs/adamleithp",
 			"/Applications/MAMP/htdocs/site/css/foundation/components",
 			"/Applications/MAMP/htdocs/LinkEnergy",
 			"/Applications/MAMP/htdocs",
@@ -616,6 +610,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"thoughts",
+			"nav",
+			"adam",
+			"content",
+			"url",
+			"body {",
+			"thoughts",
 			".section--le",
 			"transl",
 			"nav__link",
@@ -736,14 +737,7 @@
 			".port-item",
 			"title",
 			"stage",
-			".active",
-			"social",
-			"socal",
-			"header",
-			"h1",
-			"home",
-			"font-famil",
-			">"
+			".active"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -785,7 +779,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -815,45 +809,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "_layouts/default.html",
-					"settings":
-					{
-						"buffer_size": 3687,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3656,
-								3656
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1749.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "assets/styles/_style.scss",
 					"settings":
 					{
-						"buffer_size": 11780,
+						"buffer_size": 13020,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11487,
-								11487
+								9140,
+								9140
 							]
 						],
 						"settings":
@@ -863,30 +830,56 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 12142.0,
+						"translation.y": 9035.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "_config.yml",
+					"buffer": 2,
 					"settings":
 					{
-						"buffer_size": 52,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								52,
-								52
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/js/app.js",
+					"settings":
+					{
+						"buffer_size": 1709,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								604,
+								288
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -896,32 +889,6 @@
 				},
 				{
 					"buffer": 4,
-					"file": "assets/js/app.js",
-					"settings":
-					{
-						"buffer_size": 1392,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								718,
-								293
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"file": "gruntfile.js",
 					"settings":
 					{
@@ -943,35 +910,126 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 894.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "assets/styles/_margins.scss",
+					"buffer": 5,
 					"settings":
 					{
-						"buffer_size": 1287,
+						"buffer_size": 15593,
 						"regions":
 						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										352,
+										360
+									],
+									[
+										730,
+										738
+									],
+									[
+										1177,
+										1185
+									],
+									[
+										1646,
+										1654
+									],
+									[
+										1969,
+										1977
+									],
+									[
+										2323,
+										2331
+									],
+									[
+										2814,
+										2822
+									],
+									[
+										3261,
+										3269
+									],
+									[
+										3731,
+										3739
+									],
+									[
+										4075,
+										4083
+									],
+									[
+										4351,
+										4359
+									],
+									[
+										6466,
+										6474
+									],
+									[
+										8828,
+										8836
+									],
+									[
+										9275,
+										9283
+									],
+									[
+										9769,
+										9777
+									],
+									[
+										10216,
+										10224
+									],
+									[
+										10685,
+										10693
+									],
+									[
+										11132,
+										11140
+									],
+									[
+										11524,
+										11532
+									],
+									[
+										13458,
+										13466
+									]
+								],
+								"scope": ""
+							}
 						},
 						"selection":
 						[
 							[
-								350,
-								350
+								233,
+								233
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"detect_indentation": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1.0,
+						"translation.y": 114.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -979,23 +1037,23 @@
 			]
 		},
 		{
-			"selected": 6,
+			"selected": 4,
 			"sheets":
 			[
 				{
-					"buffer": 7,
-					"file": "_layouts/blog_post.html",
+					"buffer": 6,
+					"file": "_layouts/default.html",
 					"settings":
 					{
-						"buffer_size": 1150,
+						"buffer_size": 3812,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								616,
-								616
+								2438,
+								2438
 							]
 						],
 						"settings":
@@ -1004,30 +1062,30 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 115.0,
+						"translation.y": 815.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "_layouts/blog_list.html",
+					"buffer": 7,
+					"file": "/Applications/MAMP/htdocs/Link Energy/linkenergy/assets/js/app.js",
 					"settings":
 					{
-						"buffer_size": 334,
+						"buffer_size": 2264,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								229,
-								229
+								274,
+								202
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -1037,7 +1095,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 8,
 					"file": "assets/styles/foundation/_settings.scss",
 					"settings":
 					{
@@ -1063,19 +1121,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 9,
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2034,
+						"buffer_size": 2081,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								565,
-								565
+								388,
+								388
 							]
 						],
 						"settings":
@@ -1084,30 +1142,30 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 385.0,
+						"translation.y": 363.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "assets/styles/app.scss",
+					"buffer": 10,
+					"file": "_layouts/blog_page.html",
 					"settings":
 					{
-						"buffer_size": 193,
+						"buffer_size": 337,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								82,
+								82
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1116,47 +1174,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "assets/styles/_normalize.scss",
+					"buffer": 11,
+					"file": "photos.html",
 					"settings":
 					{
-						"buffer_size": 7395,
+						"buffer_size": 727,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2142,
-								2142
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 7696.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "work.html",
-					"settings":
-					{
-						"buffer_size": 1950,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1349,
-								1349
+								93,
+								83
 							]
 						],
 						"settings":
@@ -1166,7 +1196,35 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 504.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "work.html",
+					"settings":
+					{
+						"buffer_size": 1905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								93,
+								93
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1202,7 +1260,7 @@
 		"cols":
 		[
 			0.0,
-			0.496791848689,
+			0.482615037307,
 			1.0
 		],
 		"rows":
@@ -1241,6 +1299,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 181.0,
+	"side_bar_width": 147.0,
 	"status_bar_visible": true
 }
