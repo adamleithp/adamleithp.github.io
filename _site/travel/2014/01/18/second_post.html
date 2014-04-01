@@ -25,7 +25,7 @@
 		<script type="text/javascript" src="//use.typekit.net/ura7vqi.js"></script>
 		
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-		
+
 
 
 		
@@ -130,24 +130,28 @@
 	<script type="text/javascript" src="/assets/js/instafeed.min.js"></script>
 	<script type="text/javascript">
 		var feed = new Instafeed({
-		  clientId: '9a866ebfba1b42c392bca0b8bae4412e',
-		  limit: 20,
-		  sortBy: 'most-liked',
-		  after: function () {
-		    var images = $("#instafeed").find('a');
-		    $.each(images, function(index, image) {
-		      var delay = (index * 75) + 'ms';
-		      $(image).css('-webkit-animation-delay', delay);
-		      $(image).css('-moz-animation-delay', delay);
-		      $(image).css('-ms-animation-delay', delay);
-		      $(image).css('-o-animation-delay', delay);
-		      $(image).css('animation-delay', delay);
-		      $(image).addClass('animated flipInX');
-		    });
-		  },
-		  template: '<a href="" target="_blank"><img src="" /><div class="likes">&hearts; </div></a>'
-		});
-		feed.run();
+			get: 'user',
+			userId: 23293296,
+			accessToken: '262351.467ede5.176ab1984b1d47e6b8dea518109d7a5e',
+			link: 'true',
+			clientId: '19b6db2209d942ffab7a2eca8468f6a9',
+			limit: '60'
+			sortBy: 'most-liked',
+			after: function () {
+				var images = $("#instafeed").find('a');
+				$.each(images, function(index, image) {
+					var delay = (index * 75) + 'ms';
+					$(image).css('-webkit-animation-delay', delay);
+					$(image).css('-moz-animation-delay', delay);
+					$(image).css('-ms-animation-delay', delay);
+					$(image).css('-o-animation-delay', delay);
+					$(image).css('animation-delay', delay);
+					$(image).addClass('animated flipInX');
+				});
+			},
+			template: '<a href="" target="_blank"><img src="" /><div class="likes">&hearts; </div></a>'
+			});
+			feed.run();
 	</script>
 
 
