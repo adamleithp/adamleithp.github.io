@@ -9,7 +9,7 @@ $button-color:  red; //#26C766;
 $panel-border-color: darken($primary-color,10);
 $overlay-bg-color:#fff;
 
-
+$theme: #84F0AF;
 
 $border-radius: 5px;
 
@@ -28,8 +28,7 @@ $custom-break: "#{$screen} and (min-width:#{$custom})";
 }
 
 body {
-    background: url("#{$img}bg-fixed.jpg");
-    background-attachment: fixed;
+    background: #fff;
 }
 // @media #{$retina} {
 //  background: url(bg@2x.jpg) transparent;
@@ -284,19 +283,23 @@ footer {
 
 
 header {
-    border-right: 1px solid rgba(255,255,255,.2);
+    border-bottom: 1px solid #ccc;
     z-index: 2;
     background: rgba(255,255,255,.95);
     background: #fff;
     font-size: .9em;
     height:100%;
-    top:0; //bottom:0;
+    top:0; 
     z-index: 1;
 
     position: fixed;  
     background: #fff;
     height: auto;
     width: 100%;
+
+    @media #{$medium-up} {
+        border-bottom: 0;
+    }
 
 
     
@@ -323,6 +326,7 @@ header {
 
         &.active {
             text-decoration: underline;
+            background:#F8F8F8;
         }
         &:hover {
             text-decoration: underline;
@@ -346,11 +350,13 @@ header {
             text-align: center;
             border-radius: 55% 45%;
             display: none;
-            @include vendor(transition, background-color .1s .05s linear);
+            @include vendor(transition, all .1s .05s linear);
 
             &:hover {
                 //background-color: #356842;
                 background-color: #444;
+                //background-color: darken($theme,20);
+                border-radius: 51% 52%;
                 //background-color: rgb(151, 231, 209);
             }
 
@@ -397,8 +403,27 @@ header {
 // }
 
 .content {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    position: relative;
+    @include vendor(transition,all .2s ease-out);
+    @include vendor(transform, translate3d(0,0,0));
+    opacity: 1;
+    left: 0;
+
+    @include vendor(transform,scale(1));
+
 }
+    // .content--ani {
+    //     @include vendor(transform,translateX(3%));
+    //     opacity: 0;
+    // }
+    .content--ani:not(#stage__img) {
+        @include vendor(transform,scale(1.05));
+        opacity: 0;
+    }
+
+
+
 @media #{$medium-up} {
     header {
         width: 10em;
@@ -428,11 +453,13 @@ $stage-push: 4em;
 }
 
     .stage--home {
-        background-image: url("#{$img}montreal.jpg");
-            background-size: 400%;
-            background-position: center center;
+        background-image: url("#{$img}montreal2.jpg");
+        background-size: 150%;
+        background-position: center center;
+        padding: 6rem 1rem;
 
         @media #{$medium-up} {
+            padding: 9rem 1rem;
             background-size: cover;
             background-position: center center;
         }
@@ -455,7 +482,10 @@ $stage-push: 4em;
 
 // Home
     .stage__title {
-        //font-size: 2rem !important;
+
+        @media #{$small-only} { 
+            font-size: 1.1rem;
+        }
     }
         .location {
             width: 100%;
@@ -488,7 +518,7 @@ $stage-push: 4em;
                 text-decoration: none;
             }
             .icon, span {
-                color: #84F0AF;
+                color: $theme;
             }
         }
 
@@ -503,8 +533,11 @@ $stage-push: 4em;
             max-width: 113px;       
 
             @media #{$medium-up} {
-                margin: 0 1rem 6rem 0;
+                margin: 0 1rem 0rem 0;
             }
+        }
+        p {
+            line-height: 1.7;
         }
 
     }

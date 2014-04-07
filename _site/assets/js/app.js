@@ -80,3 +80,21 @@ $("a").filter(function() {
 			footer.removeClass("fixed--footer");
 		}
 })();
+
+
+
+//Content slide
+(function() {
+	var content = $(".content");
+		content.removeClass("content--ani");
+
+})();
+
+
+
+
+
+
+
+
+
