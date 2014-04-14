@@ -5,10 +5,10 @@ title: Homepage
 
 <div class="stage stage--home">
 	<div class="columns small-12 text-center">
-		<h3 class="stage__title stage__title--item">Developer and Designer in 
+		<h3 class="stage__title stage__title--item">Developer and Designer in
 
 		{% for post in site.posts limit:1 %}
-		
+
 
 		<a class="location stage__title--item" href="{{post.locationLink}}{{post.city}} {{post.country}}">
 			<i class="icon fa fa-map-marker stage__title--item"></i>
@@ -46,16 +46,16 @@ title: Homepage
 	            <li>
 	            	<a href="{{ post.url }}" class="list__entry clearfix small-12">
 		                <div class="list--entries__info">
-		                	
-	                		
+
+
 			                <h5>{{ post.title }}</h5>
 			                <span>
 			                	<small class="list-entries__date left">{{ post.date | date_to_string }}</small>
-			                	<small class="list-entries__category left text--regular">&nbsp;&nbsp;#{{ post.category }}</small>   	
+			                	<small class="list-entries__category left text--regular">&nbsp;&nbsp;#{{ post.category }}</small>
 			                </span>
-		                
+
 		                </div>
-					</a> 
+					</a>
 	           </li>
 
 	            {% endfor %}
