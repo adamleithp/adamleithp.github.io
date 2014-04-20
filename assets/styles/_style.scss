@@ -101,6 +101,7 @@ $row-width--large: rem-calc(1100);
 
 h6,h5,h4,h3,h2,h1 {
     color:#434647;//3F3D3D
+    font-weight:700 !important;
 }
 p {
     color:#595D5F;
@@ -389,10 +390,9 @@ header {
     margin-top: 2rem;
     position: relative;
     @include vendor(transition,all .2s ease-out);
-    @include vendor(transform, translate3d(0,0,0));
     opacity: 1;
     left: 0;
-
+    @extend .hardware;
     @include vendor(transform,scale(1));
 
 }
@@ -401,7 +401,7 @@ header {
     //     opacity: 0;
     // }
     .content--ani:not(#stage__img) {
-        @include vendor(transform,scale(1.05));
+        @include vendor(transform,translateX(2%));
         opacity: 0;
     }
 
@@ -442,10 +442,18 @@ $stage-push: 4em;
         background-position: center center;
         padding: 6rem 1rem;
 
+        > div {
+            display: none;
+        }
+
         @media #{$medium-up} {
             padding: 9rem 1rem;
             background-size: cover;
             background-position: center center;
+
+            >div {
+                display: block;
+            }
         }
     }
     .stage__img__wrap {
@@ -476,6 +484,7 @@ $stage-push: 4em;
             float: left;
             padding: .1rem;
             color:inherit;
+            white-space: nowrap;
             
             @media #{$medium-up} { 
                 width: auto;
@@ -516,7 +525,7 @@ $stage-push: 4em;
 
     .about {
         .wrap {
-            max-width: 290px;
+            max-width: 400px;
             margin: 0 auto;
         }
 
@@ -699,21 +708,23 @@ $content--post--bg: #fff;
             width: 50%;
             margin: 2em auto 1.5em;
 
-            @media #{$small-up} {
+            @media #{$medium-up} {
                 width: 15%;
             }
         }
     }
 
         .post__image {
-            
-            width: calc(100% - 2em);
-            margin: 0 1em 1.5em;
+            margin: 0 0 1.5em;
+
+            @media #{$medium-up} {
+                width: calc(100% - 2em);
+            }
         }
             .post__image--left {
                 @extend .post__image;
 
-                @media #{$small-up} {
+                @media #{$medium-up} {
                     float: left;
                     max-width: 300px;
                     margin: 1em 1.8em 1em -5em;
@@ -722,7 +733,7 @@ $content--post--bg: #fff;
             .post__image--right {
                 @extend .post__image;
 
-                @media #{$small-up} {
+                @media #{$medium-up} {
                     float: right;
                     max-width: 300px;
                     margin: 1em -5em 1em 1.8em;
@@ -770,7 +781,9 @@ $content--post--bg: #fff;
     @extend .clearfix;
     //border-bottom: 1px solid #D1D1D1;
     margin-bottom: 2rem;
+    float: left;
     padding: 1rem;
+    width: 100%;
 
     @media #{$medium-up} {
         margin-bottom: 4rem;
