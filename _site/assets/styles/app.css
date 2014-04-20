@@ -2901,14 +2901,14 @@ img {
   float: right !important;
 }
 
-.clearfix, footer {
+.clearfix, footer, .port-item {
   *zoom: 1;
 }
-.clearfix:before, footer:before, .clearfix:after, footer:after {
+.clearfix:before, footer:before, .port-item:before, .clearfix:after, footer:after, .port-item:after {
   content: " ";
   display: table;
 }
-.clearfix:after, footer:after {
+.clearfix:after, footer:after, .port-item:after {
   clear: both;
 }
 
@@ -8023,7 +8023,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #454444;
+  color: #222222;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -8031,7 +8031,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
-  color: #878585;
+  color: #6f6f6f;
   line-height: 0;
 }
 
@@ -8061,7 +8061,7 @@ h6 {
 
 .subheader {
   line-height: 1.4;
-  color: #878585;
+  color: #6f6f6f;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -8190,20 +8190,20 @@ blockquote {
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
-  color: #706f6f;
+  color: #555555;
 }
 blockquote cite:before {
   content: "\2014 \0020";
 }
 blockquote cite a,
 blockquote cite a:visited {
-  color: #706f6f;
+  color: #555555;
 }
 
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #878585;
+  color: #6f6f6f;
 }
 
 /* Microformats */
@@ -9867,16 +9867,16 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-.clearfix, footer {
+.clearfix, footer, .port-item {
   zoom: 1;
 }
-.clearfix:before, footer:before, .clearfix:after, footer:after {
+.clearfix:before, footer:before, .port-item:before, .clearfix:after, footer:after, .port-item:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.clearfix:after, footer:after {
+.clearfix:after, footer:after, .port-item:after {
   clear: both;
 }
 
@@ -9913,20 +9913,16 @@ body {
 }
 
 h6, h5, h4, h3, h2, h1 {
-  font-weight: 600;
+  color: #434647;
+}
+
+p {
+  color: #595D5F;
 }
 
 ul {
   margin: 0;
   list-style: none;
-}
-
-.inline-list {
-  margin: 0;
-  overflow: visible;
-}
-.inline-list li {
-  margin-left: 0 !important;
 }
 
 a {
@@ -10126,7 +10122,7 @@ header ul li {
   line-height: 1em;
   font-size: 4em;
   padding: 0.3em 0.4em;
-  background: #333;
+  background: #3F3D3D;
   color: #fff;
   text-align: center;
   border-radius: 55% 45%;
@@ -10138,7 +10134,7 @@ header ul li {
   transition: all 0.1s 0.05s linear;
 }
 .icon-logo:hover {
-  background-color: #444;
+  background-color: #252424;
   border-radius: 51% 52%;
 }
 @media only screen and (min-width: 40.063em) {
@@ -10227,6 +10223,7 @@ header ul li {
 
 .stage--home {
   background-image: url("../images/montreal2.jpg");
+  background-color: #444;
   background-size: 150%;
   background-position: center center;
   padding: 6rem 1rem;
@@ -10296,27 +10293,35 @@ header ul li {
   color: #84f0af;
 }
 
-.about h4 {
+.section--home {
+  background: #F7F7F7;
+  border-color: #E6E7E9;
+}
+
+.about .wrap {
+  max-width: 290px;
+  margin: 0 auto;
+}
+.about .title {
   color: #545252;
+  margin-top: 2rem;
 }
 .about img {
-  margin: 0 1rem 1rem 0;
-  border: 5px solid #fff;
+  margin: 0 auto;
+  display: inherit;
+  max-width: 100px;
+  background: #fff;
   border-radius: 5px;
-  max-width: 113px;
-}
-@media only screen and (min-width: 40.063em) {
-  .about img {
-    margin: 0 1rem 0rem 0;
-  }
 }
 .about p {
   line-height: 1.7;
 }
 
-.section--home {
-  background: #F7F7F7;
-  border-color: #E6E7E9;
+.span--work {
+  padding: 0 0.3rem;
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .page-title {
@@ -10451,17 +10456,24 @@ a.post__info {
   }
 }
 
-.section--work {
-  padding: 3em 0;
+.port-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+@media only screen and (min-width: 40.063em) {
+  .port-item {
+    margin-bottom: 4rem;
+  }
+}
+.port-item:first-child {
+  padding-top: 0 !important;
+}
+.port-item img {
   width: 100%;
-  height: 100%;
+  border: 1px solid #CFCFCF;
+  border-radius: 5px;
+  margin-top: 1.5rem;
 }
-
-.work__img img {
-  margin: 0 auto 4rem;
-  display: block;
-}
-
-.section--af {
-  background: #f3f3f3;
+.port-item p {
+  margin-bottom: .1rem;
 }
