@@ -150,6 +150,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "fertigo-pro",sans-serif;
     font-style: normal;
     font-weight: 400;
+    color:#3B3B3B;
+
+    .panel & {
+        color:#3B3B3B;
+    }
 }
 body,html { height: 100%;}
 
@@ -167,9 +172,11 @@ body,html { height: 100%;}
     width: 50%;
 }
 .button {
-    text-transform: uppercase;
-    padding: .7em 1.4em;
-    font-size: .8em;
+    //text-transform: uppercase;
+    padding: .1em .4em;
+    font-size: 0.8em;
+    background-color: #BEBEBE;
+    @include theme-style;
 
     &:hover {
         text-decoration: none;
@@ -204,6 +211,7 @@ footer {
     //opacity: 0.2;
     width: 100%;
     display: inline-block;
+    margin-top: 5rem;
     
     @extend .clearfix;
 
@@ -234,7 +242,17 @@ footer {
 
 
 }
+.copyright {
+    //font-size: .9rem;
+    color: #CACACA;
+    width: 100%;
+    text-align: center;
+    display: inherit;
 
+    .button {
+        margin-bottom: 0;
+    }
+}
 
 
 // Overlays
@@ -273,17 +291,21 @@ header {
     background: rgba(255,255,255,.95);
     background: #fff;
     font-size: .9em;
-    height:100%;
     top:0; 
     z-index: 1;
-
     position: fixed;  
     background: #fff;
-    height: auto;
+    height: 2rem;
     width: 100%;
 
     @media #{$medium-up} {
         border-bottom: 0;
+        height: 100%;
+    }
+    @media #{$small-only} {
+        .columns {
+            padding: 0;
+        }
     }
 
 
@@ -321,7 +343,8 @@ header {
 
 
     .logo {
-
+        display: block;
+        margin-top: 3.5rem;
     }
         .icon-logo {
             float: left;
@@ -360,6 +383,13 @@ header {
             li {
                 float: left;
             }
+            hr {
+                display: none;
+                @media #{$medium-up} {
+                    display: block;
+                }
+            }
+            
             .nav__link {
                 &:hover {
                     text-decoration: none;
@@ -369,7 +399,6 @@ header {
                     position: absolute;
                     top: 0.4rem;
                     left: 1.5rem;
-
                     display: none;
 
                     @media #{$medium-up} {
@@ -430,7 +459,6 @@ $stage-push: 4em;
     background: #fff;
     background-size: cover;
     background-position-y: 47%;
-    box-shadow: inset 0px -93px 70px -30px #FFF;
      
     h1,h2,h3,h4,h5,h6, small { color:white; }
 }
@@ -441,6 +469,7 @@ $stage-push: 4em;
         background-size: 150%;
         background-position: center center;
         padding: 6rem 1rem;
+        box-shadow: inset 0px -73px 40px -30px #FFF;
 
         > div {
             display: none;
@@ -450,9 +479,10 @@ $stage-push: 4em;
             padding: 9rem 1rem;
             background-size: cover;
             background-position: center center;
+            box-shadow: inset 0px -93px 70px -30px #FFF;
 
             >div {
-                display: block;
+                //display: block;
             }
         }
     }
@@ -524,6 +554,7 @@ $stage-push: 4em;
 
 
     .about {
+        padding: 0 1rem;
         .wrap {
             max-width: 400px;
             margin: 0 auto;
@@ -547,13 +578,12 @@ $stage-push: 4em;
         p {
             line-height: 1.7;
         }
-
     }
         .span--work {
-            padding: 0 0.3rem;
-            background-color: #2ecc71;
-            color: #fff;
             @include theme-style;
+            background-color: #2ecc71;
+            padding: .1em .4em;
+            color:#fff;
         }
 
 
@@ -592,6 +622,7 @@ $stage-push: 4em;
 // Home Page 
 .content__pull {
     margin-top: -3.5rem;
+    position: relative;
 }
 .list--entries {
     li {
@@ -651,7 +682,7 @@ $border-radius: 5px;
         background-clip: text; 
         color: #333;
         margin:0;
-        font-size: 2.1em;       
+        font-size: 1.6em;       
 
         @media #{$medium-up} {
             font-size: 2.5em; 
