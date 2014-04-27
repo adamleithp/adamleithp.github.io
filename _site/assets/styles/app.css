@@ -6366,7 +6366,6 @@ header {
   font-size: .9em;
   top: 0;
   z-index: 1;
-  position: fixed;
   background: #fff;
   width: 100%;
 }
@@ -6447,6 +6446,11 @@ header ul li {
   background-color: #252424;
   border-radius: 51% 52%;
 }
+@media only screen and (min-width: 565px) {
+  .icon-logo {
+    margin: -0.1rem 0.5rem;
+  }
+}
 @media only screen and (min-width: 40.063em) {
   .icon-logo {
     padding: 1.2rem 1rem;
@@ -6468,7 +6472,6 @@ header ul li {
 }
 
 .content {
-  margin-top: 4rem;
   position: relative;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
