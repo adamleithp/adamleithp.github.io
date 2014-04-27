@@ -6638,6 +6638,9 @@ header ul li {
   position: relative;
 }
 
+.list--entries {
+  margin-top: 3rem;
+}
 .list--entries li {
   color: #333333;
   width: 100%;

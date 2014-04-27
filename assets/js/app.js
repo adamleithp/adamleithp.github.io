@@ -19,6 +19,7 @@ $("p:has(img)").contents().unwrap();
 })();
 
 
+
 // // dropdown 
 // (function() {
 // 	var dropdown_trigger = $(".trigger-dropdown"),
@@ -64,22 +65,6 @@ $("a").filter(function() {
 		loading_overlay.fadeOut(500);
 })();
 
-
-// Fixed footer
-// If content is shorter than screen - footer size, apply fixed class.
-(function() {
-	var footer = $(".footer-wrap"),
-		footerHeight = $(".footer-wrap").outerHeight(),
-		content = $(".content-wrap"),
-		screenHeight = $(window).height(); 
-
-		if (content.outerHeight() < screenHeight - footerHeight) {
-			footer.addClass("fixed--footer");
-		}
-		else {
-			footer.removeClass("fixed--footer");
-		}
-})();
 
 
 
