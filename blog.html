@@ -6,7 +6,7 @@ title: Talking
 
             
         <ul class="list--entries">
-            <div class="small-12 medium-10 medium-centered columns">      
+            <div class="small-12 columns">      
             
                 {% for post in site.posts %}
 
@@ -15,14 +15,10 @@ title: Talking
                         <a href="{{ post.url }}" class="list__entry clearfix small-12">
 
                             <div>  
-                                <div class="list-entries__img left">
-                                    <img src="{{ post.image }}"alt="">
-                                </div>                              
-                                
-                                <h5>{{ post.title }}</h5>
+                                <h3 class="title">{{ post.title }}</h3>
                                 <span>
-                                    <small class="list-entries__date left">{{ post.date | date_to_string }}</small>
-                                    <small class="list-entries__category left text--regular">&nbsp;&nbsp;#{{ post.category }}</small>       
+                                    <h6 class="title list-entries__date left">{{ post.date | date_to_string }}</h6>
+                                    <small class="list-entries__category left text--regular"></small>      
                                 </span>
                             
                             </div>

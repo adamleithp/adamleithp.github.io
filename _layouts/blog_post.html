@@ -8,35 +8,32 @@ layout: default
 
 
 			<img src="{{page.image}}" alt="" class="stage__img" id="stage__img"/>
-
-			<div class="columns small-12 medium-10 large-11 medium-centered m-t-s-2">
-				<section class="post__title--wrap clearfix">
-					<h2 class="stage__text post__title post__title--masked">{{page.title}}</h2>
-					<h4 class="text--light">{{page.sub}}</h4>
+			<div class="map"></div>
+			<div class="columns small-12 large-10 medium-centered m-t-s-2">
+				<section class="post__title--wrap clearfix special-centered-for-small">
+					<h2>{{page.title}}</h2>
+					<h4>{{page.sub}}</h4>
 
 
 					<ul class="list--stage inline-list">
 						<li>
-							<a href="#">
-								<i class="icon fa fa-clock-o"></i>
-								<span>{{ page.date | date_to_string }} </span>
-							</a>
+							<h5 class="title">{{ page.date | date_to_string }} <span class="text--fade">in</span>&nbsp;</h5> 
+							<h5 class="title"><a href="{{page.locationLink}}{{page.city}} {{page.country}}">{{page.city}}, {{page.country}}</a></h5>
 						</li>
 					
 						<li>
-							<a href="{{page.locationLink}}{{page.city}} {{page.country}}">
-								<i class="icon fa fa-flag"></i>
-								<span>{{page.city}}, {{page.country}}</span>
-							</a>	
+							
+								
+								
 						</li>
 					</ul>
-
-					<hr class="small-3">
 					<a class="small-12 columns stage__text post__info" href="#"></a>
 				</section>
+				<hr class="small-3">
 			</div>
 		</div>
-		<div class="columns small-12 medium-10 large-9 medium-centered post__content">
+
+		<div class="columns small-12 large-10 m-t-s-2 medium-centered post__content">
 			<div class="special-centered-for-small">
 				{{ content }}
 			</div>
