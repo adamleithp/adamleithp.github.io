@@ -6173,7 +6173,7 @@ a {
   transition: color 0.15s linear;
   position: relative;
 }
-a.contact__link:hover:after {
+a.link--external:hover:after {
   content: "\231D";
   position: absolute;
   right: 0;
@@ -6257,7 +6257,7 @@ body, html {
 
 .button, .stage--button {
   padding: .1em .4em;
-  font-size: 0.8em;
+  font-size: 1em;
   background-color: #BEBEBE;
   font-family: "adobe-garamond-pro",  serif;
   border-radius: 5px;
@@ -6370,10 +6370,17 @@ header {
   background: #fff;
   width: 100%;
 }
+header hr {
+  display: none;
+  margin: -0.2rem 0 0;
+}
 @media only screen and (min-width: 40.063em) {
   header {
     border-bottom: 0;
     height: 100%;
+  }
+  header hr {
+    display: block;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -6397,9 +6404,10 @@ header ul li {
 }
 
 .nav__link {
-  padding: .3em .4em;
+  padding: .3em 0.8em;
   display: block;
   margin: 0 !important;
+  border-radius: 5px;
 }
 .nav__link.active {
   text-decoration: underline;
@@ -6412,19 +6420,23 @@ header ul li {
 
 .logo {
   display: block;
-  margin-top: 3.5rem;
+}
+@media only screen and (min-width: 40.063em) {
+  .logo {
+    margin-top: 3.5rem;
+  }
 }
 
 .icon-logo {
   float: left;
   line-height: 1em;
-  font-size: 4em;
+  font-size: 1.5em;
+  margin: 0.9rem 0.5rem;
   padding: 0.3em 0.4em;
   background: #3F3D3D;
   color: #fff;
   text-align: center;
   border-radius: 55% 45%;
-  display: none;
   -webkit-transition: all 0.1s 0.05s linear;
   -moz-transition: all 0.1s 0.05s linear;
   -ms-transition: all 0.1s 0.05s linear;
@@ -6439,13 +6451,17 @@ header ul li {
   .icon-logo {
     padding: 1.2rem 1rem;
     width: 100%;
-    font-size: 4rem;
     display: block;
+    font-size: 4em;
+    margin: 0;
   }
 }
 
 .list--social {
-  opacity: 0.4;
+  float: left;
+}
+.list--social a {
+  color: #A8A8A8;
 }
 .list--social .fa {
   display: none;
@@ -6588,7 +6604,7 @@ header ul li {
   padding: 0 1rem;
 }
 .about .wrap {
-  max-width: 500px;
+  max-width: 360px;
   margin: 0 auto;
 }
 .about .title {
@@ -6596,7 +6612,7 @@ header ul li {
   margin-top: 2rem;
 }
 .about img {
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   display: inherit;
   max-width: 100px;
   background: #fff;
