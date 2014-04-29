@@ -6,50 +6,41 @@ module.exports = function(grunt) {
 
     sass: {                              // Task
       dist: {                            // Target
-        options: {                       // Target options
-          style: 'expanded'
+        options: {
+          style: 'compressed'
         },
         files: {                         // Dictionary of files
           'assets/styles/app.css': 'assets/styles/app.scss',       // 'destination': 'source'
         }
       }
     },
-    concat: {
-      options: {
-        separator: ';'
-      },
-      dist: {
-        src: ['assets/js/app.js'],
-        dest: 'assets/js/<%= pkg.name %>.js'
-      }
-    },
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+        banner: '/*! Blank Template <%= grunt.template.today("dd-mm-yyyy") %> */\n'
       },
       dist: {
         files: {
-          'assets/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+          'assets/js/app.min.js': ['assets/js/*.js']
         }
       }
     },
-    // jshint: {
-    //   files: ['Gruntfile.js', 'assets/js/*.js', 'assets/js/*.js'],
+    jshint: {
+      files: ['Gruntfile.js'],
 
-    //   options: {
-    //     // options here to override JSHint defaults
-    //     globals: {
-    //       jQuery: false,
-    //       console: true,
-    //       module: true,
-    //       document: true
-    //     }
-    //   }
-    // },
+      options: {
+        // options here to override JSHint defaults
+        globals: {
+          jQuery: true
+        }
+      }
+    },
     watch: {
+      options: {
+        atBegin: true,
+      },
       js: {
         files: ['assets/js/*.js'],
-        tasks: ['concat', 'uglify'],
+        tasks: ['jshint', 'uglify'],
         options: {
           livereload: true,
         }
@@ -64,12 +55,12 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  // grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-concat');
 
-  // grunt.registerTask('test', ['jshint']);
+  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('prod', ['uglify', 'sass',]);
 
-  grunt.registerTask('default', ['concat', 'uglify', 'sass',]);
 
 };
+

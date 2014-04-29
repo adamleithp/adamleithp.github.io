@@ -1,42 +1,22 @@
 ---
 layout: default
 ---
-	
+
 	<div class="post">
-
 		<div class="stage__content">
-
-
-			<img src="{{page.image}}" alt="" class="stage__img" id="stage__img"/>
-			<div class="map"></div>
+			<img src="{{page.image}}" alt=""/>
 			<div class="columns small-12 large-10 medium-centered m-t-s-2">
-				<section class="post__title--wrap clearfix special-centered-for-small">
+				<section class="special-centered-for-small">
 					<h2>{{page.title}}</h2>
 					<h4>{{page.sub}}</h4>
-
-
-					<ul class="list--stage inline-list">
-						<li>
-							<h5 class="title">{{ page.date | date_to_string }} <span class="text--fade">in</span>&nbsp;</h5> 
-							<h5 class="title"><a href="{{page.locationLink}}{{page.city}} {{page.country}}">{{page.city}}, {{page.country}}</a></h5>
-						</li>
-					
-						<li>
-							
-								
-								
-						</li>
-					</ul>
-					<a class="small-12 columns stage__text post__info" href="#"></a>
+					<h5 class="title">{{ page.date | date_to_string }}&nbsp;<span>in</span>&nbsp;<a href="{{page.locationLink}}{{page.city}} {{page.country}}">{{page.city}}, {{page.country}}</a></h5>
 				</section>
 				<hr class="small-3">
 			</div>
 		</div>
-
-		<div class="columns small-12 large-10 m-t-s-2 medium-centered post__content">
+		<div class="post__content columns small-12 large-10 large-centered">
 			<div class="special-centered-for-small">
 				{{ content }}
 			</div>
-			
 		</div>
 	</div>

@@ -3,29 +3,14 @@ layout: blog_page
 title: Talking
 ---
 
+{% for post in site.posts %}
+    <li>
+        <a href="{{ post.url }}">
+            <h3 class="title">{{ post.title }}</h3>
+            <h6 class="title">{{ post.date | date_to_string }}</h6>
+        </a>
+   </li>
+{% endfor %}
 
-            
-        <ul class="list--entries">
-            <div class="small-12 columns">      
-            
-                {% for post in site.posts %}
 
-                
-                    <li>
-                        <a href="{{ post.url }}" class="list__entry clearfix small-12">
 
-                            <div>  
-                                <h3 class="title">{{ post.title }}</h3>
-                                <span>
-                                    <h6 class="title list-entries__date left">{{ post.date | date_to_string }}</h6>
-                                    <small class="list-entries__category left text--regular"></small>      
-                                </span>
-                            
-                            </div>
-                        </a> 
-                   </li> 
-                {% endfor %}
-            </div>
-        </ul>
-
-            
