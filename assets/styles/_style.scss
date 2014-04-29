@@ -15,7 +15,13 @@ $border-radius: 5px;
 
 @mixin theme-style {
     border-radius: 5px;
-
+}
+@mixin border-push {
+    padding: 0.5rem 0rem 1rem 3rem;
+}
+@mixin border-pull {
+    margin-left: -3rem;
+    border-left: 1px solid #ccc;
 }
 
 
@@ -97,7 +103,7 @@ p {
 // Links
 /////////////////////////////////////////
 a {
-    @include vendor(transition, color .15s linear);
+    @include vendor(transition, all .15s linear);
     position: relative;
 
     &.link--external {
@@ -203,6 +209,7 @@ header {
         padding:.3em 0.8em;
         display: block;
         margin: 0 !important;
+        font-size: 0.9rem;
         @include theme-style;
 
         &.active {
@@ -316,7 +323,9 @@ footer {
         opacity: 0;
         @include vendor(transform,translateX(2%));
     }
-
+    .content__title {
+        margin-top: 2rem;
+    }
 @media #{$medium-up} {
     header {
         width: 10em;
@@ -403,7 +412,10 @@ $stage-push: 4em;
 
 
 .list--blog {
-    margin-top: $stage-push;
+    @media #{$medium-up} {
+        margin-top: $stage-push;
+    }
+
     li {
         color: $primary-color;
         width: 100%;
@@ -412,6 +424,15 @@ $stage-push: 4em;
         margin: 1rem 0;
     }
 }
+        .blog__item {
+            .title {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
 
 // Post
 
@@ -463,10 +484,12 @@ $stage-push: 4em;
 // Work
 
 .list--work {
-    margin-top: $stage-push;
+    @media #{$medium-up} {
+        margin-top: $stage-push;
+    }
 }
-.port-item {
-    margin-bottom: 5rem;
+.work__item {
+    margin-bottom: 3rem;
     display: inline-block;
     @extend .clearfix;
 
@@ -476,12 +499,16 @@ $stage-push: 4em;
     @media #{$medium-up} {
         margin-bottom: 4rem;
     }
+
     .button {
         font-size: 1rem;
         margin: 0 .4rem 0 0;
         position: relative;
         top: -0.2rem;
         cursor: default;
+        background: none;
+        color: #7D7D7D;
+        border: 1px solid #7D7D7D;
     }
     p {
         margin-bottom: .1rem;

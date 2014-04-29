@@ -6,8 +6,11 @@ title: Talking
 {% for post in site.posts %}
     <li>
         <a href="{{ post.url }}">
-            <h3 class="title">{{ post.title }}</h3>
-            <h6 class="title">{{ post.date | date_to_string }}</h6>
+            <div class="blog__item">
+                <h3 class="title">{{ post.title }}</h3>
+                <p>{{ post.date | date_to_string }} in {{post.city}}, {{post.country}}</p>
+            </div>
+
         </a>
    </li>
 {% endfor %}
