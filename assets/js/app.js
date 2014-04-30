@@ -1,26 +1,13 @@
 
 
-$(document).foundation();
-
-
-//custom js goes here
-
 // Unwrap Images
 $("p:has(img)").contents().unwrap();
 
 
-(function() {
-	var stageH = $(".stage").height(),
-		stageImgH = $(".stage__img").height();
-	if (stageImgH <= stageH) {
-		$(".stage__img").addClass("stage__img--fix");
-	}
-	
-})();
 
 
 
-// // dropdown 
+// // dropdown
 // (function() {
 // 	var dropdown_trigger = $(".trigger-dropdown"),
 // 		dropdown = $(".dropdown-menu");
@@ -32,7 +19,7 @@ $("p:has(img)").contents().unwrap();
 // 		dropdown.addClass("dropdown-menu--active");
 // 	});
 
-	
+
 // })();
 
 
@@ -72,7 +59,6 @@ $("a").filter(function() {
 (function() {
 	var content = $(".content");
 		content.removeClass("content--ani");
-
 })();
 
 
