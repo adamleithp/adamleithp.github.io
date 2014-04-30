@@ -454,6 +454,14 @@ $stage-push: 4em;
             .title {
                 margin: 0;
             }
+            p {
+                @media #{$small-only} {
+                    font-size: .9rem;
+                }
+            }
+            hr {
+                border-color: #E3E3E3;
+            }
         }
             .item__info {
                 margin:-.2rem 0 0.5rem 0;

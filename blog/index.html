@@ -5,41 +5,23 @@ title: Talking
 
 {% for post in paginator.posts %}
     <li>
-
-            <div class="blog__item">
-                <a href="{{ post.url }}">
-                    <h3 class="title">{{ post.title }}</h3>
-<!--                     <p class="blog__date"></p>
- -->                </a>
-                    <p class="item__info">{{ post.date | date_to_string }}
-                        &nbsp;|&nbsp;
-                        {{post.city}}, {{post.country}}
-                        &nbsp;|&nbsp;
-                        <span>#{{post.category}}</span
-                        ></p>
-
-                <p>{{ post.excerpt | strip_html | truncatewords:15}}</p>
-            </div>
-
-
-
+        <div class="blog__item">
+            <a href="{{ post.url }}">
+                <h3 class="title">{{ post.title }}</h3>
+            </a>
+            <p class="item__info">{{ post.date | date_to_string }}
+                &nbsp;|&nbsp;
+                {{post.city}}, {{post.country}}
+                &nbsp;|&nbsp;
+                <span>#{{post.category}}</span
+                >
+            </p>
+            <p>{{ post.excerpt | strip_html | truncatewords:15}}</p>
+            <hr class="show-for-small">
+        </div>
    </li>
 {% endfor %}
 
-<!--     <div class="pagination">
-        <p>
-            {% if paginator.previous_page %}
-                <a href="/blog/page{{ paginator.previous_page }}" class="previous">&laquo; Previous</a>
-            {% else %}
-            {% endif %}
-                <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-            {% if paginator.next_page %}
-                <a href="/blog/page{{ paginator.next_page }}" class="next">Next &raquo;</a>
-            {% else %}
-            {% endif %}
-        </p>
-    </div>
- -->
 {% if paginator.total_pages > 1 %}
 <hr>
 <div class="pagination">
