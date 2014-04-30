@@ -58,7 +58,10 @@ $("a").filter(function() {
 //Content slide
 (function() {
 	var content = $(".content");
+
+	setTimeout(function(){
 		content.removeClass("content--ani");
+	}, 100);
 })();
 
 
