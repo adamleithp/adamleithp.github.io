@@ -1,3 +1,6 @@
 name: AdamLeithP
 markdown: redcarpet
 pygments: true
+paginate_path: "blog/page:num"
+paginate: 5
+

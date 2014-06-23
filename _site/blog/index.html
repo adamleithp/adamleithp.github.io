@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title> Talking  - AdamleithP</title>
+	<title> Blog Posts  - AdamleithP</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive site -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- chrome frame -->
 	<link rel="author" href="humans.txt">
@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="/assets/styles/app.css">
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
 
+	
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
@@ -31,7 +32,7 @@
 	            </ul>
 	            <ul>
 	                <li><a href="/index.html" class="nav__link stage__text">Home</a></li>
-	                <li><a href="/blog.html" class="nav__link stage__text">Blog</a></li>
+	                <li><a href="/blog/index.html" class="nav__link stage__text">Blog</a></li>
 	                <li><a href="/work.html" class="nav__link stage__text">Work</a></li>
 	                <li><a href="mailto:adamleithp@me.com" target="_blank" class="nav__link stage__text link--external">Contact</a></li>
 	            </ul>
@@ -62,27 +63,36 @@
 		</header>
 	</nav>
 	<div class="content row content--ani">
+		<div class="columns small-12">
+	<div class="special-centered-for-small">
 		<div>
-    <div class="columns small-12 page-title">
-        <div>
-            <h2 class="text--bold m-b-s-0">Photos.</h2>
-            <h5 class="text--light m-t-s-0">My adventures through pictures.</h5>
+			<h1 class="content__title">Blog</h1>
+		</div>
+        <ul class="list--blog">
+            
+    <li>
+        <div class="blog__item">
+            <a href="/code/2014/03/01/githubPost.html">
+                <h3 class="title">First Post with Github!</h3>
+            </a>
+            <p class="item__info">01 Mar 2014
+                &nbsp;|&nbsp;
+                Montreal, Canada
+                &nbsp;|&nbsp;
+                <span>#code</span
+                >
+            </p>
+            <p>This is my first official blog post using Jekyll. This post that was created by...</p>
+            <hr class="show-for-small">
         </div>
-        <hr>
-        
-    </div>
+   </li>
+
+
+
+
+        </ul>
+	</div>
 </div>
-<div class="">
-    <div class="row">
-        <div class="small-12 medium-10 medium-centered columns">
-            <div id="instafeed"></div>   
-        </div>
-        
-    </div>
-</div>
-
-
-
 
 		<footer>
 			<p class="copyright ">This website's code is open source on <a class="button" href="https://github.com/adamleithp/adamleithp.github.io">Github</a></p>
@@ -90,8 +100,7 @@
 	</div>
 
 	<script src='/assets/js/jquery.js'></script>
-	<script src='/assets/js/foundation.min.js'></script>
-	<script src='/assets/js/adamleithp.min.js'></script>
+	<script src='/assets/js/app.min.js'></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -101,6 +110,10 @@
 	  ga('create', 'UA-26325877-1', 'adamleithp.com');
 	  ga('send', 'pageview');
 
+	</script>
+	<script>
+		// if 404 page, run this JS
+		
 	</script>
 </body>
 </html>
