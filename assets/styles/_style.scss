@@ -244,11 +244,10 @@ header {
 
         &.active {
             text-decoration: underline;
-            background:#EFEFEF;
+            background:#E6E6E6;
         }
         &:hover {
             text-decoration: underline;
-            background: #E6E6E6;
         }
     }
     .logo {
@@ -272,8 +271,7 @@ header {
             @include vendor(transition, all .1s .05s linear);
 
             &:hover {
-                background-color: darken(#3F3D3D,10);
-                border-radius: 51% 52%;
+                background-color: darken(#3F3D3D,5);
             }
             @media #{$medium-up} {
                 display: block;
@@ -379,7 +377,7 @@ $stage-push: 4em;
     background-position-y: 47%;
 }
     .stage--home {
-        background-image: url("#{$img}montreal2.jpg");
+        background-image: url("#{$img}montreal.jpg");
         background-color: #444;
         background-size: 150%;
         background-position: center center;
