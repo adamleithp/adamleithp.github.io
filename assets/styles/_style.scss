@@ -91,9 +91,9 @@ $row-width--large: rem-calc(1100);
 
 // Text Colors
 $color--light: #CACACA;
-$color--medium: darken($color--light,10);
+$color--medium: darken($color--light,5);
 
-
+.text--grey {color:$color--medium;}
 
 h6,h5,h4,h3,h2,h1,body, .button {
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
@@ -445,12 +445,23 @@ $stage-push: 4em;
         width: 100%;
         position: relative;
         overflow: hidden;
-        margin: 1rem 0 2rem;
+        margin: 0rem 0 1rem;
+        
+
+        @media #{$medium-up} {
+            padding: 1.25rem 1.25rem 0;
+            margin-left: -1rem;
+
+            &:hover {
+                background: #FAFAFA;
+
+            }    
+        }
     }
 }
         .blog__item {
             .title {
-                margin: 0;
+                margin: 0 0 .4rem;
             }
             p {
                 @media #{$small-only} {
@@ -462,8 +473,9 @@ $stage-push: 4em;
             }
         }
             .item__info {
-                margin:-.2rem 0 0.5rem 0;
-                font-size: 1rem;
+                margin:0rem 0 0.5rem 0;
+                padding: 0 1rem;
+                float: right;
                 font-weight: 300;
                 font-style: italic;
                 color:$color--medium;

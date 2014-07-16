@@ -7,16 +7,11 @@ title: Talking
     <li>
         <div class="blog__item">
             <a href="{{ post.url }}">
-                <h3 class="title">{{ post.title }}</h3>
+                <h4 class="title">{{ post.title }} <small class="text--grey">in {{post.city}}, {{post.country}}</small></h4>
             </a>
-            <p class="item__info">{{ post.date | date_to_string }}
-                &nbsp;|&nbsp;
-                {{post.city}}, {{post.country}}
-                &nbsp;|&nbsp;
-                <span>#{{post.category}}</span
-                >
-            </p>
-            <p>{{ post.excerpt | strip_html | truncatewords:15}}</p>
+
+            <p class="item__info">{{ post.date | date_to_string }}</p>
+            <p>{{ post.excerpt | strip_html | truncatewords:20}}</p>
             <hr class="show-for-small">
         </div>
    </li>
