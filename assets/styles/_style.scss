@@ -218,7 +218,8 @@ header {
     }
     hr {
         display: none;
-        margin: -0.1rem 0 0;
+        margin: 0.5rem 0.8rem;
+        width: 1rem;
     }
 
     @media #{$medium-up} {
@@ -245,6 +246,7 @@ header {
         &.active {
             text-decoration: underline;
             background:#E6E6E6;
+            background:rgba(230, 230, 230, 0.38);
         }
         &:hover {
             text-decoration: underline;
@@ -258,6 +260,7 @@ header {
         }
     }
         .icon-logo {
+            position: relative;
             display: none;
             float: left;
             line-height: 1em;
@@ -267,21 +270,59 @@ header {
             background: #3F3D3D;
             color: #fff;
             text-align: center;
-            border-radius: 55% 45%;
-            @include vendor(transition, all .1s .05s linear);
+            border-radius: 50%;
+            @include vendor(transition, all .2s .1s ease-out);
 
             &:hover {
                 background-color: darken(#3F3D3D,5);
+                // box-shadow: -40px -30px 100px red, -40px 30px 100px yellow, 40px 30px 100px green, 40px -30px 100px blue;
+                box-shadow: -20px -20px 100px red, -20px 20px 100px yellow, 20px 20px 100px green, 20px -20px 100px blue;
+
+                // &:after {
+                //     @include vendor(animation, orbit 1s .2s 1 alternate forwards);
+                // }
             }
+            // &:after {
+            //     content: "";
+            //     background: #222;
+            //     width: 0.5rem;
+            //     height: 0.5rem;
+            //     display: block;
+            //     position: absolute;
+            //     top: 50%;
+            //     right: 50%;
+            //     border-radius: 50%;
+            //     @include vendor(transition, 1.1s cubic-bezier(0, 0.88, 0.51, 1.41));
+            //     z-index: -1;
+
+            // }
             @media #{$medium-up} {
                 display: block;
                 padding: 1.2rem 1rem;
                 width: 100%;
                 display: block;
                 font-size: 4em;
-                margin: 0;
+                margin: 0; 
             }
         }
+
+
+// @include keyframe(orbit) {
+
+//     80% {
+//         right:0%;
+//         top:0%;  
+//         z-index: 100;
+//         @include vendor(transform, scale(1.3));
+//     }
+//     100% {
+//         right:5%;
+//         top:5%;
+//         @include vendor(transform, scale(1.6));
+//     }
+// }
+
+
         .list--social {
             float: left;
         }
