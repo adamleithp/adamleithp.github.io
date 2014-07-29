@@ -43,7 +43,9 @@ $retina-only: "#{$screen} and (-webkit-min-device-pixel-ratio: 1.5)";
     }
 }
 
-
+// .hidden {
+//     display: none;
+// }
 
 // Grid
 /////////////////////////////////////////
@@ -156,7 +158,7 @@ ul {
 // Buttons
 /////////////////////////////////////////
 .button {
-    padding: .1em .4em;
+    padding: 0.2rem .4rem 0rem;
     font-size: 1em;
     background-color: #BEBEBE;
     @include theme-style;
@@ -202,6 +204,10 @@ header {
     top:0;
     z-index: 1;
     width: 100%;
+    height: 100%;
+    padding-top: 5rem;
+    position: fixed;
+    overflow-y:scroll;
 
     ul {
         @media #{$medium-up} {
@@ -209,15 +215,9 @@ header {
             display: inline-block;
         }
         li {
-            float: left;
-
-            @media #{$medium-up} {
-                width: 100%;
-            }
         }
     }
     hr {
-        display: none;
         margin: 0.5rem 0.8rem;
         width: 1rem;
     }
@@ -225,10 +225,9 @@ header {
     @media #{$medium-up} {
         border-bottom: 0;
         height: 100%;
+        overflow: visible;
+        left: 0;
 
-        hr {
-            display: block;
-        }
     }
     @media #{$small-only} {
         .columns {
@@ -236,12 +235,40 @@ header {
         }
     }
 }
+    .mobile-button {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10;
+        font-size: 4rem;
+        padding: 0rem 1rem;
+        line-height: 3.5rem;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+        display: none;
+        
+        @media #{$medium-up} {
+            display: none;
+            left:1rem;
+            top:0;
+            right: inherit;
+            padding: 0rem 0.6rem;
+        } 
+        &:hover {
+            text-decoration: none;
+        }
+        &.active {
+            display: block;
+        }
+    }
     .nav__link {
         padding:.3em 0.8em;
         display: block;
         margin: 0 !important;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         @include theme-style;
+        @media #{$medium-up} {
+            font-size: .9rem;
+        }
 
         &.active {
             text-decoration: underline;
@@ -261,16 +288,16 @@ header {
     }
         .icon-logo {
             position: relative;
-            display: none;
-            float: left;
             line-height: 1em;
-            font-size: 1.5em;
-            margin: 0.9rem 0.5rem;
+            font-size: 3.5em;
+            max-width: 110px;
+            margin: 6rem 0.5rem 2rem;
             padding: 0.3em 0.4em;
             background: #3F3D3D;
             color: #fff;
             text-align: center;
             border-radius: 50%;
+            //display: none !important;
             @include vendor(transition, all .2s .1s ease-out);
 
             &:hover {
@@ -297,8 +324,10 @@ header {
 
             // }
             @media #{$medium-up} {
+                float: left;
                 display: block;
                 padding: 1.2rem 1rem;
+                margin-bottom: .9rem;
                 width: 100%;
                 display: block;
                 font-size: 4em;
@@ -322,10 +351,6 @@ header {
 //     }
 // }
 
-
-        .list--social {
-            float: left;
-        }
 
 // Footer
 /////////////////////////////////////////
@@ -389,7 +414,8 @@ footer {
         @include vendor(transform,translateX(2%));
     }
     .content__title {
-        margin-top: 2rem;
+        margin:1.5rem 0 5rem;
+        padding-right: 4rem;
     }
 @media #{$medium-up} {
     header {
@@ -398,11 +424,12 @@ footer {
     }
     .content {
         margin-top: 0;
-        padding-left: 11.25em;
+        //padding-left: 11.25em;
         padding-bottom: 0;
     }
     .content__title {
-        margin-top: 4.5rem;
+        margin: 4.5rem 0 0;
+        padding-right: 0;
     }
 }
 
@@ -418,22 +445,29 @@ $stage-push: 4em;
     background-position-y: 47%;
 }
     .stage--home {
-        background-image: url("#{$img}montreal.jpg");
+        //background-image: url("#{$img}montreal.jpg");
+        background-image: url("#{$img}disco_squad.jpg");
         background-color: #444;
         background-size: 150%;
         background-position: center center;
         padding: 6rem 1rem;
-        box-shadow: inset 0px -73px 40px -30px #FFF;
+        //box-shadow: inset 0px -73px 40px -30px #FFF;
 
+        @media #{$retina-only} {
+            background-image: url("#{$img}disco_squad@2x.jpg");
+            
+        }
         @media #{$medium-up} {
+            @include theme-style;
+            margin-top: 3rem;
             padding: 9rem 1rem;
             background-size: cover;
             background-position: center center;
-            box-shadow: inset 0px -93px 70px -30px #FFF;
+            //box-shadow: inset 0px -93px 70px -30px #FFF;
         }
     }
 .content__pull {
-    margin-top:-6.5rem;//-3.5rem
+    margin-top:-3.5rem;//-3.5rem
     position: relative;
 }
 // About
@@ -450,27 +484,36 @@ $stage-push: 4em;
             color: darken($body-font-color,20);
             margin-top: 2rem;
         }
-        img {
-            margin: 0 auto 2rem;
-            display: inherit;
-            max-width: 100px;
-            background: #fff;
-            @include theme-style;
-
-            @media #{$medium-up} {
-
-            }
-        }
         p {
             line-height: 1.7;
         }
     }
+        .about__picture {
+            margin: 0 auto 2rem;
+            display: inherit;
+            max-width: 100px;
+            height: 100px;
+            background-color: #fff;
+            background-size: cover;
+            background-image: url("#{$img}adam.jpg");
+            @include theme-style;
+
+            @media #{$retina-only} {
+                background-image: url("#{$img}adam@2x.jpg");
+                
+            }
+        }
 
         .span--work {
             @include theme-style;
+            @extend .button;
             background-color: #2ecc71;
-            padding: .1em .4em;
             color:#fff;
+            cursor: default;
+
+            &:hover {
+                background-color: darken(#2ecc71,5);
+            }
         }
 
 // Entries List (blog page)
@@ -502,7 +545,7 @@ $stage-push: 4em;
 }
         .blog__item {
             .title {
-                margin: 0 0 .4rem;
+                margin-bottom: 0.5rem;
             }
             p {
                 @media #{$small-only} {
@@ -513,6 +556,11 @@ $stage-push: 4em;
                 border-color: #E3E3E3;
             }
         }
+            .blog__item__location {
+                text-decoration: none !important;
+                display: inline-block;
+                margin-left: 0.5rem;
+            }
             .item__info {
                 margin:0rem 0 0.5rem 0;
                 padding: 0 1rem;

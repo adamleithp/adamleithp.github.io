@@ -7,7 +7,7 @@ title: Talking
     <li>
         <div class="blog__item">
             <a href="{{ post.url }}">
-                <h4 class="title">{{ post.title }} <small class="text--grey">in {{post.city}}, {{post.country}}</small></h4>
+                <h4 class="title">{{ post.title }} <small class="blog__item__location text--grey">in {{post.city}}, {{post.country}}</small></h4>
             </a>
 
             <p class="item__info">{{ post.date | date_to_string }}</p>

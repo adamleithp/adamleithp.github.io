@@ -54,6 +54,30 @@ $("a").filter(function() {
 
 
 
+//menu
+(function() {
+	var menuTrigger 	= $(".mobile-button--open");
+		menu 			= $("header");
+
+	menu.hide();
+
+		menuTrigger.on("click", function(e) {
+			e.preventDefault();
+
+			if(menu.hasClass("hidden")) {
+				menu.removeClass("hidden");
+				menu.fadeIn(500);
+			}
+			else {
+				menu.addClass("hidden");
+				menu.fadeOut(500);
+			}
+
+		})
+})();
+
+
+
 
 //Content slide
 (function() {
