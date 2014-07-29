@@ -242,14 +242,13 @@ header {
         z-index: 10;
         font-size: 4rem;
         padding: 0rem 1rem;
-        line-height: 3.5rem;
+        line-height: 3rem;
         text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
         display: none;
         
         @media #{$medium-up} {
             display: none;
             left:1rem;
-            top:0;
             right: inherit;
             padding: 0rem 0.6rem;
         } 
@@ -459,7 +458,7 @@ $stage-push: 4em;
         }
         @media #{$medium-up} {
             @include theme-style;
-            margin-top: 3rem;
+            margin-top: 4.5rem;
             padding: 9rem 1rem;
             background-size: cover;
             background-position: center center;
