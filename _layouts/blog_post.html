@@ -6,11 +6,10 @@ imageUrl: /assets/images/
 
 	<div class="post">
 		<div class="stage__content">
-			<img class="show-for-retina-only" src="{{page.imageUrl}}{{page.imageHiDpi}}" alt=""/>
-			<img class="hide-for-retina-only" src="{{page.imageUrl}}{{page.imageRegular}}" alt=""/>
+			<img src="{{page.imageUrl}}{{page.imageName}}" alt=""/>
 			<div class="columns small-12 large-10 medium-centered m-t-s-2">
 				<section class="special-centered-for-small">
-					<h2>{{page.title}}</h2>
+					<h2 class="post__title">{{page.title}}</h2>
 					<h4>{{page.sub}}</h4>
 					<p class="item__info left">
 						<span>{{ page.date | date_to_string }}</span>
