@@ -55,6 +55,16 @@ $retina-only: '#{$screen} and (-webkit-min-device-pixel-ratio: 1.5)';
     }
 }
 
+
+// Retina Elements
+$very-small-down: '#{$screen} and (max-width: 30.063em)';
+
+@media #{$very-small-down}
+{
+
+}
+
+
 // .hidden {
 //     display: none;
 // }
@@ -71,6 +81,8 @@ $row-width--large: rem-calc(1100);
         margin: 0 auto;
     }
 }
+
+
 // Utility Classes
 /////////////////////////////////////////
 
@@ -796,7 +808,7 @@ $stage-push: 4em;
 .post__content
 {
     margin-top: 2rem;
-    padding: 1em 1em $stage-push;
+    padding: 3em 3em $stage-push;
 
     border-radius: $border-radius $border-radius 0 0;
     background: #fff;
@@ -827,7 +839,10 @@ $stage-push: 4em;
             color:#111;
         }
     }
-
+    @media #{$very-small-down}{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
     .post__title {
         text-transform: capitalize;
