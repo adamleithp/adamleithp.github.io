@@ -840,6 +840,9 @@ $stage-push: 4em;
     img {
         width: 100%;
     }
+    h4 {
+        margin-top: 1rem;
+    }
 }
 .post__content
 {
@@ -867,7 +870,7 @@ $stage-push: 4em;
         margin-bottom: 1.25rem;
     }
     li p {
-        margin-bottom: 0;
+        margin-bottom: 0.4rem;
     }
     a {
         color:#7E7E7E;
@@ -875,6 +878,9 @@ $stage-push: 4em;
         &:visited {
             color:#111;
         }
+    }
+    h1,h2,h3,h4,h5,h6 {
+        margin-bottom: 1rem;
     }
     @media #{$very-small-down}{
         padding-left: 2rem;
