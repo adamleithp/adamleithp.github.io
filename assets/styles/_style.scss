@@ -351,7 +351,9 @@ header
     }
     @media #{$medium-up}
     {
-        left: 0;
+        //left: 0;
+        position: relative;
+        float: left;
 
         overflow: visible;
 
@@ -382,6 +384,11 @@ header
     padding: 0rem 1rem;
 
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+
+    &.active
+    {
+        display: block;
+    }
     @media #{$medium-up}
     {
         right: inherit;
@@ -390,15 +397,18 @@ header
         display: none;
 
         padding: 0rem .6rem;
+
+
+            &.active
+            {
+                display: none;
+            }
     }
     &:hover
     {
         text-decoration: none;
     }
-    &.active
-    {
-        display: block;
-    }
+
 }
 .nav__link
 {
@@ -574,8 +584,8 @@ footer
 
 .content
 {
-    position: relative;
-    left: 0;
+    //position: relative;
+    //left: 0;
 
     opacity: 1;
 
@@ -597,13 +607,14 @@ footer
 {
     header
     {
-        position: fixed;
+        //position: fixed;
 
         width: 44em;
     }
     .content
     {
         margin-top: 0;
+        float: left;
         //padding-left: 11.25em;
         padding-bottom: 0;
     }
@@ -659,7 +670,7 @@ $stage-push: 4em;
 {
     position: relative;
 
-    margin-top: -3.5rem;//-3.5rem
+    margin-top: 1.5rem;//-3.5rem
 }
 // About
 
@@ -686,13 +697,14 @@ $stage-push: 4em;
 {
     display: inherit;
 
-    max-width: 100px;
-    height: 100px;
+    max-width: 130px;
+    height:130px;
     margin: 0 auto 2rem;
 
-    .no-boxshadow & {
+    //.no-boxshadow & {
         background-color: #fff;
-        background-image: url('#{$img}adam.jpg');
+        //background-image: url('#{$img}adam.jpg');
+        background-image: url('#{$img}adam-myanmar.jpg');
         background-size: cover;
 
         @include theme-style;
@@ -700,7 +712,7 @@ $stage-push: 4em;
         {
             background-image: url('#{$img}adam@2x.jpg');
         }
-    }
+    //}
 
 }
 
@@ -946,369 +958,369 @@ body {
   font-size: 4px;
   background-color: #fff;
 }
-.adam {
-    .no-boxshadow  & {
-        display: none;
-    }
-  background: $shirt--dark;
-  height: 1em;
-  position: absolute;
-  left: 50%;
-  //top: 50%;
-  width: 1em;
-  box-shadow: 
-    // Left to right 
+// .adam {
+//     .no-boxshadow  & {
+//         display: none;
+//     }
+//   background: $shirt--dark;
+//   height: 1em;
+//   position: absolute;
+//   left: 50%;
+//   //top: 50%;
+//   width: 1em;
+//   box-shadow: 
+//     // Left to right 
     
-    // going up ^^
-    // waist
-    -3em -1em 0 $skin--dark,
-     0em -1em 0 $shirt--dark,
-    1em -1em 0 $shirt--dark,
-    2em -1em 0 $shirt--dark,
-    3em -1em 0 $shirt--dark,
-    4em -1em 0 $shirt--light,
-    7em -1em 0 $skin--dark, 
-    // waist
-    -3em -2em 0 $skin--dark,
-     0em -2em 0 $shirt--dark,
-    1em -2em 0 $shirt--dark,
-    2em -2em 0 $shirt--dark,
-    3em -2em 0 $shirt--light,
-    4em -2em 0 $shirt--light,
-    7em -2em 0 $skin--dark, 
-    //backpack begins
-    -3em -3em 0 $skin--dark,
-    -1em -3em 0 $backpack--light,
-     0em -3em 0 $shirt--dark,
-    1em -3em 0 $shirt--dark,
-    2em -3em 0 $shirt--dark,
-    3em -3em 0 $shirt--dark,
-    4em -3em 0 $shirt--dark,
-    6em -3em 0 $skin--light, 
-    7em -3em 0 $skin--light,
-    // chest
-    -3em -4em 0 $skin--dark,
-    -2em -4em 0 $backpack--light,
-    -1em -4em 0 $backpack--dark,
-     0em -4em 0 $shirt--dark,
-    1em -4em 0 $shirt--dark,
-    2em -4em 0 $shirt--dark,
-    3em -4em 0 $shirt--dark,
-    4em -4em 0 $backpack--light,
-    6em -4em 0 $skin--dark,  
-    // chest
-    -3em -5em 0 $skin--light,
-    -2em -5em 0 $shirt--dark,
-    -1em -5em 0 $backpack--dark,
-     0em -5em 0 $shirt--dark,
-    1em -5em 0 $shirt--dark,
-    2em -5em 0 $shirt--dark,
-    3em -5em 0 $shirt--dark,
-    4em -5em 0 $backpack--light,
-    5em -5em 0 $shirt--dark,
-    6em -5em 0 $skin--dark,  
-    // chest
-    -3em -6em 0 $shirt--light,
-    -2em -6em 0 $shirt--dark,
-    -1em -6em 0 $shirt--light,
-     0em -6em 0 $backpack--dark,
-    1em -6em 0 $shirt--dark,
-    2em -6em 0 $shirt--dark,
-    3em -6em 0 $shirt--dark,
-    4em -6em 0 $backpack--dark,
-    5em -6em 0 $shirt--dark,
-    6em -6em 0 $shirt--dark,  
-    // chest
-    -3em -7em 0 $shirt--light,
-    -2em -7em 0 $shirt--dark,
-    -1em -7em 0 $shirt--dark,
-     0em -7em 0 $backpack--dark,
-    1em -7em 0 $shirt--dark,
-    2em -7em 0 $shirt--dark,
-    3em -7em 0 $shirt--dark,
-    4em -7em 0 $backpack--dark,
-    5em -7em 0 $shirt--dark,
-    6em -7em 0 $shirt--light, 
-    // chest
-    -2em -8em 0 $shirt--dark,
-    -1em -8em 0 $shirt--dark,
-     0em -8em 0 $backpack--dark,
-    1em -8em 0 $shirt--dark,
-    2em -8em 0 $shirt--dark,
-    3em -8em 0 $shirt--light,
-    4em -8em 0 $backpack--dark,
-    5em -8em 0 $shirt--dark,
-    // chest
-    -2em -9em 0 $shirt--light,
-    -1em -9em 0 $shirt--dark,
-     0em -9em 0 $backpack--dark,
-    1em -9em 0 $shirt--dark,
-    2em -9em 0 $shirt--dark,
-    3em -9em 0 $shirt--dark,
-    4em -9em 0 $backpack--dark,
-    5em -9em 0 $shirt--light,
-    // chest
-    -1em -10em 0 $shirt--light,
-     0em -10em 0 $hair--light,
-    1em -10em 0 $skin--dark,
-    2em -10em 0 $shirt--dark,
-    3em -10em 0 $shirt--light,
-    4em -10em 0 $backpack--dark,
+//     // going up ^^
+//     // waist
+//     -3em -1em 0 $skin--dark,
+//      0em -1em 0 $shirt--dark,
+//     1em -1em 0 $shirt--dark,
+//     2em -1em 0 $shirt--dark,
+//     3em -1em 0 $shirt--dark,
+//     4em -1em 0 $shirt--light,
+//     7em -1em 0 $skin--dark, 
+//     // waist
+//     -3em -2em 0 $skin--dark,
+//      0em -2em 0 $shirt--dark,
+//     1em -2em 0 $shirt--dark,
+//     2em -2em 0 $shirt--dark,
+//     3em -2em 0 $shirt--light,
+//     4em -2em 0 $shirt--light,
+//     7em -2em 0 $skin--dark, 
+//     //backpack begins
+//     -3em -3em 0 $skin--dark,
+//     -1em -3em 0 $backpack--light,
+//      0em -3em 0 $shirt--dark,
+//     1em -3em 0 $shirt--dark,
+//     2em -3em 0 $shirt--dark,
+//     3em -3em 0 $shirt--dark,
+//     4em -3em 0 $shirt--dark,
+//     6em -3em 0 $skin--light, 
+//     7em -3em 0 $skin--light,
+//     // chest
+//     -3em -4em 0 $skin--dark,
+//     -2em -4em 0 $backpack--light,
+//     -1em -4em 0 $backpack--dark,
+//      0em -4em 0 $shirt--dark,
+//     1em -4em 0 $shirt--dark,
+//     2em -4em 0 $shirt--dark,
+//     3em -4em 0 $shirt--dark,
+//     4em -4em 0 $backpack--light,
+//     6em -4em 0 $skin--dark,  
+//     // chest
+//     -3em -5em 0 $skin--light,
+//     -2em -5em 0 $shirt--dark,
+//     -1em -5em 0 $backpack--dark,
+//      0em -5em 0 $shirt--dark,
+//     1em -5em 0 $shirt--dark,
+//     2em -5em 0 $shirt--dark,
+//     3em -5em 0 $shirt--dark,
+//     4em -5em 0 $backpack--light,
+//     5em -5em 0 $shirt--dark,
+//     6em -5em 0 $skin--dark,  
+//     // chest
+//     -3em -6em 0 $shirt--light,
+//     -2em -6em 0 $shirt--dark,
+//     -1em -6em 0 $shirt--light,
+//      0em -6em 0 $backpack--dark,
+//     1em -6em 0 $shirt--dark,
+//     2em -6em 0 $shirt--dark,
+//     3em -6em 0 $shirt--dark,
+//     4em -6em 0 $backpack--dark,
+//     5em -6em 0 $shirt--dark,
+//     6em -6em 0 $shirt--dark,  
+//     // chest
+//     -3em -7em 0 $shirt--light,
+//     -2em -7em 0 $shirt--dark,
+//     -1em -7em 0 $shirt--dark,
+//      0em -7em 0 $backpack--dark,
+//     1em -7em 0 $shirt--dark,
+//     2em -7em 0 $shirt--dark,
+//     3em -7em 0 $shirt--dark,
+//     4em -7em 0 $backpack--dark,
+//     5em -7em 0 $shirt--dark,
+//     6em -7em 0 $shirt--light, 
+//     // chest
+//     -2em -8em 0 $shirt--dark,
+//     -1em -8em 0 $shirt--dark,
+//      0em -8em 0 $backpack--dark,
+//     1em -8em 0 $shirt--dark,
+//     2em -8em 0 $shirt--dark,
+//     3em -8em 0 $shirt--light,
+//     4em -8em 0 $backpack--dark,
+//     5em -8em 0 $shirt--dark,
+//     // chest
+//     -2em -9em 0 $shirt--light,
+//     -1em -9em 0 $shirt--dark,
+//      0em -9em 0 $backpack--dark,
+//     1em -9em 0 $shirt--dark,
+//     2em -9em 0 $shirt--dark,
+//     3em -9em 0 $shirt--dark,
+//     4em -9em 0 $backpack--dark,
+//     5em -9em 0 $shirt--light,
+//     // chest
+//     -1em -10em 0 $shirt--light,
+//      0em -10em 0 $hair--light,
+//     1em -10em 0 $skin--dark,
+//     2em -10em 0 $shirt--dark,
+//     3em -10em 0 $shirt--light,
+//     4em -10em 0 $backpack--dark,
 
     
-    // Middle
-    // Going down 
-    // Line 1 Waist
-    -3em 0 0 $skin--light,
-    -2em 0 0 $skin--dark,
-    -1em 0 0 $shirt--light,
-    1em 0 0 $shirt--dark,
-    2em 0 0 $shirt--dark,
-    3em 0 0 $shirt--light,
-    4em 0 0 $skin--dark,
-    5em 0 0 $skin--dark,
-    6em 0 0 $skin--dark,
-    7em 0 0 $skin--light, 
-    // Waist
-    -2em 1em 0 $skin--dark,
-    -1em 1em 0 $skin--dark,
-    0em 1em 0 $shorts--light,
-    1em 1em 0 $shorts--dark,
-    2em 1em 0 $shorts--dark,
-    3em 1em 0 $shorts--light,
-    4em 1em 0 $shorts--light,
-    5em 1em 0 $skin--dark,
-    6em 1em 0 $skin--light,
-    // Waist
-    -2em 2em 0 $skin--light,
-    -1em 2em 0 $shorts--light,
-    0em 2em 0 $shorts--light,
-    1em 2em 0 $shorts--dark,
-    2em 2em 0 $shorts--dark,
-    3em 2em 0 $shorts--dark,
-    4em 2em 0 $shorts--light,
-    5em 2em 0 $shorts--dark, 
-    // Waist
-    -1em 3em 0 $shorts--light,
-    0em 3em 0 $shorts--light,
-    1em 3em 0 $shorts--dark,
-    2em 3em 0 $shorts--dark,
-    3em 3em 0 $shorts--dark,
-    4em 3em 0 $shorts--light, 
-    // leg split
-    -1em 4em 0 $shorts--light,
-    0em 4em 0 $shorts--light,
-    1em 4em 0 $shorts--dark,
-    3em 4em 0 $shorts--dark,
-    4em 4em 0 $shorts--dark, 
-    // Legs
-    -1em 5em 0 $shorts--light,
-    0em 5em 0 $shorts--dark,
-    3em 5em 0 $shorts--dark,
-    4em 5em 0 $shorts--dark, 
-    // Legs
-    -1em 6em 0 $shorts--light,
-    0em 6em 0 $shorts--dark,
-    3em 6em 0 $shorts--dark,
-    4em 6em 0 $shorts--dark, 
-    // Legs
-    -1em 7em 0 $shorts--light,
-    0em 7em 0 $shorts--dark,
-    4em 7em 0 $shorts--dark, 
-    // Legs
-    -1em 8em 0 $shorts--light,
-    4em 8em 0 $shorts--dark, 
+//     // Middle
+//     // Going down 
+//     // Line 1 Waist
+//     -3em 0 0 $skin--light,
+//     -2em 0 0 $skin--dark,
+//     -1em 0 0 $shirt--light,
+//     1em 0 0 $shirt--dark,
+//     2em 0 0 $shirt--dark,
+//     3em 0 0 $shirt--light,
+//     4em 0 0 $skin--dark,
+//     5em 0 0 $skin--dark,
+//     6em 0 0 $skin--dark,
+//     7em 0 0 $skin--light, 
+//     // Waist
+//     -2em 1em 0 $skin--dark,
+//     -1em 1em 0 $skin--dark,
+//     0em 1em 0 $shorts--light,
+//     1em 1em 0 $shorts--dark,
+//     2em 1em 0 $shorts--dark,
+//     3em 1em 0 $shorts--light,
+//     4em 1em 0 $shorts--light,
+//     5em 1em 0 $skin--dark,
+//     6em 1em 0 $skin--light,
+//     // Waist
+//     -2em 2em 0 $skin--light,
+//     -1em 2em 0 $shorts--light,
+//     0em 2em 0 $shorts--light,
+//     1em 2em 0 $shorts--dark,
+//     2em 2em 0 $shorts--dark,
+//     3em 2em 0 $shorts--dark,
+//     4em 2em 0 $shorts--light,
+//     5em 2em 0 $shorts--dark, 
+//     // Waist
+//     -1em 3em 0 $shorts--light,
+//     0em 3em 0 $shorts--light,
+//     1em 3em 0 $shorts--dark,
+//     2em 3em 0 $shorts--dark,
+//     3em 3em 0 $shorts--dark,
+//     4em 3em 0 $shorts--light, 
+//     // leg split
+//     -1em 4em 0 $shorts--light,
+//     0em 4em 0 $shorts--light,
+//     1em 4em 0 $shorts--dark,
+//     3em 4em 0 $shorts--dark,
+//     4em 4em 0 $shorts--dark, 
+//     // Legs
+//     -1em 5em 0 $shorts--light,
+//     0em 5em 0 $shorts--dark,
+//     3em 5em 0 $shorts--dark,
+//     4em 5em 0 $shorts--dark, 
+//     // Legs
+//     -1em 6em 0 $shorts--light,
+//     0em 6em 0 $shorts--dark,
+//     3em 6em 0 $shorts--dark,
+//     4em 6em 0 $shorts--dark, 
+//     // Legs
+//     -1em 7em 0 $shorts--light,
+//     0em 7em 0 $shorts--dark,
+//     4em 7em 0 $shorts--dark, 
+//     // Legs
+//     -1em 8em 0 $shorts--light,
+//     4em 8em 0 $shorts--dark, 
     
-    -1em 9em 0 $skin--dark,
-    4em 9em 0 $skin--dark, 
-    // Legs
-    -1em 10em 0 $skin--dark,
-    4em 10em 0 $skin--dark, 
-    // Legs   
-    -1em 11em 0 $skin--dark,
-    4em 11em 0 $skin--dark, 
-    // Legs
-    -1em 12em 0 $skin--dark,
-    4em 12em 0 $skin--dark, 
-    // Legs
-    -1em 13em 0 $skin--dark,
-    4em 13em 0 $skin--dark, 
-    // Legs
-    -2em 14em 0 $skin--light,
-    -1em 14em 0 $skin--dark,
-    4em 14em 0 $skin--dark, 
-    // Legs
-    -2em 15em 0 $skin--light,
-    -1em 15em 0 $skin--dark,
-    4em 15em 0 $skin--dark, 
-    // Shoes begin
-    -2em 16em 0 $skin--dark,
-    -1em 16em 0 $shoes--dark,
-    4em 16em 0 $skin--dark, 
-    // Shoes
+//     -1em 9em 0 $skin--dark,
+//     4em 9em 0 $skin--dark, 
+//     // Legs
+//     -1em 10em 0 $skin--dark,
+//     4em 10em 0 $skin--dark, 
+//     // Legs   
+//     -1em 11em 0 $skin--dark,
+//     4em 11em 0 $skin--dark, 
+//     // Legs
+//     -1em 12em 0 $skin--dark,
+//     4em 12em 0 $skin--dark, 
+//     // Legs
+//     -1em 13em 0 $skin--dark,
+//     4em 13em 0 $skin--dark, 
+//     // Legs
+//     -2em 14em 0 $skin--light,
+//     -1em 14em 0 $skin--dark,
+//     4em 14em 0 $skin--dark, 
+//     // Legs
+//     -2em 15em 0 $skin--light,
+//     -1em 15em 0 $skin--dark,
+//     4em 15em 0 $skin--dark, 
+//     // Shoes begin
+//     -2em 16em 0 $skin--dark,
+//     -1em 16em 0 $shoes--dark,
+//     4em 16em 0 $skin--dark, 
+//     // Shoes
 
-    3em 17em 0 $shoes--dark, 
-    4em 17em 0 $shoes--dark, 
-    5em 17em 0 $shoes--dark;
+//     3em 17em 0 $shoes--dark, 
+//     4em 17em 0 $shoes--dark, 
+//     5em 17em 0 $shoes--dark;
   
-    &:after { // head
-      -webkit-animation: turn-head 5s steps(1) alternate infinite;
-      content: "";
-      height: 1em;
-      left: 0em;
-      position: absolute;
-      top: 0em;
-      width: 1em;
-      z-index: 1;
-      box-shadow: 
-            //neck 
-    1em -11em 0 $skin--dark,
-    2em -11em 0 $skin--dark,
-    3em -11em 0 $skin--dark,
-    //head 
-    1em -12em 0 $hair--dark,
-    2em -12em 0 $skin--dark,
-    3em -12em 0 $skin--dark,
-    //head 
-    1em -13em 0 $hair--dark,
-    2em -13em 0 $hair--dark,
-    3em -13em 0 $skin--dark,
-    //head 
-    1em -14em 0 $hair--light,
-    2em -14em 0 $hair--dark,
-    3em -14em 0 $hair--dark,
-    //head 
-    2em -15em 0 $hair--light, 
-    3em -15em 0 $hair--light,
-    }
-    &:before { //foot
-      -webkit-animation: foot-tapping-notes .5s steps(1) alternate infinite;
-      content: "";
-      height: 1em;
-      left: 0em;
-      position: absolute;
-      top: 0em;
-      width: 1em;
-      z-index: 1;
-      box-shadow: 
-        -3em 17em 0 $shoes--dark,
-        -2em 17em 0 $shoes--dark,
-        -1em 17em 0 $shoes--dark,
-    }
-}
-@-webkit-keyframes turn-head {
-  //head to the right
-  0% {
-    box-shadow:
-    1em -11em 0 $skin--dark,
-    2em -11em 0 $skin--dark,
-    3em -11em 0 $skin--dark,
-    //head 
-    1em -12em 0 $hair--dark,
-    2em -12em 0 $skin--dark,
-    3em -12em 0 $skin--dark,
-    //head 
-    1em -13em 0 $hair--dark,
-    2em -13em 0 $hair--dark,
-    3em -13em 0 $skin--dark,
-    //head 
-    1em -14em 0 $hair--light,
-    2em -14em 0 $hair--dark,
-    3em -14em 0 $hair--dark,
-    //head 
-    2em -15em 0 $hair--light, 
-    3em -15em 0 $hair--light,
-      ;
-  }
-  //head forward
-  50% {
-    box-shadow:
-    1em -11em 0 $skin--dark,
-    2em -11em 0 $skin--dark,
-    3em -11em 0 $skin--dark,
+//     &:after { // head
+//       -webkit-animation: turn-head 5s steps(1) alternate infinite;
+//       content: "";
+//       height: 1em;
+//       left: 0em;
+//       position: absolute;
+//       top: 0em;
+//       width: 1em;
+//       z-index: 1;
+//       box-shadow: 
+//             //neck 
+//     1em -11em 0 $skin--dark,
+//     2em -11em 0 $skin--dark,
+//     3em -11em 0 $skin--dark,
+//     //head 
+//     1em -12em 0 $hair--dark,
+//     2em -12em 0 $skin--dark,
+//     3em -12em 0 $skin--dark,
+//     //head 
+//     1em -13em 0 $hair--dark,
+//     2em -13em 0 $hair--dark,
+//     3em -13em 0 $skin--dark,
+//     //head 
+//     1em -14em 0 $hair--light,
+//     2em -14em 0 $hair--dark,
+//     3em -14em 0 $hair--dark,
+//     //head 
+//     2em -15em 0 $hair--light, 
+//     3em -15em 0 $hair--light,
+//     }
+//     &:before { //foot
+//       -webkit-animation: foot-tapping-notes .5s steps(1) alternate infinite;
+//       content: "";
+//       height: 1em;
+//       left: 0em;
+//       position: absolute;
+//       top: 0em;
+//       width: 1em;
+//       z-index: 1;
+//       box-shadow: 
+//         -3em 17em 0 $shoes--dark,
+//         -2em 17em 0 $shoes--dark,
+//         -1em 17em 0 $shoes--dark,
+//     }
+// }
+// @-webkit-keyframes turn-head {
+//   //head to the right
+//   0% {
+//     box-shadow:
+//     1em -11em 0 $skin--dark,
+//     2em -11em 0 $skin--dark,
+//     3em -11em 0 $skin--dark,
+//     //head 
+//     1em -12em 0 $hair--dark,
+//     2em -12em 0 $skin--dark,
+//     3em -12em 0 $skin--dark,
+//     //head 
+//     1em -13em 0 $hair--dark,
+//     2em -13em 0 $hair--dark,
+//     3em -13em 0 $skin--dark,
+//     //head 
+//     1em -14em 0 $hair--light,
+//     2em -14em 0 $hair--dark,
+//     3em -14em 0 $hair--dark,
+//     //head 
+//     2em -15em 0 $hair--light, 
+//     3em -15em 0 $hair--light,
+//       ;
+//   }
+//   //head forward
+//   50% {
+//     box-shadow:
+//     1em -11em 0 $skin--dark,
+//     2em -11em 0 $skin--dark,
+//     3em -11em 0 $skin--dark,
 
-    //face 
-    1em -12em 0 $skin--dark,
-    2em -12em 0 darken($skin--light,20),
-    3em -12em 0 $skin--dark,
+//     //face 
+//     1em -12em 0 $skin--dark,
+//     2em -12em 0 darken($skin--light,20),
+//     3em -12em 0 $skin--dark,
       
-    //head 
-    1em -13em 0 $skin--dark,
-    2em -13em 0 darken($skin--light,25),
-    3em -13em 0 $skin--dark,
-    //head 
-    1em -14em 0 $hair--dark,
-    2em -14em 0 $hair--dark,
-    3em -14em 0 $hair--dark,
-    //head 
-    1em -15em 0 $hair--dark,
-    2em -15em 0 $hair--dark, 
-    3em -15em 0 $hair--dark,  
-      ;
-  }
-  //head to the left
-  55% {
-    box-shadow:
-    3em -11em 0 $skin--dark,
-    2em -11em 0 $skin--dark,
-    1em -11em 0 $skin--dark,
+//     //head 
+//     1em -13em 0 $skin--dark,
+//     2em -13em 0 darken($skin--light,25),
+//     3em -13em 0 $skin--dark,
+//     //head 
+//     1em -14em 0 $hair--dark,
+//     2em -14em 0 $hair--dark,
+//     3em -14em 0 $hair--dark,
+//     //head 
+//     1em -15em 0 $hair--dark,
+//     2em -15em 0 $hair--dark, 
+//     3em -15em 0 $hair--dark,  
+//       ;
+//   }
+//   //head to the left
+//   55% {
+//     box-shadow:
+//     3em -11em 0 $skin--dark,
+//     2em -11em 0 $skin--dark,
+//     1em -11em 0 $skin--dark,
 
-    //head 
-    3em -12em 0 $hair--dark,
-    2em -12em 0 $skin--dark,
-    1em -12em 0 $skin--dark,
-    //head 
-    3em -13em 0 $hair--dark,
-    2em -13em 0 $hair--dark,
-    1em -13em 0 $skin--dark,
-    //head 
-    3em -14em 0 $hair--light,
-    2em -14em 0 $hair--dark,
-    1em -14em 0 $hair--dark,
-    //head 
-    2em -15em 0 $hair--light, 
-    1em -15em 0 $hair--light, 
-      ;
-  }
-}
-$notes--dark: rgba(0,0,0,.4);
+//     //head 
+//     3em -12em 0 $hair--dark,
+//     2em -12em 0 $skin--dark,
+//     1em -12em 0 $skin--dark,
+//     //head 
+//     3em -13em 0 $hair--dark,
+//     2em -13em 0 $hair--dark,
+//     1em -13em 0 $skin--dark,
+//     //head 
+//     3em -14em 0 $hair--light,
+//     2em -14em 0 $hair--dark,
+//     1em -14em 0 $hair--dark,
+//     //head 
+//     2em -15em 0 $hair--light, 
+//     1em -15em 0 $hair--light, 
+//       ;
+//   }
+// }
+// $notes--dark: rgba(0,0,0,.4);
   
-@-webkit-keyframes  foot-tapping-notes {
-  //head to the right
-  0% {
-    box-shadow:
-      //foot
-        -3em 17em 0 $shoes--dark,
-        -2em 17em 0 $shoes--dark,
-        -1em 17em 0 $shoes--dark,
-      //notes
+// @-webkit-keyframes  foot-tapping-notes {
+//   //head to the right
+//   0% {
+//     box-shadow:
+//       //foot
+//         -3em 17em 0 $shoes--dark,
+//         -2em 17em 0 $shoes--dark,
+//         -1em 17em 0 $shoes--dark,
+//       //notes
       
-        //hor bottom bar
-         9em -9em 0 $notes--dark,
-        10em -9em 0 $notes--dark,
-        10em -10em 0 $notes--dark,
+//         //hor bottom bar
+//          9em -9em 0 $notes--dark,
+//         10em -9em 0 $notes--dark,
+//         10em -10em 0 $notes--dark,
       
-        //hor top bar
-        10em -11em 0 $notes--dark,
-        11em -11em 0 $notes--dark,
-      ;
-  } 
-  50% { 
-    box-shadow:
-        //-3em 16em 0 $shoes--dark,
-        -2em 16em 0 $shoes--dark,
-        -1em 17em 0 $shoes--dark,
-      //notes
+//         //hor top bar
+//         10em -11em 0 $notes--dark,
+//         11em -11em 0 $notes--dark,
+//       ;
+//   } 
+//   50% { 
+//     box-shadow:
+//         //-3em 16em 0 $shoes--dark,
+//         -2em 16em 0 $shoes--dark,
+//         -1em 17em 0 $shoes--dark,
+//       //notes
       
-        //hor bottom bar
-        7em -10em 0 $notes--dark,
-        8em -11em 0 $notes--dark,
-        8em -13em 0 $notes--dark,
-        7em -12em 0 $notes--dark,
+//         //hor bottom bar
+//         7em -10em 0 $notes--dark,
+//         8em -11em 0 $notes--dark,
+//         8em -13em 0 $notes--dark,
+//         7em -12em 0 $notes--dark,
       
-      ;
-  }
-}
+//       ;
+//   }
+// }
 
 
 

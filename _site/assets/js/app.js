@@ -59,17 +59,18 @@ $("a").filter(function() {
 	var menuTrigger 	= $(".mobile-button--open");
 		menu 			= $("header");
 
-	menu.hide();
+	//menu.hide();
+
 
 		menuTrigger.on("click", function(e) {
 			e.preventDefault();
 
 			if(menu.hasClass("hidden")) {
-				menu.removeClass("hidden");
+				//menu.removeClass("hidden");
 				menu.fadeIn(500);
 			}
 			else {
-				menu.addClass("hidden");
+				//menu.addClass("hidden");
 				menu.fadeOut(500);
 			}
 
