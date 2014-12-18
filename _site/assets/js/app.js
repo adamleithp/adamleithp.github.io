@@ -66,11 +66,11 @@ $("a").filter(function() {
 			e.preventDefault();
 
 			if(menu.hasClass("hidden")) {
-				//menu.removeClass("hidden");
+				menu.removeClass("hidden");
 				menu.fadeIn(500);
 			}
 			else {
-				//menu.addClass("hidden");
+				menu.addClass("hidden");
 				menu.fadeOut(500);
 			}
 
