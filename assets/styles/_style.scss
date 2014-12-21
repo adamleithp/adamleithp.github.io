@@ -590,7 +590,9 @@ $tablet-large-up: '#{$screen} and (min-width: #{rem-calc(1400)})';
 //$tablet-small: '#{$screen} and (min-width: 10.063em) and (max-width: 30.063em)';
 
 
+.wrapper {
 
+}
 .content
 {
     opacity: 1;
@@ -598,17 +600,22 @@ $tablet-large-up: '#{$screen} and (min-width: #{rem-calc(1400)})';
     @extend .hardware;
     @include vendor(transition,all .2s ease-out);
 
-    max-width: 30rem; 
     
+    
+    @media #{$medium-up}
+    {
+        border-right: 1px solid #cacaca;
+        max-width: 75%; 
 
+    }  
     @media #{$large-up}
     {
-        max-width: 45rem; 
+        max-width: 70%; 
     }  
-
     @media #{$tablet-medium-up}
     {
         max-width: 800px; 
+
     }  
     @media #{$tablet-large-up}
     {
@@ -681,12 +688,13 @@ $stage-push: 4em;
     @media #{$medium-up}
     {
         margin-top: 4.5rem;
-        padding: 9rem 1rem;
+        padding: 9.5rem 1rem;
 
         background-position: center center;
         background-size: cover;
 
         @include theme-style;
+        border-radius: 15px 0 0px 15px;
         //box-shadow: inset 0px -93px 70px -30px #FFF;
     }
 }
