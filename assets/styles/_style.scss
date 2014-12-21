@@ -882,6 +882,9 @@ $stage-push: 4em;
     h1,h2,h3,h4,h5,h6 {
         margin-bottom: 1rem;
     }
+    h3 {
+        margin: 2rem 0 2.1rem;
+    }
     @media #{$very-small-down}{
         padding-left: 2rem;
         padding-right: 2rem;
