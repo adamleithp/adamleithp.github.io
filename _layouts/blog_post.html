@@ -25,9 +25,15 @@ imageUrl: /assets/images/
 		<div class="post__content columns small-12 large-8 small-centered">
 			<div class="special-centered-for-small">
 				{{ content }}
+				<hr>
+				<div class="comments">
+					{% include disqus.html %}
+				</div>
 			</div>
+
 		</div>
 		<hr>
+		
 		<div class="m-t-s-1">
 			<div class="left">
 				<p>
