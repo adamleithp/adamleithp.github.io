@@ -2,7 +2,14 @@
 layout: blog_page
 title: Talking
 ---
+<div class="content__wrap special-centered-for-small">
 
+    <div>
+        <div class="content__title">
+            <h1>Blog</h1>
+            <h5>Attempting to write.</h5>                
+        </div>
+    </div>
 {% for post in paginator.posts %}
     <li>
         <div class="blog__item">
@@ -45,3 +52,4 @@ title: Talking
     </p>
 </div>
 {% endif %}
+</div>

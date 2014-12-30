@@ -611,7 +611,7 @@ $tablet-large-up: '#{$screen} and (min-width: #{rem-calc(1400)})';
     
     @media #{$medium-up}
     {
-        border-right: 1px solid #cacaca;
+        border-right: 1px solid $color--light;
         max-width: 75%; 
 
     }  
@@ -639,7 +639,19 @@ $tablet-large-up: '#{$screen} and (min-width: #{rem-calc(1400)})';
 .content__title
 {
     margin: 1.5rem 0 5rem;
-    padding-right: 4rem;
+    padding:0 4rem 1.6rem 0;
+    border-bottom: 1px solid $color--light;
+
+    @media #{$medium-up} {
+        // h1 {
+        //     font-size: 3.85rem;
+
+        // }
+        // h5 {
+        //     margin-top: -1rem;
+        // }
+    }
+
 }
 @media #{$medium-up}
 {
@@ -664,7 +676,7 @@ $tablet-large-up: '#{$screen} and (min-width: #{rem-calc(1400)})';
     .content__title
     {
         margin: 4.5rem 0 0;
-        padding-right: 0;
+        padding: 0.3rem 0 2.6rem 1.25rem;
     }
 }
 
@@ -706,7 +718,7 @@ $stage-push: 4em;
         background-size: cover;
 
         @include theme-style;
-        border-radius: 15px 0 0px 15px;
+        border-radius: 5px 0 0px 5px;
         //box-shadow: inset 0px -93px 70px -30px #FFF;
     }
 }
@@ -780,10 +792,6 @@ $stage-push: 4em;
 
 .list--blog
 {
-    @media #{$medium-up}
-    {
-        margin-top: $stage-push - 1;
-    }
     li
     {
         position: relative;
@@ -794,15 +802,18 @@ $stage-push: 4em;
         margin: 0rem 0 1rem;
 
         color: $primary-color;
+
+        padding: 1rem 1rem 0 1rem;
+
+        &:hover
+        {
+            background: #fafafa;
+        }
         @media #{$medium-up}
         {
-            margin-left: -1rem;
             padding: 1.25rem 1.25rem 0;
-            &:hover
-            {
-                background: #fafafa;
-            }
         }
+
     }
 }
 .blog__item
@@ -834,6 +845,7 @@ $stage-push: 4em;
 }
 .item__info
 {
+    display: none;
     font-weight: 300;
     font-style: italic;
 
@@ -845,6 +857,10 @@ $stage-push: 4em;
     text-decoration: none !important;
 
     color: $color--medium;
+
+    @media #{$medium-up} {
+        display: block;
+    }
 }
 .pagination
 {
@@ -862,6 +878,13 @@ $stage-push: 4em;
     }
     h4 {
         margin-top: 1rem;
+    }
+}
+.content__wrap {
+    padding: 1rem;
+
+    @media #{$medium-up} {
+        padding: 0;
     }
 }
 .post__content
@@ -957,6 +980,8 @@ $stage-push: 4em;
     @media #{$medium-up}
     {
         margin-top: $stage-push - 1;
+        padding: 0 0 0 1.25rem;
+
     }
 }
 .work__item
