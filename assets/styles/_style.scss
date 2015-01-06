@@ -164,7 +164,7 @@ $row-width--large: rem-calc(1100);
 
 
 // Text Colors
-$color--light: #cacaca;
+$color--light: #DDDDDD;
 $color--medium: darken($color--light,5);
 
 .text--grey
@@ -360,6 +360,7 @@ header
     @media #{$medium-up}
     {
         //left: 0;
+        background: none;
         position: relative;
         float: left;
 
@@ -535,8 +536,6 @@ footer
 
     width: 100%;
 
-    background: #fff;
-
     @extend .clearfix;
     @media #{$medium-up}
     {
@@ -611,7 +610,7 @@ $tablet-large-up: '#{$screen} and (min-width: #{rem-calc(1400)})';
     
     @media #{$medium-up}
     {
-        border-right: 1px solid $color--light;
+        //border-right: 1px solid $color--light;
         max-width: 75%; 
 
     }  
@@ -890,7 +889,7 @@ $stage-push: 4em;
 .post__content
 {
     margin-top: 2rem;
-    padding: 3em 3em $stage-push;
+    padding: 2rem 1.5rem 1.5rem;
 
     border-radius: $border-radius $border-radius 0 0;
     background: #fff;
@@ -979,8 +978,11 @@ $stage-push: 4em;
 {
     @media #{$medium-up}
     {
-        margin-top: $stage-push - 1;
-        padding: 0 0 0 1.25rem;
+        padding: 3em 1.25rem 0;
+        border-left: 1px solid $color--light;
+        border-right: 1px solid $color--light;
+        border-bottom: 1px solid $color--light;
+        background: #fff;
 
     }
 }
