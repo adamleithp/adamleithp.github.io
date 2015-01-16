@@ -1,0 +1,267 @@
+// Variables
+
+$img: '../images/';
+//background: url("#{$img}logo.png");
+
+// Colors
+$overlay-bg-color: #fff;
+
+
+
+
+// Utility Classes
+/////////////////////////////////////////
+
+.inline {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
+}
+.hardware {
+    @include vendor(transform, translate3d(0,0,0));
+}
+.cf {
+    zoom: 1;
+    &:before,
+    &:after {
+        display: block;
+        overflow: hidden;
+
+        height: 0;
+
+        content: '\0020';
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Typography
+/////////////////////////////////////////
+
+// Font Styles
+.text--serif {
+    font-family: Georgia, serif !important;
+}
+.text--italic {
+    font-style: italic;
+}
+.text--uppercase {
+    text-transform: uppercase;
+}
+.text--lowercase {
+    text-transform: lowercase !important;
+}
+.text--underline {
+    text-decoration: underline;
+}
+.text--reset {
+    text-decoration: none;
+}
+.text--no-break {
+    white-space: nowrap;
+}
+.text--link {
+    text-decoration: underline;
+}
+a {
+    text-decoration: underline;
+}
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+body,
+.button {
+    font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+}
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+    font-weight: 700;
+    font-style: normal;
+}
+p {
+    color: #595d5f;
+    @media #{$medium-up} {
+        font-size: 1.1rem;
+    }
+    a {
+        text-decoration: underline;
+    }
+}
+
+
+// Lists
+/////////////////////////////////////////
+ul {
+    margin: 0;
+
+    list-style: none;
+}
+
+
+// Grid
+/////////////////////////////////////////
+.special-centered-for-small {
+    @media #{$small-only} {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+// Body
+/////////////////////////////////////////
+body,
+html {
+    height: 100%;
+}
+body {
+    overflow-x: hidden;
+
+    background: #fff;
+}
+// Header
+/////////////////////////////////////////
+
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+
+    overflow-y: scroll;
+
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    background: #fff;
+    ul {
+        @media #{$medium-up}
+        {
+            display: inline-block;
+
+            width: 100%;
+        }
+    }
+    @media #{$medium-up} {
+        display: block !important;
+
+        background: none;
+        position: relative;
+        float: left;
+
+        overflow: visible;
+
+        height: 100%;
+        width: 5rem;
+    }
+}
+.mobile-button {
+    font-size: 4rem;
+    line-height: 3rem;
+    text-decoration: none;
+
+    position: fixed;
+    z-index: 10;
+    top: 1rem;
+    right: 1rem;
+
+    display: none;
+
+    padding: 0rem 1rem;
+
+    text-shadow: 1px 1px 1px #fff, 2px 2px 1px rgba(255,255,255,0.4);
+
+    &.active {
+        display: block;
+    }
+    @media #{$medium-up} {
+        right: inherit;
+        left: 1rem;
+
+        display: none;
+
+        padding: 0rem .6rem;
+
+
+            &.active
+            {
+                display: none;
+            }
+    }
+    &:hover {
+        text-decoration: none;
+    }
+
+}
+
+
+// Overlays
+/////////////////////////////////////////
+.overlay {
+    position: fixed;
+    z-index: 400;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    background: $overlay-bg-color;
+}
+.overlay--loading {
+    display: block;
+
+    @extend .overlay;
+}
+
+
+
+
+// Content
+/////////////////////////////////////////
+
+$tablet-medium-up: '#{$screen} and (min-width: #{rem-calc(1100)})';
+$tablet-large-up: '#{$screen} and (min-width: #{rem-calc(1400)})';
+
+.content {
+    opacity: 1;
+
+    @extend .hardware;
+    @include vendor(transition,all .2s ease-out);
+
+    
+    
+    @media #{$medium-up} {
+        max-width: 75%; 
+    }  
+    @media #{$large-up} {
+        max-width: 70%; 
+    }  
+    @media #{$tablet-medium-up} {
+        max-width: 800px; 
+
+    }  
+    @media #{$tablet-large-up} {
+        max-width: 900px; 
+    }
+           
+}
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+---
+layout: default
+locationLink: https://www.google.ca/maps/preview#!q=
+imageUrl: /assets/images/
+---
+	
+
+<!-- Blog post page -->
+<!-- Your post content -->
+
+	<div class="post">
+		<div class="row">
+			<div class="special-centered-for-small">
+				<div class="columns small-12">
+
+					<h1>{{page.title}}</h1>
+					<h2>{{page.sub}}</h2>
+
+					<hr>
+
+
+					<!-- Blog Post -->
+					
+					{{ content }}
+
+					<!-- Blog Post Pagination (prev, next) -->
+					<div class="pagination--post">
+						<h5>Pagination</h5>
+
+						{% if page.previous.url %}
+							<a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+						{% endif %}
+
+						{% if page.next.url %}
+							<a href="{{page.next.url}}" title="next Post: {{page.next.title}}">{{page.next.title}} &raquo; </a>
+						{% endif %}
+
+					</div>
+					<hr>
+					<!-- Blog Post Comments -->
+					<div class="comments">
+						{% include disqus.html %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
