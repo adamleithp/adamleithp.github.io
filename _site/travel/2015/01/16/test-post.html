@@ -13,8 +13,8 @@
 	<link rel="author" href="humans.txt">
 	<meta name="keywords" content="<!-- Put keywords here -->" />
 	<meta name="description" content="<!-- Put description here -->">
-	<meta property="og:image" content="/assets/images/ukraine-banner.jpg "/>
-	<meta property="og:image:secure_url" content="/assets/images/ukraine-banner.jpg " />
+	<meta property="og:image" content="/assets/images/post.jpg "/>
+	<meta property="og:image:secure_url" content="/assets/images/post.jpg " />
 
 
 <!-- Jekyll 404 response -->
@@ -50,21 +50,33 @@
 <body>
 
 	<!-- Mobile Button -->
-	<a href="#" class="mobile-button mobile-button--open active">&#x2261;</a>
+
+	<!-- <a href="#" class="mobile-button mobile-button--open active">&#x2261;</a> -->
+
+	<a href="#" class="mobile-button mobile-button--open active">
+		<span class="burger burger--1"></span>
+		<span class="burger burger--2"></span>
+		<span class="burger burger--3"></span>
+	</a>
 
 
     <!-- Everything else -->
 	<div class="wrapper clearfix">
 		
 	
-
 		<header class="clearfix hidden">
-			<div class="small-12 columns">
-	            <ul class="header__list">
-	                <li><a href="/index.html" class="">Home</a></li>
-	                <li><a href="/blog/index.html" class="">Blog</a></li>
-	            </ul>
+			<div class="header__list">
+				<div class="row">
+					<div class="ssmall-12 columns">
+						<ul class="special-centered-for-small">
+			                <li><a href="/index.html" class="">Home</a></li>
+			                <li><a href="/blog/index.html" class="">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+					
 			</div>
+			
 		</header>
 
 
@@ -78,9 +90,9 @@
 		<div class="row">
 			<div class="special-centered-for-small">
 				<div class="columns small-12">
-
+					<img src="/assets/images/post.jpg" alt=""/>
 					<h1>Blog Post Title (1st)</h1>
-					<h2></h2>
+					<h2>Subtitle!</h2>
 
 					<hr>
 
@@ -129,6 +141,7 @@
 
 	</div>
 
+	<div class="overlay overlay--menu"></div>
 	<div class="overlay overlay--loading"></div>
 
 

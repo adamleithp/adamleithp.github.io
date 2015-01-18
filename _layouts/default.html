@@ -52,21 +52,33 @@
 <body>
 
 	<!-- Mobile Button -->
-	<a href="#" class="mobile-button mobile-button--open active">&#x2261;</a>
+
+	<!-- <a href="#" class="mobile-button mobile-button--open active">&#x2261;</a> -->
+
+	<a href="#" class="mobile-button mobile-button--open active">
+		<span class="burger burger--1"></span>
+		<span class="burger burger--2"></span>
+		<span class="burger burger--3"></span>
+	</a>
 
 
     <!-- Everything else -->
 	<div class="wrapper clearfix">
 		
 	
-
 		<header class="clearfix hidden">
-			<div class="small-12 columns">
-	            <ul class="header__list">
-	                <li><a href="/index.html" class="">Home</a></li>
-	                <li><a href="/blog/index.html" class="">Blog</a></li>
-	            </ul>
+			<div class="header__list">
+				<div class="row">
+					<div class="ssmall-12 columns">
+						<ul class="special-centered-for-small">
+			                <li><a href="/index.html" class="">Home</a></li>
+			                <li><a href="/blog/index.html" class="">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+					
 			</div>
+			
 		</header>
 
 
@@ -81,6 +93,7 @@
 
 	</div>
 
+	<div class="overlay overlay--menu"></div>
 	<div class="overlay overlay--loading"></div>
 
 

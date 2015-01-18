@@ -67,6 +67,12 @@ $overlay-bg-color: #fff;
 }
 a {
     text-decoration: underline;
+    outline: 0;
+
+    &:focus {
+        outline:thin dotted #ccc;
+    }
+
 }
 h6,
 h5,
@@ -136,23 +142,17 @@ body {
 header {
     position: fixed;
     z-index: 1;
-    top: 0;
+    bottom: 0;
 
     overflow-y: scroll;
 
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: none;
 
     background: #fff;
-    ul {
-        @media #{$medium-up}
-        {
-            display: inline-block;
+    border-top: 1px solid #cacaca;
 
-            width: 100%;
-        }
-    }
     @media #{$medium-up} {
         display: block !important;
 
@@ -164,47 +164,93 @@ header {
 
         height: 100%;
         width: 5rem;
+
+        border:none;
     }
 }
+    .header__list {
+        width: 100%;
+        left: 0;
+        padding: 2rem 0;
+        height: 100%;
+        position: absolute;
+        overflow-y: scroll;
+
+        @media #{$medium-up}
+        {
+            display: inline-block;
+            position: relative;
+            height: auto;
+            padding: 0;
+        }
+        a {
+            display: block;
+        }
+    }
+
 .mobile-button {
-    font-size: 4rem;
+    padding: 1rem;
+    font-size: 1.5rem;
     line-height: 3rem;
     text-decoration: none;
-
     position: fixed;
     z-index: 10;
-    top: 1rem;
-    right: 1rem;
-
+    top: 50%;
+    right: 0;
     display: none;
+    height: 3em;
+    width: 3em;
 
-    padding: 0rem 1rem;
+    @include vendor(transition,all .2s .2s ease-out);
 
-    text-shadow: 1px 1px 1px #fff, 2px 2px 1px rgba(255,255,255,0.4);
-
-    &.active {
-        display: block;
-    }
     @media #{$medium-up} {
         right: inherit;
         left: 1rem;
 
-        display: none;
+        display: none !important;
 
         padding: 0rem .6rem;
 
-
-            &.active
-            {
-                display: none;
-            }
+        &.active
+        {
+            display: none;
+        }
     }
     &:hover {
         text-decoration: none;
+
+        .burger {
+            background: #555;
+        }
     }
-
+    &.active {
+        display: block;
+    }
+    &.open {
+        .burger--1 {
+            @include vendor(transform,rotate(45deg) translateX(0.4em) translateY(0.4em));
+        }
+        .burger--2 {opacity: 0;}
+        .burger--3 {
+            @include vendor(transform,rotate(-45deg) translateX(0.3em) translateY(-0.3em));
+        }
+    }
 }
+    .burger {
+        @include vendor(transition,all .2s .2s ease-out);
+        transform-origin: center;
+        width: 100%;
+        height: 0.3em;
+        margin-top: 0.2em;
+        background: #000;
+        display: block;
+        border-bottom: 1px solid #fff;
+        @extend .hardware;
 
+        &:first-child {
+            margin-top: 0;
+        }
+    }
 
 // Overlays
 /////////////////////////////////////////
@@ -219,13 +265,21 @@ header {
     display: none;
 
     background: $overlay-bg-color;
+    @extend .hardware;
 }
 .overlay--loading {
     display: block;
 
     @extend .overlay;
 }
+.overlay--menu {
+    background: rgba(0,0,0,.4);
+    z-index: 0;
 
+     @media #{$medium-up} {
+        display: none !important;
+     }
+}
 
 
 
