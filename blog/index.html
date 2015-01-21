@@ -10,19 +10,23 @@ title: Talking
             <h5>Attempting to write.</h5>                
         </div>
     </div>
+<ul class="list--blog">
+
 {% for post in paginator.posts %}
     <li>
         <div class="blog__item">
             <a href="{{ post.url }}">
-                <h4 class="title">{{ post.title }} <small class="blog__item__location text--grey">in {{post.city}}, {{post.country}}</small></h4>
+                <h3 class="title">{{ post.title }} <small class="blog__item__location text--grey"><span>in</span> {{post.city}}, {{post.country}}</small></h3>
             </a>
 
             <p class="item__info">{{ post.date | date_to_string }}</p>
             <p>{{ post.excerpt | strip_html | truncatewords:20}}</p>
             <hr class="show-for-small">
         </div>
-   </li>
+    </li>
 {% endfor %}
+</ul>
+
 
 {% if paginator.total_pages > 1 %}
 <hr>
