@@ -1,0 +1,20 @@
+---
+layout: quotes_page
+title: quotes
+category: quotes
+---
+
+{% for post in site.posts %}
+  {% if post.categories contains 'quotes' %}
+    <div class="post">
+        <h3 class="title">{{ post.title }}</h3>
+        <div class="entry">
+            {{ post.content }}
+        </div>
+    </div>
+  {% endif %}
+{% endfor %}
+
+
+
+

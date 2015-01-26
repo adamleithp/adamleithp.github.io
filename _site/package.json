@@ -1,0 +1,34 @@
+{
+  "name": "adamleithp",
+  "version": "0.0.1",
+  "description": "Blank Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adamleithp/Blank-Template.git"
+  },
+  "author": "Adamleithp",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/adamleithp/Blank-Template/issues"
+  },
+  "homepage": "https://github.com/adamleithp/Blank-Template",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-uglify": "~0.3.3",
+    "grunt-contrib-qunit": "~0.4.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-jekyll": "~0.4.1"
+  },
+  "keywords": [
+    "blog",
+    "development",
+    "travel"
+  ]
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title> Talking  - AdamleithP</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive site -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- chrome frame -->
+	<link rel="author" href="humans.txt">
+	<meta name="keywords" content="Web development, websites, design, designer, montreal" />
+	<meta name="description" content="Creative Web Developer and Designer. I like to travel, adventure, build &amp; blog. Always learning.">
+
+	<meta property="og:image" content=" "/>
+	<meta property="og:image:secure_url" content=" " />
+
+	<link rel="stylesheet" href="/assets/styles/app.css">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+
+	
+	    <meta http-equiv="refresh" content="5; url=/">
+	
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+
+	<link rel="shortcut icon" href="/assets/ico/favicon.png">
+
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js'></script>
+	<script src='/assets/js/modernizr.js'></script>
+</head>
+<body>
+
+
+	<a href="#" class="mobile-button mobile-button--open active">&#x2261;</a>
+
+	<div class="wrapper clearfix">
+		
+	
+		<header class="clearfix hidden">
+			<div class="header__list small-6 small-centered medium-12 columns">
+				<!-- <ul class="m-b-m-2">
+	                <li><a href="/index.html" class=" small-12 logo text--cursive"><div class="icon-logo"></div></a></li>
+
+
+	            </ul> -->
+	            <ul>
+	                <li><a href="/index.html" class="nav__link stage__text">Home</a></li>
+	                <li><a href="/blog/index.html" class="nav__link stage__text">Blog</a></li>
+	                <li><a href="/web.html" class="nav__link stage__text">Web</a></li>
+	                <li><a href="/code.html" class="nav__link stage__text">Code</a></li>
+	                <li><a href="/design.html" class="nav__link stage__text">Design</a></li>
+	                <li><a href="mailto:adamleithp@me.com" target="_blank" class="nav__link stage__text link--external">Contact</a></li>
+	            </ul>
+	            <ul class="list--social">
+	            	<hr>
+	            	<li>
+	            		<a class="link--external nav__link link--linkedin" href="http://www.linkedin.com/pub/adam-pietrantonio/18/24b/73b">
+	            			<span>LinkedIn</span>
+		            	</a>
+		            </li>
+	            	<li>
+	            		<a class="link--external nav__link link--instagram" href="http://instagram.com/adamleithp">
+	            			<span>Instagram</span>
+		            	</a>
+		            </li>
+	            	<li>
+	            		<a class="link--external nav__link link--facebook" href="https://www.facebook.com/adam.lieth.pietrantonio">
+	            			<span>Facebook</span>
+		            	</a>
+		            </li>
+	            	<li>
+	            		<a class="link--external nav__link" href="https://github.com/adamleithp">
+	            			<span>Github</span>
+		            	</a>
+		            </li>
+	            </ul>
+			</div>
+		</header>
+		<div class="content row content--ani">
+			<div class="columns small-12 large-11 large-right padding-none">
+				<div>
+    <h1 class="content__title">Sorry this page does not exist =(</h1>
+    <p>Redirecting you back home in <span id="timer">5</span> seconds...</p>
+</div>
+
+
+
+			</div>
+			<footer>
+				<p class="copyright">This website's code is open source on <a class="button" href="https://github.com/adamleithp/adamleithp.github.io">Github</a></p>
+			</footer>
+		</div>
+	</div>
+
+	<script src='/assets/js/jquery.js'></script>
+	<script src='/assets/js/app.min.js'></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-26325877-1', 'adamleithp.com');
+	  ga('send', 'pageview');
+
+	</script>
+	<script>
+		// if 404 page, run this JS
+		
+			(function() {
+				var count=5;
+				var counter=setInterval(timer, 1000);
+				function timer() {
+					count=count-1;
+					if (count <= 0) {
+						clearInterval(counter);
+						return;
+					}
+					document.getElementById("timer").innerHTML=count;
+					if(document.getElementById("timer") != null){
+					    var idPost=document.getElementById("timer").innerHTML=count;
+					}
+				}
+			})();
+		
+	</script>
+</body>
+</html>
