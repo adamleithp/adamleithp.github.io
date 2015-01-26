@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     },
     uglify: {
       options: {
-        banner: '/*! Blank Template <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+        banner: '/*! Jekyll Template <%= grunt.template.today("dd-mm-yyyy") %> */\n'
       },
       dist: {
         files: {

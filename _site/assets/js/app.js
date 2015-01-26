@@ -1,96 +1,84 @@
 
 
-// Unwrap Images
-$("p:has(img)").contents().unwrap();
+// Center About text vertically
+// Adding padding to top, and bottom of .about
+function centerAboutVertically(){
+	var $stage = $(".stage"),
+		$aboutHeight = $(".about").outerHeight(),
+		$stageHeight = $(".stage").outerHeight(),
+		screenHeight = $(window).height();
+
+		$stage.css({"padding-top": $(window).height()/2 - $aboutHeight/2} );
+		$stage.css({"padding-bottom": $(window).height()/2 - $aboutHeight/2} );
+}
+centerAboutVertically();
+
+
+
+//  Tab System
+(function() {
+	var button 	= $(".content__button");
+		content 	= $(".content"),
+		contentHeight = $(".content").outerHeight(),
+		contentTextHeight = $(".content__text").outerHeight() + 50,
+
+	button.on("click", function(e) {
+		e.preventDefault();
+
+		// HIDE MENU
+		if(content.hasClass("content__open")) {
+			content.removeClass("content__open");
+			button.removeClass("content__open")
+			content.css({"max-height": contentHeight});
+		}
+		// SHOW MENU
+		else {
+			content.addClass("content__open");
+			button.addClass("content__open");
+			content.css({"max-height": contentTextHeight});
+		}
+	})
+})();
 
 
 
 
 
-// // dropdown
-// (function() {
-// 	var dropdown_trigger = $(".trigger-dropdown"),
-// 		dropdown = $(".dropdown-menu");
-
-// 	if (dropdown.hasClass("dropdown-menu--active"));
-
-// 	dropdown_trigger.on("click", function(e) {
-// 		e.preventDefault()
-// 		dropdown.addClass("dropdown-menu--active");
-// 	});
 
 
-// })();
 
 
-// var $document = $(document),
-//     $element = $('.stage__img'),
-//     className = 'stage__img--blur',
-//     stageH = $(".stage").height();
+// Iframe resizing test
+// var isResizing = false,
+//     lastDownX = 0;
 
-//     $element.css({"opacity":"1"});
+// $(function () {
+//     var container = $('#grabber'),
+//         left = $('#grabber__left'),
+//         right = $('#grabber__right'),
+//         handle = $('#grabber__handle');
 
-// $document.scroll(function() {
-//   if ($document.scrollTop() >= stageH) {
-//     // user scrolled 50 pixels or more;
-//     // do stuff
-//     $element.addClass(className);
-//   } else {
-//     $element.removeClass(className);
-//   }
+//     handle.on('mousedown', function (e) {
+//         isResizing = true;
+//         lastDownX = e.clientX;
+//     });
+
+//     $(document).on('mousemove', function (e) {
+//         // we don't want to do anything if we aren't resizing.
+//         if (!isResizing) 
+//             return;
+        
+//         var offsetRight = container.width() - (e.clientX - container.offset().left);
+
+//         left.css('right', offsetRight);
+//         right.css('width', offsetRight);
+//     }).on('mouseup', function (e) {
+//         // stop resizing
+//         isResizing = false;
+//     });
 // });
-
-// Add current url links active class
-$("a").filter(function() {
-    return this.href === document.location.href;
-}).addClass("active");
-
-
-//Overlay FadeIn
-(function() {
-	var loading_overlay = $(".overlay--loading");
-		loading_overlay.fadeOut(500);
-})();
-
-
-
-//menu
-(function() {
-	var menuTrigger 	= $(".mobile-button--open");
-		menu 			= $("header");
-
-	//menu.hide();
-
-
-		menuTrigger.on("click", function(e) {
-			e.preventDefault();
-
-			if(menu.hasClass("hidden")) {
-				menu.removeClass("hidden");
-				menu.fadeIn(500);
-			}
-			else {
-				menu.addClass("hidden");
-				menu.fadeOut(500);
-			}
-
-		})
-})();
-
-
-
-
-//Content slide
-(function() {
-	var content = $(".content");
-
-	setTimeout(function(){
-		content.removeClass("content--ani");
-	}, 100);
-})();
-
-
-
+// $('#grabber__right').delay(5000).animate({width: '100%'}, 5000);
+// $('#grabber__right').delay(5000).animate({width: '20%'}, 5000);
 
 
 

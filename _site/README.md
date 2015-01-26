@@ -1,4 +1,0 @@
-adamleithp
-==========
-
-my jekyll website.

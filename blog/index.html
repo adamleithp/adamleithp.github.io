@@ -1,59 +1,71 @@
 ---
-layout: blog_page
-title: Talking
+layout: default
+title: Blog List
 ---
-<div class="content__wrap special-centered-for-small">
 
-    <div>
-        <div class="content__title">
-            <h1>Blog</h1>
-            <h5>Attempting to write.</h5>                
-        </div>
-    </div>
-<ul class="list--blog">
-
-{% for post in paginator.posts %}
-    <li>
-        <div class="blog__item">
-            <a href="{{ post.url }}">
-                <h3 class="title">{{ post.title }} <small class="blog__item__location text--grey"><span>in</span> {{post.city}}, {{post.country}}</small></h3>
-            </a>
-
-            <p class="item__info">{{ post.date | date_to_string }}</p>
-            <p>{{ post.excerpt | strip_html | truncatewords:20}}</p>
-            <hr class="show-for-small">
-        </div>
-    </li>
-{% endfor %}
-</ul>
+<!-- Blog list page -->
+<!-- All of your posts in a list -->
 
 
-{% if paginator.total_pages > 1 %}
-<hr>
-<div class="pagination">
-    <p>
-        {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pageination__link">&laquo; Prev</a>
-        {% else %}
-            <span class="pageination__link">&laquo; Prev</span>
-        {% endif %}
+<div class="special-centered-for-small">
 
-        {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-            <em class="pageination__link">{{ page }}</em>
-        {% elsif page == 1 %}
-            <a href="{{ '/blog/index.html' | prepend: site.baseurl | replace: '//', '/' }}" class="pageination__link">{{ page }}</a>
-        {% else %}
-            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="pageination__link">{{ page }}</a>
-        {% endif %}
+
+    <!-- Page Header -->
+    <h1>Blog Page</h1>
+    <hr>
+
+
+    <!-- Blog List -->
+    <ul>
+
+        {% for post in paginator.posts %}
+            <li>
+                <div>
+
+                    <a href="{{ post.url }}">
+                        <h3>{{ post.title }}</h3>
+                        
+                        <p>{{ post.date | date_to_string }}</p>
+                        <p>{{ post.excerpt | strip_html | truncatewords:20}}</p>
+                    </a>
+                    
+                </div>
+            </li>
+            <hr>
         {% endfor %}
 
-        {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pageination__link">Next &raquo;</a>
-        {% else %}
-            <span class="pageination__link">Next &raquo;</span>
-        {% endif %}
-    </p>
-</div>
-{% endif %}
+    </ul>
+
+    <!-- Page List Pagination -->
+
+    {% if paginator.total_pages > 1 %}
+        <h5>Pagination</h5>
+        <hr>
+        <div class="pagination--page">
+            <p>
+                {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+                {% else %}
+                    <span>&laquo; Prev</span>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                    {% if page == paginator.page %}
+                        <em>{{ page }}</em>
+                    {% elsif page == 1 %}
+                        <a href="{{ '/blog/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                    {% else %}
+                        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                    {% endif %}
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+                {% else %}
+                    <span>Next &raquo;</span>
+                {% endif %}
+            </p>
+        </div>
+    {% endif %}
+
 </div>
