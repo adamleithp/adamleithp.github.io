@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-blank template.sublime-project
-blank template.sublime-workspace
-.sass-cache/
-=======
 .sass-cache
 .sass-cache/*
 node_modules
 _site/node_modules
-
->>>>>>> 8d0d660c1966e8c932a6527fc0b3b58cb4bc107a
+photoshop
+photoshop/*
