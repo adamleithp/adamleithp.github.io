@@ -103,7 +103,7 @@ a {
     outline: 0;
 
     &:focus {
-        outline:thin dotted #fafafa;
+        outline:thin dotted #ccc;
     }
 
 }
@@ -119,9 +119,16 @@ ul {
 
 // Grid
 /////////////////////////////////////////
-.row--max {
+.row--max--small {
     @media #{$small-only} {
         max-width: 26.5rem !important;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+.row--max--medium-up {
+    @media #{$medium-up} {
+        max-width: 25rem !important;
         margin: 0 auto;
         position: relative;
     }
@@ -187,7 +194,9 @@ $color--text-dark: #8E8E8E;
         padding:.1rem 1rem;
         z-index: 1;
         position: relative;
-        color: #878585;
+        color: $color--text-light;
+        @include vendor(transition, all .3s linear);
+
     }
     hr {
         position: absolute;
@@ -199,6 +208,9 @@ $color--text-dark: #8E8E8E;
 
     }
     &:hover {
+        span {
+            color:$color--text-dark;
+        }
         hr {
             border-color: $color--text-dark;
         }
@@ -261,24 +273,32 @@ $color--text-dark: #8E8E8E;
         position: relative;
         @include vendor(transition, all .3s linear);
 
-        img {
-            max-width: 200px;
-            
-            &.left {
-                margin:2.3rem 2.2rem 4rem 0;
-            }
-            &.right {
-                margin:1rem 0 1rem 1rem;
-            }
-        }
         @media #{$medium-up} {
             max-height: 12.5rem;
         }
+        img {
+            max-width: 150px;
+
+            @media #{$medium-up} {
+                max-width: 200px;
+            }
+            
+            &.left {
+                margin:.5rem 2.2rem 4rem 0;
+            }
+            &.right {
+                margin:.5rem 0 1rem 1rem;
+            }
+        }
+        
         
     }
     .content__text {
         padding-bottom: 3rem;
     }
+        .text--status {
+            color: #7BC084;
+        }
     .content__open {
         .content__button--plus {
             display: none;
@@ -305,6 +325,11 @@ $color--text-dark: #8E8E8E;
         box-shadow: inset 0px -25px 25px 0px #fff;
         box-shadow: inset 0px -25px 25px 0px rgba(255, 255, 255, 0.88);
 
+        &:active,
+        &:focus {
+            border:1px solid $color--text-light;
+            color:$color--text-light;
+        }
         &:hover {
             span {
                 color:$color--text-dark;
@@ -353,7 +378,7 @@ $color--text-dark: #8E8E8E;
 // Projects
 /////////////////////////////////////////
 .projects {
-    
+    padding-bottom: 5rem;
 }
 .project__item {
     padding:5rem 0 0;
