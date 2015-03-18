@@ -4,12 +4,13 @@
 // Adding padding to top, and bottom of .about
 function centerAboutVertically(){
 	var $stage = $(".stage"),
+		$nav = $(".projects__list").outerHeight()/2,
 		$aboutHeight = $(".about").outerHeight(),
 		$stageHeight = $(".stage").outerHeight(),
 		screenHeight = $(window).height();
 
-		$stage.css({"padding-top": $(window).height()/2 - $aboutHeight/2} );
-		$stage.css({"padding-bottom": $(window).height()/2 - $aboutHeight/2} );
+		$stage.css({"padding-top": $(window).height()/2 - $aboutHeight/2  - $nav} );
+		$stage.css({"padding-bottom": $(window).height()/2 - $aboutHeight/2 - $nav} );
 }
 centerAboutVertically();
 
@@ -37,6 +38,38 @@ centerAboutVertically();
 			button.addClass("content__open");
 			content.css({"max-height": contentTextHeight});
 		}
+	})
+})();
+
+
+
+
+(function() {
+	var button 	= $(".projects__list .button");
+
+	button.on("click", function(e) {
+		e.preventDefault();
+
+		$('html, body').animate({
+	        scrollTop: button.offset().top
+	    }, 500);
+
+
+
+		var $thisId = $(this).attr('id'),
+			$thisSection = $(".projects--"+ $thisId);
+
+		$(".projects__list .button").removeClass("button--active");
+		$(this).addClass("button--active");
+
+		$(".projects").fadeOut();
+		$thisSection.fadeIn();
+
+
+		
+
+
+
 	})
 })();
 

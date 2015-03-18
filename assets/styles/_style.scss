@@ -81,10 +81,10 @@ h5,
 h4,
 h3,
 h2,
-h1 {
-    font-weight: 300;
+h1,
+strong {
     font-style: normal;
-    color:#4F4F4F;
+    color:#545454;
 }
 p {
     font-weight: 300;
@@ -103,7 +103,7 @@ a {
     outline: 0;
 
     &:focus {
-        outline:thin dotted #ccc;
+        outline:thin dotted #fafafa;
     }
 
 }
@@ -119,16 +119,9 @@ ul {
 
 // Grid
 /////////////////////////////////////////
-.row--max--small {
+.row--max {
     @media #{$small-only} {
         max-width: 26.5rem !important;
-        margin: 0 auto;
-        position: relative;
-    }
-}
-.row--max--medium-up {
-    @media #{$medium-up} {
-        max-width: 25rem !important;
         margin: 0 auto;
         position: relative;
     }
@@ -178,7 +171,7 @@ body {
 
 $color--text-light: #ddd;
 $color--text-dark: #8E8E8E;
-
+$color--text-darker: #444;
 
 
 
@@ -193,25 +186,36 @@ $color--text-dark: #8E8E8E;
         background: #fff;
         padding:.1rem 1rem;
         z-index: 1;
-        position: relative;
-        color: $color--text-light;
-        @include vendor(transition, all .3s linear);
-
+        color: #878585;
     }
     hr {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        left: 0;
-        margin:0;
+        position: relative;
+        top: -0.5rem;
+        width: 75%;
+        margin: 0 auto;
         @include vendor(transition, all .3s linear);
+    }
+    span, hr {
+        position: relative;
+
+        cursor: pointer;
+        @include vendor(transition, all .3s linear);
+    }
+    &.button--active {
+        span {
+            color: $color--text-darker
+        }
+        hr {
+            border-color:  $color--text-darker;
+        }
 
     }
     &:hover {
-        span {
-            color:$color--text-dark;
+        span, {
+            color: $color--text-darker;
         }
         hr {
+            width: 85%;
             border-color: $color--text-dark;
         }
     }
@@ -219,6 +223,9 @@ $color--text-dark: #8E8E8E;
     &:active, 
     &:focus {
         background: none;
+    }
+    &.touch {
+
     }
 }
 
@@ -229,42 +236,13 @@ $color--text-dark: #8E8E8E;
     padding: 22.5rem 0;
     // @include vendor(transition, all .3s linear);
 }
-    .stage__arrow {
-        display: none;
-        position: absolute;
-        bottom: -1rem;
-        left: 50%;
-        margin-left: -.5rem;
-        font-size: 1.5rem;
-        line-height: 0.95rem;
-        @include vendor(animation, arrowBounce 3s infinite);
-
-        @media #{$medium-up} {
-            display: block;
-        }
-        @media only screen and (max-height: 935px) {
-            display: none;
-
-        }
-    }
-
-    @include keyframe(arrowBounce) {
-      0% {
-        @include vendor(transform, translateY(-1rem));
-      }
-      50% {
-        @include vendor(transform, translateY(0rem));
-      }
-      100% {
-        @include vendor(transform, translateY(-1rem));
-      }
-    }
 
 // About
 /////////////////////////////////////////
 .about {
     position: relative;
-    //padding: 20rem 0 0rem;
+    background: #fff;
+    z-index: 1;
 }
     
     .content {
@@ -273,31 +251,20 @@ $color--text-dark: #8E8E8E;
         position: relative;
         @include vendor(transition, all .3s linear);
 
+        img {
+            max-width: 100%;
+            margin: 1rem 0 2rem;
+        }
         @media #{$medium-up} {
             max-height: 12.5rem;
         }
-        img {
-            max-width: 150px;
-
-            @media #{$medium-up} {
-                max-width: 200px;
-            }
-            
-            &.left {
-                margin:.5rem 2.2rem 4rem 0;
-            }
-            &.right {
-                margin:.5rem 0 1rem 1rem;
-            }
-        }
-        
         
     }
     .content__text {
         padding-bottom: 3rem;
     }
         .text--status {
-            color: #7BC084;
+            color:rgb(94, 197, 94);
         }
     .content__open {
         .content__button--plus {
@@ -325,23 +292,19 @@ $color--text-dark: #8E8E8E;
         box-shadow: inset 0px -25px 25px 0px #fff;
         box-shadow: inset 0px -25px 25px 0px rgba(255, 255, 255, 0.88);
 
-        &:active,
-        &:focus {
-            border:1px solid $color--text-light;
-            color:$color--text-light;
-        }
         &:hover {
             span {
-                color:$color--text-dark;
+                color:$color--text-darker;
                 border:1px solid $color--text-dark;
                 opacity: 1;
             }
             hr {
                 border-color: $color--text-dark;
+                width: 80%;
             }
         }
         hr {
-            width: 100%;
+            width: 75%;
             margin: 0 auto;
             top: -1rem;
             position: relative;
@@ -358,7 +321,7 @@ $color--text-dark: #8E8E8E;
             //margin-left: -1rem;
             background:#fff;
             border:1px solid $color--text-light;
-            color:$color--text-light;
+            color:$color--text-dark;
             @include vendor(transition, all .3s linear);
             z-index: 2;
             position: relative;
@@ -378,16 +341,41 @@ $color--text-dark: #8E8E8E;
 // Projects
 /////////////////////////////////////////
 .projects {
-    padding-bottom: 5rem;
+    
 }
+.projects__list {
+    li {
+        display: inline-block;
+        width: 33%;
+        float: left;
+    }
+    .button {
+        hr {
+            width: 100%;
+        }
+    }
+}
+
 .project__item {
-    padding:5rem 0 0;
+    padding: 10rem 0 5rem;
+    border-bottom: 1px solid $color--text-light;
+
     img {
         border: 1px solid $color--text-light;
     }
-    
 }
 
+.projects--all {}
+
+
+.projects--web {
+    display: none;
+}
+
+
+.projects--branding {
+    display: none;
+}
 
 
 

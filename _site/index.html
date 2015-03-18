@@ -55,19 +55,25 @@
 		<div class="about">
 
 
-			<div class="row--xsmall row--max--small">
+			<div class="row--xsmall row--max">
 					<div class="content columns">
 						<div class="content__text">
 							<p>Hey there, my name is <strong>Adam Leith</strong>, I'm a Front End Developer and User Experience Designer based out of Montreal, Canada.</p>
 
-							<p>Creating relationships with people worth keeping. I'm currently <span class="text--underline text--status">available</span> for contract work. <a href="mailto:adamleithp@me.com" target="_blank">Contact me</a>.</p>
+
+							<p>Creating relationships with people worth keeping. I'm currently <span class="text--status">available</span> for contract work. <a href="mailto:adamleithp@me.com" target="_blank">Contact me</a>.</p>
 
 							<br><br>
 
-							<p>A Front End Developer implies two things: The perfectionist eye of a Designer, and the problem solving mentality of Developer. Keeping my work beautiful, useable, and highly efficient excite me. </p>
-							<img src="assets/images/adam2.jpg" alt="A picture of my face" class="left">
 
-							<p>At times, things get crazy: design changes and priorities change- chaos ensues, correct? No. Label me cautious, but building websites while predicting change, are absolutely fundamental to my work. Creating modular code keeps me on my toes and I love it.</p>
+
+							<p>A Front End Developer implies two things: The perfectionist eye of a Designer, and the problem solving mentality of Developer. Keeping my work beautiful, useable, and highly efficient excites me.
+							<img src="assets/images/adam3.jpg" alt="A picture of my face" class="left">
+							</p>
+
+							
+
+							<p><strong>Change:</strong> At times, things get crazy: design changes and priorities change- chaos ensues, correct? No. Label me cautious, but building websites while predicting change, are absolutely fundamental to my work. Creating modular code keeps me on my toes and I love it.</p>
 
 						</div>
 					</div>	
@@ -83,88 +89,281 @@
 
 
 
-	<section class="projects">
+	<section>
 
-		<div class="stage__arrow">&#x25BE;</div>
-
-		<div class="project__item">
-			<div class="row--xsmall row--max--small">
-				<div class="columns">
-					<div class="row--max--medium-up">
-						<h3>Every Day Happy</h3>
-						<p>A marketplace for your typical mom. Get all your baby products in one place, easily and efficiently.</p>
-						<p><strong>Role(s):</strong> Lead Front End Developer, CSS Style-guide creation &amp; maintenance.</p>
-						<p><strong>Notes:</strong> I'm also Front End Lead of the signup process on the site. It can be found <a href="https://www.everydayhappy.com/signup">here</a>.</p>
-					</div>
-					<a href="https://www.everydayhappy.com" class="button" target="_blank">
-						<span>Visit</span>
-						<hr>
-					</a>
-				</div>
-			</div>	
-			<div class="row row--full">
-				<img src="assets/images/everydayhappy.jpg" srcset="assets/images/everydayhappy@2x.jpg" alt="EveryDayHappy website image">
-
-
-<!-- 				<div id="grabber">
-				    <div id="grabber__left"></div>
-				    <div id="grabber__right">
-						<img src="assets/images/everydayhappy2.jpg" alt="" class="">
-						<iframe class="grabber__iframe" src="https://www.everydayhappy.com/signup" frameborder="0" allowfullscreen></iframe>
-						<div class="iframe--overlay"></div>
-				        <div id="grabber__handle"></div> This is the right side's content!
-				    </div>
-				</div> -->
-
-
-				
-			</div>
-		</div>
-		<hr>
-
-		<div class="project__item">
-			<div class="row--xsmall row--max--small">
-				<div class="columns">
-					<div class="row--max--medium-up">
-						<h3>BigRebel</h3>
-						<p>A media platform serving up Games, Movies, Books and Music all in one place. With the signup process boasting over 1 million views per day, It is easily my most public work.</p>
-
-						<p><strong>Role(s):</strong> Lead Front End Developer, CSS Style-guide creation &amp; maintenance.</p>
-
-						<p><strong>Notes:</strong> Translated into 12 different languages, keeping content flexible.</p>
-					</div>
-					<a href="https://www.bigrebel.com/signup?sf=eone" class="button"target="_blank">
-						<span>Visit</span>
-						<hr>
-					</a>
-				</div>
-			</div>	
-			<div class="row">
-				<img src="assets/images/bigrebel.jpg" srcset="assets/images/bigrebel@2x.jpg" alt="BigRebel website image">
-			</div>
-		</div>
-		<hr>
-
-		<div class="project__item">
-			<div class="row--xsmall row--max--small">
-				<div class="columns">
-					<div class="row--max--medium-up">
-						<h3>Hollandia Floral</h3>
-						<p>A beautiful flower and decoration shop in the small town of Hudson, Québec. </p>
-
-						<p><strong>Role(s):</strong> Website design, Lead Web Developer.</p>
-					</div>
-					<a href="http://www.hollandiafloral.com" class="button" target="_blank">
-						<span>Visit</span>
-						<hr>
-					</a>
-				</div>
-			</div>	
-			<div class="row">
-				<img src="assets/images/hollandia.jpg" srcset="assets/images/hollandia@2x.jpg" alt="Hollandia website image">
-			</div>
-		</div>
 		
+		<nav>
+			<ul class="projects__list cf row">
+
+				<li>
+			        <a class='button button--active' id="all" href="#">
+			            <span>All</span>
+			            <hr>
+			        </a>
+			    </li>
+				
+				    <li>
+				        <a class='button' id="branding" href="#branding/">
+				            <span>Branding</span>
+				            <hr>
+				        </a>
+				    </li>
+				
+				    <li>
+				        <a class='button' id="web" href="#web/">
+				            <span>Web</span>
+				            <hr>
+				        </a>
+				    </li>
+				
+			</ul>
+		</nav>
+
+
+
+
+
+
+
+		<div class="projects projects--all">
+			
+
+				<div class="project__item" role="web">
+					<div class="row--xsmall row--max">
+						<div class="columns">
+							<h3>EveryDayHappy</h3>
+							<p>A marketplace for your typical mom. Get all your baby products in one place, easily and efficiently.</p>
+<p><strong>Role(s):</strong> Lead Front End Developer, Style guide creation and management.</p>
+<p><strong>Notes:</strong> I'm also Front End Lead of the signup process on the site. It can be found <a href="https://www.everydayhappy.com/signup">here</a>.</p>
+
+<a href="https://www.everydayhappy.com" class="button" target="_blank">
+    <span>Visit</span>
+    <hr>
+</a>
+						</div>
+					</div>	
+					<div class="row">
+						<img src="/assets/images/everydayhappy.jpg" srcset="/assets/images/everydayhappy@2x.jpg" alt="Everydayhappy">
+					</div>
+				</div>
+
+
+			
+
+				<div class="project__item" role="web">
+					<div class="row--xsmall row--max">
+						<div class="columns">
+							<h3>BigRebel</h3>
+							<p>A media platform serving up Games, Movies, Books and Music all in one place. With the signup process boasting over 1 million views per day, It is easily my most public work.</p>
+
+<p><strong>Role(s):</strong> Lead Front End Developer, Style-guide creation and management.</p>
+
+<p><strong>Notes:</strong> Translated into 12 different languages, keeping content flexible and "white-spaced" is a great task.</p>
+
+<a href="https://www.bigrebel.com/signup?sf=eone" class="button"target="_blank">
+    <span>Visit</span>
+    <hr>
+</a>
+						</div>
+					</div>	
+					<div class="row">
+						<img src="/assets/images/bigrebel.jpg" srcset="/assets/images/bigrebel@2x.jpg" alt="BigRebel">
+					</div>
+				</div>
+
+
+			
+
+				<div class="project__item" role="web">
+					<div class="row--xsmall row--max">
+						<div class="columns">
+							<h3>Hollandia</h3>
+							<p>A beautiful flower and decoration shop in the small town of Hudson, Québec. </p>
+
+<p><strong>Role(s):</strong> Website design, Lead Web Developer.</p>
+
+<a href="http://www.hollandiafloral.com" class="button" target="_blank">
+    <span>Visit</span>
+    <hr>
+</a>
+						</div>
+					</div>	
+					<div class="row">
+						<img src="/assets/images/hollandia.jpg" srcset="/assets/images/hollandia@2x.jpg" alt="hollandia">
+					</div>
+				</div>
+
+
+			
+
+				<div class="project__item" role="branding">
+					<div class="row--xsmall row--max">
+						<div class="columns">
+							<h3>Qwax</h3>
+							<p>Qwax wax, proudly founded in Quebec, Canada. </p>
+<p><strong>Role(s):</strong> Brand creation</p>
+
+						</div>
+					</div>	
+					<div class="row">
+						<img src="/assets/images/qwax.jpg" srcset="/assets/images/qwax@2x.jpg" alt="Qwax">
+					</div>
+				</div>
+
+
+			
+
+				<div class="project__item" role="branding">
+					<div class="row--xsmall row--max">
+						<div class="columns">
+							<h3>Link Energy</h3>
+							<p>Link Energy is a North American Energy Retailer committed to helping homeowners, businesses and non-profit organizations procure their energy and manage their costs while giving back to their communities.</p>
+
+<p><strong>Role(s):</strong> Branding </p>
+						</div>
+					</div>	
+					<div class="row">
+						<img src="/assets/images/linkenergy.jpg" srcset="/assets/images/linkenergy@2x.jpg" alt="Link Energy">
+					</div>
+				</div>
+
+
+			
+		</div>
+
+
+		<div class="projects projects--web">
+			
+			  
+
+				<div class="project__item" role="web">
+					<div class="row--xsmall row--max">
+						<div class="columns">
+							<h3>EveryDayHappy</h3>
+							<p>A marketplace for your typical mom. Get all your baby products in one place, easily and efficiently.</p>
+<p><strong>Role(s):</strong> Lead Front End Developer, Style guide creation and management.</p>
+<p><strong>Notes:</strong> I'm also Front End Lead of the signup process on the site. It can be found <a href="https://www.everydayhappy.com/signup">here</a>.</p>
+
+<a href="https://www.everydayhappy.com" class="button" target="_blank">
+    <span>Visit</span>
+    <hr>
+</a>
+						</div>
+					</div>	
+					<div class="row">
+						<img src="/assets/images/everydayhappy.jpg" srcset="/assets/images/everydayhappy@2x.jpg" alt="Everydayhappy">
+					</div>
+				</div>
+
+
+			  
+			
+			  
+
+				<div class="project__item" role="web">
+					<div class="row--xsmall row--max">
+						<div class="columns">
+							<h3>BigRebel</h3>
+							<p>A media platform serving up Games, Movies, Books and Music all in one place. With the signup process boasting over 1 million views per day, It is easily my most public work.</p>
+
+<p><strong>Role(s):</strong> Lead Front End Developer, Style-guide creation and management.</p>
+
+<p><strong>Notes:</strong> Translated into 12 different languages, keeping content flexible and "white-spaced" is a great task.</p>
+
+<a href="https://www.bigrebel.com/signup?sf=eone" class="button"target="_blank">
+    <span>Visit</span>
+    <hr>
+</a>
+						</div>
+					</div>	
+					<div class="row">
+						<img src="/assets/images/bigrebel.jpg" srcset="/assets/images/bigrebel@2x.jpg" alt="BigRebel">
+					</div>
+				</div>
+
+
+			  
+			
+			  
+
+				<div class="project__item" role="web">
+					<div class="row--xsmall row--max">
+						<div class="columns">
+							<h3>Hollandia</h3>
+							<p>A beautiful flower and decoration shop in the small town of Hudson, Québec. </p>
+
+<p><strong>Role(s):</strong> Website design, Lead Web Developer.</p>
+
+<a href="http://www.hollandiafloral.com" class="button" target="_blank">
+    <span>Visit</span>
+    <hr>
+</a>
+						</div>
+					</div>	
+					<div class="row">
+						<img src="/assets/images/hollandia.jpg" srcset="/assets/images/hollandia@2x.jpg" alt="hollandia">
+					</div>
+				</div>
+
+
+			  
+			
+			  
+			
+			  
+			
+		</div>
+
+		<div class="projects projects--branding">
+			
+			  
+			
+			  
+			
+			  
+			
+			  
+
+				<div class="project__item">
+					<div class="row--xsmall row--max">
+						<div class="columns">
+							<h3>Qwax</h3>
+							<p>Qwax wax, proudly founded in Quebec, Canada. </p>
+<p><strong>Role(s):</strong> Brand creation</p>
+
+						</div>
+					</div>	
+					<div class="row">
+						<img src="/assets/images/qwax.jpg" srcset="/assets/images/qwax@2x.jpg" alt="Qwax">
+					</div>
+				</div>
+
+
+			  
+			
+			  
+
+				<div class="project__item">
+					<div class="row--xsmall row--max">
+						<div class="columns">
+							<h3>Link Energy</h3>
+							<p>Link Energy is a North American Energy Retailer committed to helping homeowners, businesses and non-profit organizations procure their energy and manage their costs while giving back to their communities.</p>
+
+<p><strong>Role(s):</strong> Branding </p>
+						</div>
+					</div>	
+					<div class="row">
+						<img src="/assets/images/linkenergy.jpg" srcset="/assets/images/linkenergy@2x.jpg" alt="Link Energy">
+					</div>
+				</div>
+
+
+			  
+			
+		</div>
+
+
+
 
 
 	</section>
