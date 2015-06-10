@@ -83,7 +83,9 @@ title: Montreal Based Front End Developer
 						</div>
 					</div>	
 					<div class="row">
-						<img src="{{post.imageUrl}}{{post.imageSrc}}.jpg" srcset="{{post.imageUrl}}{{post.imageSrc}}@2x.jpg" alt="{{post.imgAlt }}">
+						{% for img in post.imageSrc %}					    
+					        <img src="{{post.imageUrl}}{{img}}.jpg" srcset="{{post.imageUrl}}{{img}}@2x.jpg" alt="{{post.imgAlt }}" class="{{post.imgRatio}}">
+						{% endfor %}				
 					</div>
 				</div>
 
@@ -92,9 +94,9 @@ title: Montreal Based Front End Developer
 		</div>
 
 
-		<div class="projects projects--web">
+		<div class="projects projects--ux">
 			{% for post in site.posts %}
-			  {% if post.categories contains 'web' %}
+			  {% if post.categories contains 'ux' %}
 
 				<div class="project__item" role="{{ post.categories}}">
 					<div class="row--xsmall row--max">
@@ -104,7 +106,9 @@ title: Montreal Based Front End Developer
 						</div>
 					</div>	
 					<div class="row">
-						<img src="{{post.imageUrl}}{{post.imageSrc}}.jpg" srcset="{{post.imageUrl}}{{post.imageSrc}}@2x.jpg" alt="{{post.imgAlt }}">
+						{% for img in post.imageSrc %}					    
+					        <img src="{{post.imageUrl}}{{img}}.jpg" srcset="{{post.imageUrl}}{{img}}@2x.jpg" alt="{{post.imgAlt }}" class="{{post.imgRatio}}">
+						{% endfor %}			
 					</div>
 				</div>
 
@@ -125,7 +129,9 @@ title: Montreal Based Front End Developer
 						</div>
 					</div>	
 					<div class="row">
-						<img src="{{post.imageUrl}}{{post.imageSrc}}.jpg" srcset="{{post.imageUrl}}{{post.imageSrc}}@2x.jpg" alt="{{post.imgAlt }}">
+						{% for img in post.imageSrc %}					    
+					        <img src="{{post.imageUrl}}{{img}}.jpg" srcset="{{post.imageUrl}}{{img}}@2x.jpg" alt="{{post.imgAlt }}" class="{{post.imgRatio}}">
+						{% endfor %}	
 					</div>
 				</div>
 

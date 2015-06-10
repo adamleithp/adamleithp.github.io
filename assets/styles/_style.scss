@@ -357,11 +357,23 @@ $color--text-darker: #444;
 }
 
 .project__item {
+    overflow: hidden;
     padding: 10rem 0 5rem;
     border-bottom: 1px solid $color--text-light;
 
     img {
         border: 1px solid $color--text-light;
+
+        &:nth-child(2n) {
+            border-top: 0;
+        }
+
+    }
+    .wide {
+        @media #{$small-only} {
+            margin: 0px -34%;
+            max-width: 170%;
+        }
     }
 }
 
