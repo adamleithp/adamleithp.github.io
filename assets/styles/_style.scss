@@ -269,6 +269,7 @@ $color--text-darker: #444;
     .content__open {
         .content__button--plus {
             display: none;
+            appearance:none;
             
         }
         .content__button--minus {
@@ -278,6 +279,7 @@ $color--text-darker: #444;
     }
 
     .content__button {
+        background: #fff;
         text-align: center;
         width: 100%;
         position: absolute;
@@ -292,7 +294,10 @@ $color--text-darker: #444;
         box-shadow: inset 0px -25px 25px 0px #fff;
         box-shadow: inset 0px -25px 25px 0px rgba(255, 255, 255, 0.88);
 
-        &:hover {
+        &:hover,
+        &:focus,
+        &:active {
+            background: #fff;
             span {
                 color:$color--text-darker;
                 border:1px solid $color--text-dark;
