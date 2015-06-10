@@ -8,6 +8,14 @@ $overlay-bg-color: #fff;
 
 
 
+$color--text-light: #ddd;
+$color--text-dark: #8E8E8E;
+$color--text-darker: #444;
+
+
+
+
+
 
 // Utility Classes
 /////////////////////////////////////////
@@ -103,9 +111,21 @@ a {
     outline: 0;
 
     &:focus {
-        outline:thin dotted #fafafa;
-    }
+        outline: thin dotted #FFFFFF;
+        /* box-shadow: 0px 0px 36px blue; */
+        background-color: blue;
+        color: #fff;    }
 
+}
+
+.button { 
+    hr {
+        width: 100%;
+    }
+    &:focus {
+        width: 100% !important;
+        outline:1px solid $color--text-light !important;
+    }
 }
 
 // Lists
@@ -166,14 +186,6 @@ body {
 
     @extend .overlay;
 }
-
-
-
-$color--text-light: #ddd;
-$color--text-dark: #8E8E8E;
-$color--text-darker: #444;
-
-
 
 
 
@@ -354,11 +366,6 @@ $color--text-darker: #444;
         width: 33%;
         float: left;
     }
-    .button {
-        hr {
-            width: 100%;
-        }
-    }
 }
 
 .project__item {
@@ -373,6 +380,16 @@ $color--text-darker: #444;
             border-top: 0;
         }
 
+    }
+    .button {
+        &:hover,
+        &:active,
+        &:focus {
+            hr {
+                width: 100%;
+                border-color: #8E8E8E;
+            }  
+        }
     }
     .wide {
         @media #{$small-only} {
