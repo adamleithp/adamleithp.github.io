@@ -44,6 +44,21 @@ $color--text-darker: #444;
         clear: both;
     }
 }
+pre {
+    @media #{$large-up} {
+        width: 150%;
+        margin-left: -25%;
+    }
+}
+code {
+    background-color: #E7E7E7;
+    padding: .1rem .2rem 0.1rem 0.3rem;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: 3px;
+}
+
 
 // Typography
 /////////////////////////////////////////
@@ -189,6 +204,9 @@ body {
 
 
 
+// Stage
+/////////////////////////////////////////
+
 .button {
     padding: 1rem 0;
     width: 100%;
@@ -241,6 +259,25 @@ body {
     }
 }
 
+body {
+    background-color: #F1F1F1;
+}
+section {
+    background-color: #fff;
+}
+
+// Header
+/////////////////////////////////////////
+header {
+    background-color: #F1F1F1;
+    padding: 1rem;
+
+    p {
+        margin: 0;
+        font-size: .8rem;
+    }
+}
+
 
 // Stage
 /////////////////////////////////////////
@@ -248,6 +285,9 @@ body {
     padding: 22.5rem 0;
     // @include vendor(transition, all .3s linear);
 }
+
+
+
 
 // About
 /////////////////////////////////////////
