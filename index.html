@@ -34,29 +34,6 @@ title: Montreal Based Front End Developer
 
 	<section>
 
-		<nav>
-			<ul class="projects__list cf row">
-
-				<li>
-			        <a class='button button--active' id="all" href="#">
-			            <span>All</span>
-			            <hr>
-			        </a>
-			    </li>
-				{% for category in site.categories %}
-				    <li>
-				        <a class='button' id="{{ category | first | slugize }}" href="#{{ category | first | slugize }}/">
-				            <span>{{ category | first | capitalize }}</span>
-				            <hr>
-				        </a>
-				    </li>
-				{% endfor %}
-			</ul>
-		</nav>
-
-
-
-
 		<div class="projects projects--all">
 			{% for post in site.posts %}
 
