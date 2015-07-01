@@ -14,7 +14,53 @@ $color--text-darker: #444;
 
 
 
+// Gay Pride Banner
 
+.gay-banner {
+  height:5px;
+  width:100%;
+  display:block;
+  text-align:center;
+  background: #000;
+  background: -webkit-linear-gradient( left,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 255, 0, 1) 15%,
+        rgba(0, 255, 0, 1) 30%,
+        rgba(0, 255, 255, 1) 50%,
+        rgba(0, 0, 255, 1) 65%,
+        rgba(255, 0, 255, 1) 80%,
+        rgba(255, 0, 0, 1) 100%);
+  animation: gay-move 100s infinite;
+    //background-position: 0% 100%;
+  /* background-repeat: no-repeat; */
+  background-size: 90%;
+  transition: all .2s .2s linear;
+  
+  .title {
+    position: absolute;
+    width:100%;
+    opacity:0;
+    font-size:.7rem;
+    margin:.2rem 0;
+    transition: all .1s .2s linear;
+  }
+  &:hover {
+    height:2rem;
+    
+    .title {
+      opacity:1;
+      margin:0.5rem 0;
+    }
+  }
+}
+@keyframes gay-move {
+  from {
+    background-position:0 0; 
+  }
+  to {
+   background-position:1000% 0; 
+  }
+}
 
 
 // Utility Classes
