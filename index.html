@@ -1,134 +1,116 @@
----
-layout: default
-title: Montreal Based Front End Developer
----
+<!DOCTYPE html>
+<head>
+    <title>AdamLeithP - personal website</title>
+</head>
+<style>
+
+/* latin-ext */
+@font-face {
+  font-family: 'Scope One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Scope One'), local('ScopeOne-Regular'), url(./5L_rzgZS69R6TluPhc4U-4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Scope One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Scope One'), local('ScopeOne-Regular'), url(./_52Fm41u4u2R3EEH0A9bn5Bw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background: #504545;
+    margin: 0;padding: 0;
+    font-size: .7em;
+}
+/*@media (min-width: 320px) {
+    body {
+        font-size: .75em;
+    }
+}
+@media (min-width: 500px) {
+    body {
+        font-size: 1em;
+    }
+}*/
+body, p, h1 {
+    font-family: 'Scope One', serif;
+}
+
+.intro-text {
+    z-index: 1;
+    padding: 2em;
+    width: 100%;
+    max-width: 400px;
+}
+.headers {
+    border-bottom: 1px solid #cdf3ed;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    line-height: 1.21;
+}
+p {
+    font-size: 1.2em;
+}
+a {
+    transition: color .15s linear;
+}
+
+a:hover {
+    color: #fff !important;
+    fill: #fff !important;
+}
+.offwhite {
+    color: #cdf3ed;
+    fill: #cdf3ed;
+}
+.block {
+    display: block;
+}
+
+</style>
+<html>
+<body onload="draw();">
+
+    <div class="intro-text offwhite">
+        <div class="headers">
+            <h1>
+                Hey, I'm Adam<a class="offwhite" href="./">leithP</a>
+            </h1>
+            <h2>
+                Sr. web developer
+                + ux designer
+                + consultant
+            </h2>
+        </div>
+        <p>I love designing applications front to back, and building automation.</p>
+        <p>I like to spend my time solving tech problems.</p>
 
 
-	<section class="stage">
-		<div class="about">
-			<div class="row--xsmall row--max">
-				<div class="content columns">
-					<div class="content__text">
-						<p>Hey there, my name is <strong>Adam Leith</strong>, I'm a Front End Developer and User Experience Designer based out of Montreal, Canada.</p>
-						<p>Creating relationships with people worth keeping. I'm currently <span class="text--status">available</span> for contract work. <a href="mailto:adamleithp@me.com" target="_blank" role="link" title="Contact me via email">Contact me</a>.</p>
-						<br><br>
-						<p>A Front End Developer implies two things: The perfectionist eye of a Designer, and the problem solving mentality of Developer. Keeping my work beautiful, useable, and highly efficient excites me.
-							<a href="assets/images/adam3@2x.jpg" title="Link to HiDpi image" role="link" tabindex="-1">
-								<img src="assets/images/adam3.jpg" srcset="assets/images/adam3@2x.jpg" alt="Picture of me :D" class="left">
-							</a>
-						</p>
-						<p><strong>Change:</strong> At times, things get crazy: design changes and priorities change- chaos ensues, correct? No. Label me cautious, but building websites while predicting change, are absolutely fundamental to my work. Creating modular code keeps me on my toes and I love it.</p>
-					</div>
-				</div>	
-				<button class="content__button" role="button">
-					<span class="content__button--plus">+</span>
-					<span class="content__button--minus">—</span>
-					<hr>
-				</button>
-			</div>
-		</div>
-	</section>
+    </div>
+    <header>
+        <a href="./" class="offwhite">
+            <svg class="offwhite" fill="#fff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+        </a>
+    </header>
 
 
+</body>
 
+<script type="text/javascript" src="./app.js">
 
-	<section>
-
-		<div class="projects projects--all">
-			{% for post in site.posts %}
-
-				{% if post.tags contains "blog" %}
-					<div class="project__item" role="{{ post.categories}}">
-						<div class="row--xsmall row--max">
-							<div class="columns">
-								{{ post.content | truncatewords: 50 }}
-							</div>
-						</div>	
-						<div class="row">
-							{% for img in post.imageSrc %}			
-								<a href="{{post.imageUrl}}{{img}}@2x.jpg" title="Link to HiDpi image" role="link">
-									<img src="{{post.imageUrl}}{{img}}.jpg" srcset="{{post.imageUrl}}{{img}}@2x.jpg" alt="{{post.imgAlt }}" class="{{post.imgRatio}}">
-								</a>		     
-							{% endfor %}				
-						</div>
-					</div>	
-
-				{% else %}
-
-					<div class="project__item" role="{{ post.categories}}">
-						<div class="row--xsmall row--max">
-							<div class="columns">
-								<h2>{{post.title}}</h2>
-								{{ post.content }}
-							</div>
-						</div>	
-						<div class="row">
-							{% for img in post.imageSrc %}			
-								<a href="{{post.imageUrl}}{{img}}@2x.jpg" title="Link to HiDpi image" role="link">
-									<img src="{{post.imageUrl}}{{img}}.jpg" srcset="{{post.imageUrl}}{{img}}@2x.jpg" alt="{{post.imgAlt }}" class="{{post.imgRatio}}">
-								</a>		     
-							{% endfor %}				
-						</div>
-					</div>				
-				{% endif %}
-
-			{% endfor %}
-		</div>
-
-
-		<div class="projects projects--ux">
-			{% for post in site.posts %}
-			  {% if post.categories contains 'ux' %}
-
-				<div class="project__item" role="{{ post.categories}}">
-					<div class="row--xsmall row--max">
-						<div class="columns">
-							<h2>{{post.title}}</h2>
-							{{ post.content }}
-						</div>
-					</div>	
-					<div class="row">
-						{% for img in post.imageSrc %}					    
-							<a href="{{post.imageUrl}}{{img}}@2x.jpg" title="Link to HiDpi image" role="link">
-								<img src="{{post.imageUrl}}{{img}}.jpg" srcset="{{post.imageUrl}}{{img}}@2x.jpg" alt="{{post.imgAlt }}" class="{{post.imgRatio}}">
-							</a>	
-						{% endfor %}			
-					</div>
-				</div>
-
-
-			  {% endif %}
-			{% endfor %}
-		</div>
-
-		<div class="projects projects--branding">
-			{% for post in site.posts %}
-			  {% if post.categories contains 'branding' %}
-
-				<div class="project__item">
-					<div class="row--xsmall row--max">
-						<div class="columns">
-							<h2>{{post.title}}</h2>
-							{{ post.content }}
-						</div>
-					</div>	
-					<div class="row">
-						{% for img in post.imageSrc %}					    
-							<a href="{{post.imageUrl}}{{img}}@2x.jpg" title="Link to HiDpi image" role="link">
-								<img src="{{post.imageUrl}}{{img}}.jpg" srcset="{{post.imageUrl}}{{img}}@2x.jpg" alt="{{post.imgAlt }}" class="{{post.imgRatio}}">
-							</a>
-						{% endfor %}	
-					</div>
-				</div>
-
-
-			  {% endif %}
-			{% endfor %}
-		</div>
-
-
-
-
-
-	</section>
-
+</script>
+</html>
