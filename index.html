@@ -2,86 +2,88 @@
 <head>
     <title>AdamLeithP - personal website</title>
     <link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.png"
 </head>
 <style>
 
-body {
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #504545;
+    background: linear-gradient(30deg, #504545, rgb(208, 70, 70));
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body, p, h1 { font-family: 'Scope One', serif; }
+
+.intro {
     align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
     position: absolute;
+    height: 100%;
     width: 100%;
-    background: #504545;
-    margin: 0; padding: 0 1em;
-    font-size: .7em;
-}
-/*@media (min-width: 320px) {
-    body {
-        font-size: .75em;
-    }
-}
-@media (min-width: 500px) {
-    body {
-        font-size: 1em;
-    }
-}*/
-body, p, h1 {
-    font-family: 'Scope One', serif;
 }
 
-.intro-text {
+.intro__text {
     z-index: 1;
     padding: 2em;
-    max-width: 400px;
+    max-width: 26.250em; /* hehe */
+    font-size: 1em;
 }
-.headers {
+@media only screen and (min-width: 450px) {
+    .intro__text {
+        font-size: .8em;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .intro__text {
+        font-size: .7em;
+    }
+}
+
+.intro__text__headers {
     line-height: 1.21;
     margin-bottom: 1.5em;
 }
-.headers h1 {
-    margin-bottom: .2em;
-}
-.headers h2 {
-    margin-top: 0;
-}
+.intro__text__headers h1, .intro__text__headers h2 { margin: 0 0 .25em 0; }
+
 p {
     font-size: 1.2em;
+    margin: 0 0 .5em 0;
 }
-a {
-    transition: color .15s linear;
-}
+a { transition: color .15s linear;}
 
 a:hover {
     color: #fff !important;
     fill: #fff !important;
 }
-.offwhite {
-    color: #cdf3ed;
-    fill: #cdf3ed;
-}
-.block {
-    display: block;
-}
-
+.offwhite { color: #cdf3ed; }
 </style>
-<html>
-<body onload="draw();">
 
-    <div class="intro-text offwhite">
-        <div class="headers">
-            <h1>
-                Hey, I'm Adam leithP
-            </h1>
-            <h2>
-                Web developer
-                + UX designer
-                + Web Dev Consultant
-            </h2>
+<html>
+<body>
+    <div class="intro">
+        <div class="intro__text offwhite">
+            <div class="intro__text__headers">
+                <h1>
+                    Hey, I'm Adam leith,
+                </h1>
+                <h2>
+                    Sr. Web Developer
+                    + UX Designer
+                    + Web Dev Consultant
+                </h2>
+            </div>
+            <p>I am frontend web consultant focused on building a faster web through static content and deployment.</p>
+            <p>Through optimization and geo distribution, I pride myself in fast, useable websites.</p>
+
+            <br/>
+            <p>More coming soon :) <blockquote>- June 27, 2017</blockquote></p>
         </div>
-        <p>I am frontend web consultant focused on building a faster web through static content and deployment.</p>
-        <p>Through optimization and geo distribution, I pride myself in fast, useable websites.</p>
     </div>
 </body>
 </script>
