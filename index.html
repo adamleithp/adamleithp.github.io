@@ -1,31 +1,206 @@
 <!DOCTYPE html>
 <head>
-    <title>AdamLeithP - Web Developer, UX Designer</title>
+    <title>AdamLeithP - Web Developer, UX Designer - changing new macbook pro system settings from default</title>
     <link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
     <link rel="shortcut icon" href="./favicon.png">
-    <link href="./app.css" rel="stylesheet">
+    <title></title>
 </head>
 
 <html>
 <body>
-    <div class="intro">
-        <div class="intro__text offwhite">
-            <div class="intro__text__headers">
-                <h1 class="title">
-                    Hey, I'm Adam leith,
-                </h1>
-                <h2 class="title">
-                    Sr. Web Developer
-                    + UX Designer
-                    + Web Dev Consultant
-                </h2>
-            </div>
-            <p>I am frontend web consultant focused on building a faster web through static content and deployment.</p>
-            <p>Through optimization and geo distribution, I pride myself in fast, useable websites.</p>
+    <header>
+        <p>Adam Leith - <strong>Full stack developer</strong>, <strong>UX</strong> & <strong>Sales Funnels</strong></p>
+    </header>
+    
+    
+    <main>
+        <small>Created: 24/12/2019</small>
+        <h1>From default to hero.</h1>
 
-            <br/>
-            <p>Blog posts, and examples of my work coming soon :) <blockquote>- June 27, 2017</blockquote></p>
-        </div>
-    </div>
+        
+        <h3>A developers personal checklist to setting up a new Macbook Pro 16" from scratch; changing system configurations from default settings.</h3>
+        
+        <!-- <br> -->
+
+        <p>Uncluttered, minimal macosx experience that let's you focus on your work. Here's the checklist.</p>
+        
+        <!-- <p>
+            This post was inspired not because I am lucky enough to have one of these beautiful machines, but because I was given a second 16" macbook at work as-well. </p>
+        <p>
+            As I wanted to start clean on both machines, It was a struggle to keep track of what settings I needed as default. 
+            I had to constantly try and remember how each app or system settings was configured. Development is life, but I'm not ready to go full-terminal.</p>
+        
+        <br> -->
+
+
+        <p></p>
+
+        <ol>
+            <li>
+                <h3>Security</h3>
+                <ul>
+                    <li>
+                        <h4>Filevault On - Important</h4>
+                        <p>System Preferences → Secuity → Filevault → Turn on Filevault.</p>
+                    </li>
+                    <li>
+                        <h4>Firewall On - Important</h4>
+                        <p>System Preferences → Secuity → Firewall → Turn on Firewall.</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Keyboard</h3>
+                <ul>
+                    <li>
+                        <h4>Hide Language Flag in status bar - Minimalist</h4>
+                        <p>System Preferences → Keyboard → Input Sources → Uncheck "Show input menu in menu bar".</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>General Appearance</h3>
+                <ul>
+                    <li>
+                        <h4>Dark mode, always on - improve UX</h4>
+                        <p>System Preferences → General → Appearances "Dark"</p>
+                    </li>
+                    <li>
+                        <h4>Hide Menu Bar (top bar) automatically - Minimalist / improve UX</h4>
+                        <p>System Preferences → General → Check "Automatically hide and show the menu bar"</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Screensaver</h3>
+                <ul>
+                    <li>
+                        <h4>Hot corner bottom right show desktop - improve UX</h4>
+                        <p>System Preferences → Desktop Screensaver → Hot Corners →  Bottom right, set to "Show Desktop"</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Display</h3>
+                <ul>
+                    <li>
+                        <h4>Turn off auto brightness on battery - improve UX</h4>
+                        <p>System Preferences → Energy Saver → Uncheck "Slightly dim the disaply while on battery power"</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Dock</h3>
+                <ul>
+                    <li>
+                        <h4>Hide Dock - maximize screen real-estate</h4>
+                        <p>System Preferences → Dock → Check "Automatically hide and show the dock"</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Touch Bar</h3>
+                <ul>
+                    <li>
+                        <h4>Show expanded/full touchbar settings by default - impove UX</h4>
+                        <p>System Preferences → Keyboard → Keyboard Tab → Touchbar shows "Expanded Control Strip"</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Screenshots</h3>
+                <ul>
+                    <li>
+                        <h4>Set folder to save screenshots in a particular folder location. (example: Documents/Screenshots) - Minimalist</h4>
+                        <code>defaults write com.apple.screencapture location /Users/adamleithp/Documents/Screenshots</code>
+                    </li>
+                    <li>
+                        <h4>Turn off floating thumbnails (those annoying thumbnails that hang around for 5 seconds - Minimalist / improve UX</h4>
+                        <p>Screenshot.app → Options → Uncheck Show Floating Thumbnail</p>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- <li>
+                <h3>Firefox</h3>
+                <p>Show expanded control strip by default.</p>
+            </li>
+            <li>
+                <h3>Iterm2</h3>
+                <p>Show expanded control strip by default.</p>
+            </li>
+            <li>
+                <h3>Vscode</h3>
+                <p>Show expanded control strip by default.</p>
+            </li> -->
+        </ol>
+        
+    </main>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155013067-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155013067-1');
+    </script>
+
 </body>
 </html>
+
+<style>
+body {
+    background: #27272b;
+    color: #f3f3f3;
+    font-family:sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    /* font-family: 'Scope One', serif; */
+}
+
+h1 {font-size: 2em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.5em;}
+h4 {font-size: 1.1em;}
+h5 {font-size: 1em;}
+h6 {font-size: .9em;}
+
+p {
+    line-height: 1.4;
+    color: #cdcdcd;
+}
+
+ul {
+    padding: 0 0 0 1em;
+}
+ul li {
+    list-style-type: disc;
+}
+
+main {
+    padding: 5em 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+li {
+    margin-bottom: 2em;
+}
+
+code {
+    width: 100%;
+    padding: .5em;
+    background:#000;
+    display: block;
+    border-radius: 5px;
+}
+
+</style>
